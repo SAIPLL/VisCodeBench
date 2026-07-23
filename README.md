@@ -190,3 +190,9 @@ pytest tests/t2v_logging/test_geopandas.py -v
 ## License
 
 See [LICENSE](LICENSE).
+
+
+## Acknowledgements
+
+We would like to acknowledge the following references that have contributed to the development of this project:
+[References](./docs/acknowledgements.md)
