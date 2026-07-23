@@ -1,198 +1,101 @@
-# t2v-eval
+# VisCodeBench
 
-**t2v-eval** is a Python library for logging and evaluating
-Text-to-Visualisation (T2V) outputs. It captures the data that plotting
-libraries actually render, then compares predicted visualisations against
-reference visualisations using data-centric metrics.
+**VisCodeBench** is an end-to-end Text-to-Vis benchmark that reflects real-world
+practice. It contains **2,672 samples** drawn from three domains — educational,
+scientific, and general-audience — with varying levels of complexity, and it
+pairs those samples with data-centric evaluation metrics for scoring generated
+visualisations.
 
-The logger works by monkey-patching common plotting APIs from matplotlib,
-seaborn, pandas, and geopandas. Each captured plotting call is appended to a
-compact `series.jsonl` file.
+> **Paper:** *VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting
+> real-world practice* (COLM 2026).
+> Hy Nguyen, Thomas James Elton, Ella Wilson, Andrew Reeson, Cécile Paris,
+> Josiah Poon, Jonathan K. Kummerfeld.
+> The University of Sydney · CSIRO's Data61.
 
-## Installation
+> **🏆 Leaderboard:** https://www.codabench.org/competitions/16125/
+
+This repository provides the **evaluation code**, **representative samples**, and
+**prompts**. The full benchmark dataset is kept private and accessed via the
+leaderboard to prevent web scraping and use in LLM training.
+
+## What is Text-to-Vis?
+
+Text-to-Vis is the task of taking a human-language request for a visualisation,
+together with some input data, and generating code that produces the
+corresponding chart. VisCodeBench evaluates systems on realistic requests: the
+charts, data, and requests originate from real users rather than synthetic
+templates, and many samples require substantial data processing and
+customisation.
+
+## Dataset Overview
+
+VisCodeBench is built from three sources. After collection, the raw data went
+through an annotation process combining LLM assistance and expert human review
+(annotators with 4+ years of coding and academic-visualisation experience).
+
+| Subset | Size | Domain | Description |
+| --- | --- | --- | --- |
+| **GitHub-T2V** | 843 | Educational | Visualisation tasks from assignment notebooks in online data-science, data-analysis, and ML courses shared on GitHub. Each sample includes underlying data, context code, a natural-language request, the reference code, and the resulting chart. |
+| **arXiv-T2V** | 805 | Scientific | Charts contributed by authors of 2024 arXiv papers via an ethics-approved survey, with the corresponding code, underlying data, and a newly written request. Exhibits longer outputs, more plot types, and more subplots. |
+| **OWID-T2V** | 1,024 | General audience | Charts and datasets curated from [Our World in Data](https://ourworldindata.org/). Original charts were produced in custom JavaScript, so instead of code we provide reference displayed data points and the original chart images for evaluation. |
+
+Compared with existing benchmarks, VisCodeBench places higher demands on models:
+longer inputs and outputs, more distinct libraries per sample, multiple subplots
+per chart, and greater flexibility of data format — reflecting genuine
+real-world visualisation work.
+
+## Leaderboard & Submissions
+
+Because the full dataset is held out, evaluation is run through the Codabench
+competition rather than by releasing test data:
+
+**➡️ https://www.codabench.org/competitions/16125/**
+
+To participate:
+
+1. Open the competition page and read the task description and rules.
+2. Register for the competition on Codabench.
+3. Generate visualisation code for the provided inputs using your Text-to-Vis
+   system.
+4. Package your outputs in the required submission format (see the competition
+   page) and upload them.
+5. Your submission is scored automatically with the metrics in this repository,
+   and results appear on the leaderboard.
+
+The representative samples and prompts in this repository illustrate the input
+format and let you validate your pipeline locally before submitting.
+
+## Evaluation Library (`t2v_eval`)
+
+The `t2v_eval` package is the scoring engine behind the leaderboard. It logs the
+data that plotting libraries actually render, then compares predicted
+visualisations against reference visualisations using data-centric metrics such
+as **Displayed Data Similarity** and an image-level **Accessibility** score.
+
+Installation, logging, scoring, the full API reference, supported plotting
+libraries, and tests are documented in **[docs/t2v_eval.md](./docs/t2v_eval.md)**.
+
+Quick start:
 
 ```bash
 pip install -e .
 ```
 
-Requires Python 3.10 to 3.12. Core dependencies are listed in
-`requirements.txt`.
-
-## Quick Start
-
-Activate logging before running the visualisation code you want to capture:
-
 ```python
-from t2v_eval.logging import activate_t2v_logging, setup_log_dir
-
-LOG_DIR = "logs/example"
-setup_log_dir(LOG_DIR)
-activate_t2v_logging(LOG_DIR)
-
-import matplotlib.pyplot as plt
-
-fig, ax = plt.subplots()
-ax.scatter([1, 2, 3], [4, 5, 6])
-plt.show()
-```
-
-After execution, the log directory contains:
-
-```text
-logs/example/
-├── series.jsonl
-└── variables.json
-```
-
-`series.jsonl` is written directly while plotting. You do not need a separate
-compaction step for current logs.
-
-## JSONL Format
-
-Each line in `series.jsonl` is one JSON record for one plotting call:
-
-```json
-{
-  "axis_id": "<fig_id>_<ax_id>",
-  "plot_func_id": "<timestamp>",
-  "t2v_eval_version": "0.2.2",
-  "plt_func": "scatter",
-  "args": [],
-  "kargs": {
-    "ax_col": 0,
-    "ax_row": 0
-  },
-  "data_series": [
-    {
-      "x": [1, 2, 3],
-      "y": [4, 5, 6]
-    }
-  ]
-}
-```
-
-The exact `data_series` keys depend on the chart type. For example, scatter
-plots may include marker sizes and colors, box plots include summary
-statistics, and gridded charts include matrix-like values.
-
-## Evaluation
-
-Use the evaluation APIs to compare a predicted log directory with a reference
-log directory:
-
-```python
-from t2v_eval.evaluation import (
-    calculate_similarity_score,
-    calculate_chart_type_accuracy,
-)
+from t2v_eval.evaluation import calculate_similarity_score
 
 similarity = calculate_similarity_score(
     pred_log_dir="logs/pred",
     gt_log_dir="logs/reference",
 )
-
-chart_type_ok = calculate_chart_type_accuracy(
-    pred_log_dir="logs/pred",
-    gt_log_dir="logs/reference",
-)
-
-print(similarity)
-print(chart_type_ok)
-```
-
-`calculate_similarity_score` returns a float in `[0, 1]`, where higher is
-better. `calculate_chart_type_accuracy` returns whether the predicted chart
-types cover the reference chart types.
-
-## Main APIs
-
-### Logging
-
-```python
-from t2v_eval.logging import (
-    activate_t2v_logging,
-    setup_log_dir,
-    reset_log_dir,
-    iter_series_records,
-)
-```
-
-| Function | Description |
-| --- | --- |
-| `setup_log_dir(log_dir)` | Set and reset the active log directory. |
-| `activate_t2v_logging(log_dir)` | Enable monkey-patched logging for supported plotting libraries. |
-| `reset_log_dir()` | Reset logging to the default `/tmp/t2vlog` directory. |
-| `iter_series_records(log_dir)` | Stream records from `<log_dir>/series.jsonl`. |
-
-### Evaluation
-
-```python
-from t2v_eval.evaluation import (
-    calculate_similarity_score,
-    calculate_chart_type_accuracy,
-    calculate_accessibility_score,
-)
-```
-
-| Function | Description |
-| --- | --- |
-| `calculate_similarity_score(pred_log_dir, gt_log_dir, ...)` | Compare displayed data series and return a score in `[0, 1]`. |
-| `calculate_chart_type_accuracy(pred_log_dir, gt_log_dir, ...)` | Check whether predicted chart types cover reference chart types. |
-| `calculate_accessibility_score(image_path, ...)` | Compute image-level accessibility signals such as contrast and text spacing. |
-
-Useful `calculate_similarity_score` options include:
-
-| Parameter | Default | Description |
-| --- | --- | --- |
-| `down_sampling` | `True` | Downsample long series before comparison. |
-| `down_sampling_max_length` | `5000` | Maximum points per series after downsampling. |
-| `use_cache` | `False` | Reuse a cached `evaluation.json` result if available. |
-| `save_results` | `False` | Save the computed result to `evaluation.json`. |
-| `verbose` | `False` | Print additional debugging information. |
-
-## Supported Plotting Libraries
-
-| Library | Examples of captured charts |
-| --- | --- |
-| matplotlib | line, scatter, bar, histogram, pie, box, violin, errorbar, eventplot, image, contour, pcolormesh, hexbin, 3D scatter, 3D bar, surface |
-| seaborn | relational, categorical, distribution, regression, FacetGrid, PairGrid, pairplot, relplot, catplot, displot, lmplot |
-| pandas | DataFrame/Series plots including line, area, bar, scatter, box, hist, KDE, pie, hexbin |
-| geopandas | GeoDataFrame plots such as choropleths and heatmaps |
-
-## Legacy Logs
-
-Older versions of `t2v_eval` wrote one loose JSON file per plotting call.
-Current logging writes `series.jsonl` directly. If you need to convert an old
-log directory, use:
-
-```python
-from t2v_eval.logging import compact_log_dir
-
-compact_log_dir("logs/old_format")
-```
-
-## Tests
-
-Run the logging test suite with:
-
-```bash
-pytest tests/t2v_logging/ -v
-```
-
-To run a smaller subset:
-
-```bash
-pytest tests/t2v_logging/test_matplotlib_pairwise.py -v
-pytest tests/t2v_logging/test_seaborn_relational.py -v
-pytest tests/t2v_logging/test_geopandas.py -v
+print(similarity)  # float in [0, 1], higher is better
 ```
 
 ## License
 
 See [LICENSE](LICENSE).
 
-
 ## Acknowledgements
 
-We would like to acknowledge the following references that have contributed to the development of this project:
-[References](./docs/acknowledgements.md)
+We would like to acknowledge the following references that have contributed to
+the development of this project: [References](./docs/acknowledgements.md).
