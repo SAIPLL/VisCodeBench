@@ -94,37 +94,41 @@ def compare_scatter(pred_ds: dict, gt_ds: dict,
 def get_cont_recall_new(p_xs, p_ys, g_xs, g_ys, epsilon: float) -> float:
     """
     Parametric (arc-length) interpolation recall for continuous (line) series.
+
+    Vectorised implementation.
     """
     p_ts = np.concatenate([[0], np.cumsum(np.hypot(np.diff(p_xs), np.diff(p_ys)))])
     g_ts = np.concatenate([[0], np.cumsum(np.hypot(np.diff(g_xs), np.diff(g_ys)))])
 
     if p_ts[-1] == 0: p_ts[-1] = epsilon
     if g_ts[-1] == 0: g_ts[-1] = epsilon
-    p_ts /= p_ts[-1]
-    g_ts /= g_ts[-1]
+    p_ts = p_ts / p_ts[-1]
+    g_ts = g_ts / g_ts[-1]
 
-    interp_px = lambda t: np.interp(t, p_ts, p_xs)
-    interp_py = lambda t: np.interp(t, p_ts, p_ys)
-
-    total_score = total_interval = 0.0
     n = len(g_ts)
-    for i in range(n):
-        if i == 0:
-            interval = (g_ts[1] - g_ts[0]) / 2
-        elif i == n - 1:
-            interval = (g_ts[-1] - g_ts[-2]) / 2
-        else:
-            interval = (g_ts[i + 1] - g_ts[i - 1]) / 2
-        interval = abs(interval)
+    if n < 2:
+        # single ground-truth point → no interval to integrate over.
+        # (In practice single-point 'plot' series are reclassified as scatter
+        # upstream, so this guard is just defensive.)
+        return 0.0
 
-        gx, gy = g_xs[i], g_ys[i]
-        px, py = interp_px(g_ts[i]), interp_py(g_ts[i])
-        error  = np.hypot(gx - px, gy - py)
-        denom  = np.hypot(gx, gy) + epsilon
-        norm_error = min(1.0, error / denom)
+    # Interval weights (trapezoidal): endpoints get a half interval, interior
+    # points get the centred half-difference. Matches the original loop exactly.
+    interval = np.empty(n)
+    interval[0]    = (g_ts[1] - g_ts[0]) / 2
+    interval[-1]   = (g_ts[-1] - g_ts[-2]) / 2
+    interval[1:-1] = (g_ts[2:] - g_ts[:-2]) / 2
+    interval = np.abs(interval)
 
-        total_score    += (1.0 - norm_error) * interval
-        total_interval += interval
+    # Interpolate the predicted curve at every ground-truth parameter at once.
+    px = np.interp(g_ts, p_ts, p_xs)
+    py = np.interp(g_ts, p_ts, p_ys)
+    error      = np.hypot(g_xs - px, g_ys - py)
+    denom      = np.hypot(g_xs, g_ys) + epsilon
+    norm_error = np.minimum(1.0, error / denom)
+
+    total_score    = float(np.sum((1.0 - norm_error) * interval))
+    total_interval = float(np.sum(interval))
 
     return min(1.0, total_score / total_interval) if total_interval > 0 else 0.0
 
@@ -221,7 +225,7 @@ def compare_data_series(pred_series: dict, gt_series: dict, debug: bool = False)
 
 
 def compare_axes(pred_series_list: list, gt_series_list: list,
-                 debug: bool = False, n_jobs: int = 4) -> float:
+                 debug: bool = False, n_jobs: int = 1) -> float:
     """
     Compare two axes by solving the optimal series-assignment problem.
     """
@@ -245,7 +249,7 @@ def compare_axes(pred_series_list: list, gt_series_list: list,
 
 
 def compare_figures(pred_fig_data: dict, gt_fig_data: dict,
-                    debug: bool = False, n_jobs: int = 4) -> float:
+                    debug: bool = False, n_jobs: int = 1) -> float:
     """
     Compare two full figures (dicts of axes) by optimal axis assignment.
     """
