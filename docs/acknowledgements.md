@@ -1765,3 +1765,4 @@
 
 - Wei Zhou and Zhou Wang. 2024. Perceptual Depth Quality Assessment of Stereoscopic Omnidirectional Images. IEEE Transactions on Circuits and Systems for Video Technology, 34(12):13452-13462.
 
+And other contributions sending to our mail box.

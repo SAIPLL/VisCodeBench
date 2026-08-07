@@ -8,7 +8,7 @@ include = ["t2v_eval*"]
 
 [project]
 name = "t2v_eval"
-version = "0.2.2"
+version = "0.2.4"
 description = "Evalulation scripts for Text-to-Vis projects"
 readme = "README.md"
 requires-python = ">=3.10, <=3.12.13"
@@ -18,7 +18,7 @@ dynamic = ["dependencies"]
 dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
-"Homepage" = "https://github.com/SAIPLL/t2v-eval"
+"Homepage" = "https://github.com/SAIPLL/VisCodeBench"
 
 [tool.pytest.ini_options]
 # Run from the repo root so that both "t2v_eval" and "tests" are importable.
