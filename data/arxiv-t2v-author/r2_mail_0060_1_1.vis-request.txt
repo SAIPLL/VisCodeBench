@@ -1,0 +1,2 @@
+Show a calibration bin plot using the raw results by first binning the results with confidence score into different bins, then calculate the accuracy within each bin.
+Finally, draw a scatter plot with the size of each circle reflect the size of data within each confidence bin.

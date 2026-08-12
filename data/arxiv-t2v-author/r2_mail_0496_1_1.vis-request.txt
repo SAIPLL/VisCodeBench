@@ -1,0 +1,1 @@
+For the given data in the txt file, please plot the historgram.

@@ -1,0 +1,5 @@
+Generate two groups of bar plots in the same graph using matplotlib and seaborn, comparing the average reward for state based and policy based instructions for numbers in the range of 0-99.
+Each group of bar plot should additionally contain 3 bar plots, filename ending with pt1 should have yellow colored bar with label as "Atten.
+based Increasing Ord.", pt2 should have orange colored bar with label as "Atten.
+based MyOptimal Ord." and  pt3 should have red colored bar with label as "Atten.
+based Decreasing Ord.".

@@ -1,0 +1,1 @@
+Plot the distribution of the score of each Wikipedia article on absolute value heuristics for Wikipedias in each tier.

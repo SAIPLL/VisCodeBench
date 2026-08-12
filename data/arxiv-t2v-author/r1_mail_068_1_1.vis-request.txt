@@ -1,0 +1,4 @@
+Plot the values of the given set using the line graph.
+Please make the values for AMS parser bold.
+Use the color palette 'Set2'.
+Each category should have different line styles.

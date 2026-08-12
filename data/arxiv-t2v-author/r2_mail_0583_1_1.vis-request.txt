@@ -1,0 +1,4 @@
+For the given "accuracy_data" and "degradation_data" in the "4_data" folder, generate two plots, side by side in a single figure, using Pandas and Matplotlib.
+The x-line should represent the "Task" for both plots.
+The y-line should represent the "Accuracy A_t" for the "accuracy_data" and "PD" for the "degradation_data".
+Use different markers and colors for each model and include a legends based on "MODEL" column.

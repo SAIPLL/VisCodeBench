@@ -1,0 +1,5 @@
+We now investigate the impact of the masking ratio of our vector quantization process.
+
+The masking  ratio is search in the ranges of [0, 1] in 0.1 increments, and the corresponding hit rates (HR) are [0.059220076, 0.060691854, 0.061175688, 0.061161596, 0.059526853, 0.054156083, 0.05276746, 0.052615631, 0.052623841, 0.053123222, 0.052883752].
+
+Please visualise the data into a linear plot using matplotlib.pyplot in Python.

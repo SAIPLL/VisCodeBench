@@ -1,0 +1,1 @@
+A violin plot of the data makes it easy to see the distribution of the data.

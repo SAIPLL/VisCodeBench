@@ -1,0 +1,3 @@
+From the given data, plot the reward for the task 2b_3 and methods "ours" and "dqn".
+Two lines should be plotted, one for each method.
+Visualize the standard deviation as a shaded region around the plotted line.

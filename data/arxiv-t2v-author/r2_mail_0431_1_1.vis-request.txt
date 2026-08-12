@@ -1,0 +1,6 @@
+Create a bar chart where the x-axis represents different benchmarks and the y-axis represents speedup values.
+Use different colors for the configurations.
+Group the bars for each benchmark and limit the y-axis to a maximum value of 5.
+Annotate bars with their exact values unless they are too small.
+Split the benchmarks into two subplots if needed for better readability.
+Add a legend as well.

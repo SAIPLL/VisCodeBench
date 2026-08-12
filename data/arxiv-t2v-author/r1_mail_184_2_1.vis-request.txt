@@ -1,0 +1,5 @@
+plot the performance of three methods (DB, DB+TKS, and DB+IEDP) as a function of aspect ratio, and also plot the statistics of text count for different aspect ratios.
+
+The relevant data is provided in as.txt, where the data is divided into three parts by empty lines, each corresponding to one method.
+
+Each data line contains the aspect ratio partition (represented as an integer), the text line count, and the performance.

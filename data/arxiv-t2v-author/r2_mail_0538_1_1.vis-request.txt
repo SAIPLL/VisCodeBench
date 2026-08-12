@@ -1,0 +1,2 @@
+For the accuracy of different algorithms on CIFAR100, use matplotlib to plot them.
+Different colored lines represent different algorithms.

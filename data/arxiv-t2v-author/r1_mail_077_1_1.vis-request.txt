@@ -1,0 +1,2 @@
+The comparison of NDCG@10 between running RankGPT multiple times in serial and running TourRank-r in parallel.
+The abscissa is the number of iterations, and the ordinate is the NDCG@10 corresponding to different algorithms.

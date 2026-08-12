@@ -1,0 +1,5 @@
+Plot the y variables with respect to x in a single figure.
+y1 must be plain style, y2 and y3 must be in green and dashed style while y4 must be in black and dashed style too.
+On the figure, label the beginning and the end of y1 as "Baseline Input" and "Original input" respectively, and mark their spot with a black dot.
+In the legend, y1's label is "Output's prediction", y2 and y3 label is "Important neurons' activations" and y4 is "Non important neurons' activations".
+x and y axis names are "t" and "logit" respectively.

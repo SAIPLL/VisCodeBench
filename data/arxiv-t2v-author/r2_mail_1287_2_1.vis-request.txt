@@ -1,0 +1,36 @@
+I have multiple CSV files containing estimation errors of a JS divergence estimator.
+
+Each file is located in a folder structured as results/use_case_1/{M}_{L}/seeds_js.csv, where M and L can be 20, 200, or 2000.
+ 
+Each CSV contains two columns: "Ground Truth MC JS" (Monte Carlo ground truth estimate) and "Disc JS" (discriminator-based estimate).
+
+
+I want to compute the absolute error between them and display the distributions as boxplots.
+
+I want to generate a figure with 3 subplots arranged in a single row.
+
+Each subplot corresponds to a fixed M value (20, 200, 2000), and compares the estimation errors across different L values (20, 200, 2000) for that M.
+ 
+For each subplot:  
+- The x-axis should show the different L values.
+ 
+- The y-axis (shared across subplots) should represent the absolute estimation error.
+ 
+- Each boxplot should be color-filled: light blue for L=20, light pink for L=200, and light yellow for L=2000.
+ 
+- The title should be: "$D_{JS}$ Estimation for M = {value}".
+ 
+- Include red median lines and show outliers if any.
+ 
+- Add horizontal grid lines to improve readability.
+ 
+- Only the first subplot (M=20) needs to include the y-axis label "Estimation Errors".
+ 
+- All subplots should have the x-axis label "L values".
+ 
+- The overall figure should:  Have size approximately (16, 6).
+ 
+- Use tight_layout with padding.
+ 
+
+Be saved as js_error_boxplots.png in the same results/use_case_1/ directory.

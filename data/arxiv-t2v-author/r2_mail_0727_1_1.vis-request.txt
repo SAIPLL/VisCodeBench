@@ -1,0 +1,18 @@
+For the given data in the CSV files create 3 graphs horizontally next to each other, one for each run.
+Use the 'science', 'grid', and 'ieee' styles for matplotlib.
+ The CSV file paths are named using the following pattern: data/<Run>/Decrypt(<ContentSize>, n=<NumberOfRecipients>, <DeceptionBlocks>, <VerifyRecipients>)_Decrypt.csv where <Run> specifies the used processor and execution environment, e.g.
+Ryzen 7 7900X net8; and <ContentSize> is the content size, e.g.
+1MB; and <NumberOfRecipients> is a natural number, e.g.
+50; and <DeceptionBlocks> is a boolean value, e.g.
+True; and <VerifyRecipients> is a boolean value, e.g.
+False; Each CSV file contains four columns naming the four cipher suites and an index column named 'run'.
+The performance measurements are given in seconds.
+ The graphs share common axis scaling and are log-log graphs.
+In each graph there are 4 lines, one for each cipher suite, i.e.
+column in the CSV file.
+For this plot, use all CSV files that contain decryption performance measurements with n=5 recipients, deception blocks enabled, verification enabled, and differing content sizes.
+Use the average over all runs, i.e.
+rows in CSV, per cipher suite to generate the data points for the graphs.
+ The x-axis shows the varying content size in megabytes, ranging from 1 to 1000.
+The y-axis shows the time in seconds, ranging from 0.01 to 10.
+Place a human readable description on top of each graph stating the used processor and execution environment and provide reasonable axis labels.

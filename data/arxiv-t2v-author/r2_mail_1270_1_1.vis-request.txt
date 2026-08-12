@@ -1,0 +1,1 @@
+Load results from multiple CSV files and generate boxplots for various error metrics and SSIM, comparing in-distribution (ID) and out-of-distribution (OOD) datasets across different numbers of projection angles.

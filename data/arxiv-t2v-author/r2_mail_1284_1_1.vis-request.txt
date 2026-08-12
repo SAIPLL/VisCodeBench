@@ -1,0 +1,1 @@
+For the variable 'results' in each JSON file, plot the 'result' curves of different methods (i.e., JSON files), using the index as the x-axis.

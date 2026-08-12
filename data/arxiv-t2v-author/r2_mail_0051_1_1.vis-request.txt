@@ -1,0 +1,5 @@
+Plot the birth function b(e) = 0.0004 / (1.0 + exp(-0.1e) with e from 0 to 80.
+Show grid.
+The line should be purple.
+x label should be Energy $e$.
+The title should be "Birth prob.".

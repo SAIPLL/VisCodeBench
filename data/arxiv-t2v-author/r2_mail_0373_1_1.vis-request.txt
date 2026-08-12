@@ -1,0 +1,4 @@
+For the speed and hull settings (the first two columns of the data), make a 3D plot with the settings as the x and y axes and the avg_speed as the z-axis.
+Also have a color gradient from low speed to high speed.
+Finally, exclude any data points where the speed and hull settings where below .05 or above .95 when making the visualization.
+This should produce a 3D manifold.

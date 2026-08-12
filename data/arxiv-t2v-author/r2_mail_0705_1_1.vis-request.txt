@@ -1,0 +1,6 @@
+The variable "outputsList" consists of a torch tensor having the feature vectors of some sample images, and the variable "labelsList" consists of the corresponding class labels.
+Generate a scatterplot that portrays the t-Distributed Stochastic Neighbor Embedding (t-SNE) representations of the given feature vectors.
+Make sure each of the classes are represented by a different color.
+Include a legend of all the classes at the top-right of the scatterplot.
+The fontsize of the plot should be 14pt, the figure size should be (15, 15), and the number of columns in the legend should be 3.
+Save the generated plot in PDF format with tight bounding box padding.

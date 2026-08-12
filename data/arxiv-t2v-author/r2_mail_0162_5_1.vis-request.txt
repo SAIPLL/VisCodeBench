@@ -1,0 +1,2 @@
+Please generate a BA graph and an ER graph according to the parameters and randomly set the edge weights for different variance cases (0,0.03,0.09) for all the edges of this graph, and finally plot the graph energy density and cumulative distributions of these three.
+Also, please add a magnifying glass feature to zoom in on the data portion of this data at both ends of the spectrum

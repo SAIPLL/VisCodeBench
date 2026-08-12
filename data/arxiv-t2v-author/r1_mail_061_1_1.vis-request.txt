@@ -1,0 +1,36 @@
+I need help creating a detailed political compass visualization.
+
+Here's what I need:  
+1) Data Preparation: From the parquet file 'persona_compass.pqt' extract only 'persona_id' and 'compass_position' columns.
+Remove any duplicate entries and load this into a dataframe.
+The 'baseLLMsPoliticalView.json' file contains political leaning tuples for 4 different LLMs.
+From it extract only the tuple for 'Llama-3.1-8B-Instruct' Store this single tuple in an array.
+ 
+2) Visualization Requirements: Create a function that generates a political compass plot with the following specifications:  
+Core Plot: Use the position of the persona in the dataframe to display their distribution using hexbins.
+
+Additionally use the position of the base LLM displaying it with a white circle with black margin.
+ 
+- Compass range: -10 to 10 on both axes - X-axis label: '<- Left        Right ->' 
+- Y-axis label: '<- Libertarian        Authoritarian ->' 
+- Background: Light grid at 1-step intervals 
+- Origin lines with adjustable transparency controlled by a parameter that I can pass to the function when called  Marginal Distributions: 
+- Display on top and right sides of main plot 
+- Format tick labels to use 'k' for thousands (e.g., 1000 -> 1k, 200000 -> 200k) 
+- Legend placement: Right side of the y-axis marginal plot  Customizable Parameters: The following are parameters that I would like to control when calling the function to create the plot: 
+- bins: For distribution binning - gridsize: For plot density 
+- label_gap: For label spacing 
+- label_margin: For margin around labels 
+- marginal_ratio: For marginal plot proportions 
+- tick_interval: For axis tick spacing 
+- label_size: For label text size 
+- tick_size: For tick mark size 
+- colorbar_size: For legend dimensions 
+- marginal_alpha: For marginal plot transparency 
+- origin_lines_alpha: For origin line visibility
+
+Create this as a modular function accepting all parameters and returning a plot.
+Include a call to the function with specific parameter values.
+Save the resulting figure.
+ All of this should be implemented in a Jupyter notebook with separate cells for each major step (data loading, function definition, execution and saving).
+Make sure to import all the library that are needed to make the code runnable.|

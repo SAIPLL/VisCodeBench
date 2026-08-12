@@ -1,0 +1,5 @@
+We further investigate the effects of the size of augmented TabMWP-TeLL data with the TabMWP dataset on LLMs' TMWP-solving performance.
+Incorporating more TabMWP-TeLL data consistently contributes to the performance across all models, even with smaller amounts of augmented data.
+Among these, a small amount of data (e.g., $20\%$) leads to a substantial improvement in model performance.
+As the data volume increases, the improvement rate slows, but the model continues to benefit from the generated data.
+This finding not only demonstrates the usefulness of additional augmented data in enhancing TMWP results but also highlights the critical importance of high-quality data in achieving superior model performance.

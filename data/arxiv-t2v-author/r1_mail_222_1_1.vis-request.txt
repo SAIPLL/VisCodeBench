@@ -1,0 +1,9 @@
+Please generate two side-by-side line plots that visualize evaluation metrics (precision, recall, accuracy, and F1-score) as a function of threshold values for two datasets.
+Each plot should correspond to one dataset, and the metrics should be plotted with distinct markers and colors for clarity.
+Ensure that:      The x-axis represents the threshold values (0.0 to 0.9).
+    The y-axis represents the score values ranging from 0.0 to 1.0.
+    Each line represents a different metric (precision, recall, accuracy, or F1-score).
+    Include a legend, proper labels for the axes, and titles indicating the dataset name.
+ For example:      The first dataset corresponds to the provided data dictionary for BASIL.
+    The second dataset corresponds to the data dictionary for BABE.
+ The layout should be clear, professional, and resemble the visual structure of the attached image, with the two plots aligned horizontally.

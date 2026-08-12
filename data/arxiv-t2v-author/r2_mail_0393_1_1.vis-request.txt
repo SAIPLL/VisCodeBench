@@ -1,0 +1,3 @@
+Given the input data, which involves a domain of GPU counts and a range of achieved performance in teraflops, plot achieved performance on a log-log scale using a line plot.
+ Title the plot "FP32 GEMM, 32K x 32K Matrices" and title the x- and y-axes "Number of GPU Tiles" and "TFLOPs," respectively.
+ Add a dashed grey "perfect scaling" line showing perfect efficiency (flops scaling linear with GPUs) slightly below the plotted line.

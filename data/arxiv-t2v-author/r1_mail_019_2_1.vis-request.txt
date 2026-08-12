@@ -1,0 +1,10 @@
+We have embedding data in three folders for their respective models: eucli_sq_vB16, hyp-B16, and clip_B_16.
+For the first two, the l2 norm of text/image embeddings are in the files 'text_l2_norms.npy' and 'image_l2_norms.npy'.
+
+For the last, negative cosine similarities with the root are in the files 'root_dist_text_l2_norms.npy', 'root_dist_image_l2_norms.npy'.
+
+Plot the distribution of l2 norm of the first two as they are but plot the negative cosine similarities linearly transformed as 0.5 * (1  + (- cos())) for the last.
+
+Output all three subplots side-by-side.
+
+To make sure that the plot is legible, increase the font size to 15.

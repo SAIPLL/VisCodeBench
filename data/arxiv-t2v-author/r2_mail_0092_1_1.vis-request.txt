@@ -1,0 +1,8 @@
+Given: 
+- Functions (get_attn_layer_flops(), get_mlp_layer_flops(), and get_mamba1_flops()) of calculating FLOPs of different types of layers (Attention, MLP, and Mamba1) when processing inputs with a specific sequence length 
+- Number of layers: '24 SSM layers', '4 Attn layers', '28 MLP layers' 
+- Model dimensions d = 4096, and n = 128, which act as input to the FLOP calculation functions  
+
+Generate a stacked plot that has sequence length as the x-axis and a breakdown of the FLOPs of different types of layers on the y-axis.
+Use different color gradients to differentiate the different layer types.
+Add a legend that shows the three different types of layers on the top left corner of the image.

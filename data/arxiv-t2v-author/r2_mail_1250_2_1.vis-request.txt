@@ -1,0 +1,1 @@
+Plot the first row as y axis values, and the second row for x axis values and create a plot

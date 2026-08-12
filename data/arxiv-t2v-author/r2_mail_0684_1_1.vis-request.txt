@@ -1,0 +1,5 @@
+shows the relationship between shielding thickness in millimeters and total ionizing dose (TID) in rads on a semi-logarithmic scale.
+Red square markers represent data points connected by a smooth blue line, illustrating how radiation exposure decreases as shielding increases.
+The background is divided into three colored regions: green for doses below 2 krad, orange for doses between 2 krad and 20 krad, and red for doses above 20 krad.
+A red dashed line at 20 krad marks the boundary between the orange and red regions, while an orange dashed line at 2 krad separates the green and orange areas.
+The visualization highlights the effectiveness of shielding in reducing radiation exposure.

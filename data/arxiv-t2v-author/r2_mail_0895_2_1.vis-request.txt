@@ -1,0 +1,3 @@
+Plot the converged training accuracy versus the number of local aggregations per training round $J$.
+Each dot represents the average accuracy across 10 clients, with error bars indicating the range of their individual accuracies.
+The marker $\times$ denotes the best observed training accuracy.

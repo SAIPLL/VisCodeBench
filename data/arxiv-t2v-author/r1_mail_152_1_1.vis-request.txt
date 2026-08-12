@@ -1,0 +1,13 @@
+I would like to visualize the performance of models BERT and GPT2 using the provided data.
+
+Create a plot with two subplots side-by-side:  
+X-axis: Use the alpha values, representing a varying parameter.
+ 
+Y-axis: Display accuracy values as percentages (multiply the raw values by 100).
+ 
+Each subplot represents one model:  The first subplot for BERT.
+The second subplot for GPT2.
+
+For each model:  Plot the Evaluation Accuracy and Training Accuracy for both types of loss functions (kld and mse)  Set the Y-axis range from 20% to 100%, with ticks every 10%.
+ 
+Title the plots as "BERT (2 layers)" and "GPT2 (2 layers)" respectively.

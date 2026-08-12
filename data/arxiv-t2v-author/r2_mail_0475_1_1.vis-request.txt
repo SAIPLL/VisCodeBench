@@ -1,0 +1,3 @@
+Using the original results and the refined results (stored in "result" folder), generate a box plot for each log parser to compare the GA, PA, FGA, and FTA before and after implementing the preprocessing framework.
+Show the metric means and medians in the box plots.
+Put the tool name on top of each subplot, and also show the box color and version (original or refined) match.

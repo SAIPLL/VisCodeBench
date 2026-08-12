@@ -1,0 +1,1 @@
+Plot the bar figure for the activity recognition performance on DeepSeg data.

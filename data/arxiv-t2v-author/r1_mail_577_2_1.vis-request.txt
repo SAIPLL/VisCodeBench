@@ -1,0 +1,1 @@
+For the given data, plot a scatterplot with variability on the x-axis and confidence on the y-axis and use correctness value rounded to the closest multiple of 0.2 within the range 0.0 to 1.0 as hue for the points.

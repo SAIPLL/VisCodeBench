@@ -1,0 +1,2 @@
+Use a combination of line plot and scatter plot to draw the distribution of the number of downloads.
+Draw the statistics of the whole dataset as line plots, and draw the statistics of the classA subset as dots/scatters on the line.

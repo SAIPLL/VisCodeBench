@@ -1,0 +1,2 @@
+Energy landscapes for a set of 1-dimensional patterns D = {−2, 0, 1}.
+The orange curves correspond to the MCHN energy with β = 1, 2.

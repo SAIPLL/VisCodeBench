@@ -1,0 +1,4 @@
+Plot data to show: 
+The curves in the figure represent the function $\lambda = -(\beta - 0.5)s^\alpha + \beta$, where the horizontal axis represents $s$ and the vertical axis represents $\lambda$.
+In Figure (a), the curves are plotted with a fixed $\beta=1$ and $\alpha$ values of 0.1, 0.2, 0.5, 1, 2, 5, and 10.
+In Figure (b), the curves are plotted with a fixed $\alpha=1$ and $\beta$ values of 0.75, 0.8, 0.85, 0.9, 0.95, and 1.

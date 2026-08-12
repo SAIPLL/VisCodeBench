@@ -1,0 +1,4 @@
+The data contains three different files, the original measurements, 4-bit measurements and 8-bit measurements.
+Each of the files contains the energy consumption of DRAM, GPU, CPU and the sum (total) of these.
+It also contains a column EstimatedCO2 with the estimated carbon emissions and finally the runtime as column.
+Each data file has five rows (excluding column names) corresponding with one measurement each.

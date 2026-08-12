@@ -1,0 +1,3 @@
+Please create a figure that plots the given text embeddings as scatter dots.
+In each plot, data points are represented as small colored dots corresponding to their category.
+The dots are scattered across the 2D space, showing the distribution of text embedding for different eye conditions.

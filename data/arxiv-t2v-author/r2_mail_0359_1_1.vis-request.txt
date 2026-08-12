@@ -1,0 +1,4 @@
+Show a bar chart comparing the performance of ComDML with other baselines, including 'GossipLearning', 'BrainTorrent', 'Allreduce', and 'FedAvg', across different datasets: CIFAR-10, CIFAR-100, and CINIC-10.
+The plot should display training times in seconds.
+Use different colors and patterns for each baseline, and group the bars for each dataset.
+In the plot, also add a caption in the upper right corner.

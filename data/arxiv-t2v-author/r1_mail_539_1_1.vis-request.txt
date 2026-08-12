@@ -1,0 +1,12 @@
+For Claude 3.5 Sonnet, Harmful Accepted, draw 
+1) logistic relationship with all observations, 
+2) ols relationship with averages calculated per language.
+The average er language to be represented by blue dots.
+Calculate and show with gray lines 95% Wilson score intervals based on the ols results ( 100 obs.
+per language.
+) us logarithmic horizontal scale.
+
+
+Add text labels for languages.
+
+Show legend - logistic relationship with no of obs., formula and params, ols relationship with no of obs., formula and params, and that the blue dots indicate observed proportions.

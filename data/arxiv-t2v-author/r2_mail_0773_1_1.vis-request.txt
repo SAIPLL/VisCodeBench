@@ -1,0 +1,2 @@
+Given a set of points in 2 dimensions $X$ along with the classes in $y$, plot the unsigned distance of the points to the line x-y as a histogram.
+Also include a kernel density estimate of the same.

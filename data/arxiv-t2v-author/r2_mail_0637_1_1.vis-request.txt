@@ -1,0 +1,4 @@
+Create a Python code to plot the class distribution for a vehicle color recognition dataset.
+The plot should fulfill the following requirements:  I) The plot should be a bar plot; II) It must use a tight layout; III) Bars should be sorted in ascending order; IV) Above each bar, there must be two pieces of information (on separate lines): the total class frequency and the percentage (with two decimal points); V) Given the color class names, the bars should match that color; VI) Use a light-gray background; VII) X-ticks should be rotated; VIII) The X-label should be "Vehicle Color" and the Y-label should be "# Images"; IX) Do not define a title for the plot.
+X) Save the plot as "barplot.pdf".
+ The class distribution is given below:  beige: 145   black: 1562   blue: 168   brown: 43   gray: 880   green: 102   orange: 22   red: 474   silver: 2699   white: 3871   yellow: 73

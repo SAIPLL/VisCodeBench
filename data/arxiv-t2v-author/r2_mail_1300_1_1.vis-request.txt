@@ -1,0 +1,2 @@
+Prompt for the first sub-figure:  Given four methods listed as: ["w/o structure", "w/o selector", "w/o error", "w/o diversity", "Ours"], and their respective performances: [0.6633, 0.6920, 0.6980, 0.6967, 0.7140].
+Please help me generate a line chart with blue dots and a blue line, using plt.grid, with an adjustable 'Times New Roman' font, an adjustable canvas size setting, and the y-axis font color set to blue.

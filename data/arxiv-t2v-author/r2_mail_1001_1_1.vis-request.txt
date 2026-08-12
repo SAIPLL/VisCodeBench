@@ -1,0 +1,2 @@
+For the data given in f1_per_s, show a bar chart, with labels given in model_names.
+Place the models on the x-axis and the associated f1/s score on the y-axis.

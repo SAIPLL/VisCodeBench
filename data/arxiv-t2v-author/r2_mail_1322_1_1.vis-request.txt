@@ -1,0 +1,6 @@
+There are multiple csv files named: (a1) "subs_all.csv", (a2) "subs_flavhue.csv", (a3) "subs_alcpro.csv", (b1) "pumap_all.csv", (b2) "pumap_flavhue.csv", (b3) "pumap_alcpro.csv"  Visualize each csv file as a scatterplot where points are encoded by their labels (Cultivar 1: green circle, Cultivar 2: yellow circle, Cultivar 3: purple circle, Benign: black plus, Adversarial: black cross).
+  Then, arrange them to make a single plot where the first row (a1), (a2), (a3) and the second row (b1), (b2), (b3).
+  Also, add subtitles to the first and second row as "Substitute model" and "PUMAP" and to the first, second, and third columns as "(a) all attributes, (b) flavanoids & hue, (c) alcohol & proline.
+Add figure labels (a1, a2, a3, b1, b2, b3)at the right corner of the corresponding figures.
+In (a1), annotate the position (-2.5, -2.5) with "Aimed position (-2.5, -2.5).
+Add a legend in (b1).

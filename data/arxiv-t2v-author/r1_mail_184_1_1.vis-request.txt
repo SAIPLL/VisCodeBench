@@ -1,0 +1,1 @@
+Plot three separate IOU graphs, where the x-axis represents different text aspect ratios, the y-axis represents the IOU levels after text recovery, and the plots are presented as contour maps.

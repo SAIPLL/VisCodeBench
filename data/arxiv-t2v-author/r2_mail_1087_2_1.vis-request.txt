@@ -1,0 +1,9 @@
+I need to create a set of bar charts showing demographic differences across three key measures: Perceived Fairness, Social Presence and Perception, and Impression Management.
+ For each measure, display the mean values for four demographic groups: Black Female, White Female, Black Male, and White Male.
+Add error bars showing the standard deviation for each group.
+Include a visual separator (a vertical dashed line) between the female and male groups to help distinguish gender categories.
+ Format the visualization as three panels in a single row with clear subplot labels '(a) PF', '(b) SPP', and '(c) IM'.
+The bars should use a muted color palette, and all text labels should be large enough to be clearly readable in a presentation.
+Only show the y-axis label ('Mean (M)') on the first panel to avoid redundancy.
+ All text should be properly sized and formatted - x-axis labels should be rotated 45 degrees to prevent overlap.
+The final visualization should have a professional appearance suitable for publication in a research paper.

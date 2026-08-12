@@ -1,0 +1,1 @@
+Take the data from the model responses and show the distributions as bar plots for the selected items "bombed" and "lifted" - compare human results with GPT-4 results.

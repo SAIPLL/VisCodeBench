@@ -1,0 +1,23 @@
+For the given data in "data.tsv", get the values for the english detection column (fourth column) for all models across 18 languages.
+
+Make sure all language codes are in alphabetical order.
+
+Plot the english detection scores for the models across all 18 languages as a lollipop plot using matplotlib where you plot similar models in the same lollipop as multiple circles.
+  
+Plot in the following order all without a legend: 
+(i) GPT with brown color (gpt-4-azure, gpt-4o-azure, gpt-3.5-turbo-azure), 
+(ii) Mistral with green color (mistralai/Mistral-7B-Instruct-v0.2, mistralai/Mistral-7B-Instruct-v0.3, mistralai/Mixtral-8x22B-Instruct-v0.1, mistralai/Mixtral-8x7B-Instruct-v0.1), 
+(iii) Cohere with red color (cohereforai-c4ai-aya-23, cohereforai-c4ai-command-r, cohereforai-c4ai-command-r-plus), 
+(iv) Google with blue color (google/gemma-1.1-2b-it, google/gemma-1.1-7b-it) 
+(v) Llama-3 with yellow color (meta-llama/Meta-Llama-3-8B-Instruct, meta-llama/Meta-Llama-3-70B-Instruct), 
+(vi) Phi-3 with maroon color (microsoft/Phi-3-medium-128k-instruct, microsoft/Phi-3-mini-128k-instruct, microsoft/Phi-3-small-8k-instruct) and 
+(vii) Qwen-2 (Qwen/Qwen2-1.5B-Instruct, Qwen/Qwen2-7B-Instruct) with cyan color.
+
+Please display the x-axis containing the 18 languages as xticks with a font size of 15 and to accommodate space, shift each model lollipop plot by approximately 0.35 (starting from GPT ...
+to Qwen-2).
+
+Keep x and y labels empty.
+
+Plot the legend containing all models in the upper center, bbox_to_anchor=(0.5, 1.9), and containing all 7 models highlighted before.
+
+Plot using plt.stem and save the figure as a png as `avg_english_detection.png` with tight bounds.

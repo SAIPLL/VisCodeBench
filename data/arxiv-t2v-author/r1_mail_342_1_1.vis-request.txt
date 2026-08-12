@@ -1,0 +1,1 @@
+plot the bar chart distribution for 'weighted average bias' and 'unweighted average bias'

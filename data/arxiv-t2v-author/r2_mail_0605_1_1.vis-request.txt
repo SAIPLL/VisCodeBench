@@ -1,0 +1,10 @@
+"I have four metrics (NDCG@1, DivRatio@1, ORRatio@1, and MGU@1) measured across several iteration steps (from 0 to 5).
+For each metric, I have four different methods: SPRec, SPRec-noDPO, SPRec-noSFT, and SPRec-RN.
+ Please create a 2×2 grid of subplots:  In the top-left subplot, plot NDCG@1 versus iteration.
+In the top-right subplot, plot DivRatio@1 versus iteration.
+In the bottom-left subplot, plot ORRatio@1 versus iteration.
+In the bottom-right subplot, plot MGU@1 versus iteration.
+Use a line chart for each method in each subplot.
+Give each method a unique color and marker so they are distinguishable, and include a legend that labels them (SPRec, SPRec-noDPO, SPRec-noSFT, SPRec-RN).
+ On the x-axis, label the iteration steps (0, 1, 2, 3, 4, 5), and on the y-axis, label the respective metric values.
+Make sure the plots share a consistent y-axis range where appropriate, so we can visually compare the methods across iterations."

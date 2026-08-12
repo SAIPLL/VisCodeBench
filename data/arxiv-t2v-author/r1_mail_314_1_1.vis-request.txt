@@ -1,0 +1,5 @@
+Create a bar chart to visualize the performance of different models across various topics.
+The topics are School, Art, Climate, Animal, Entertainment, Life, and Technology.
+For each topic, display the average pass rates of three models with appropriate labels and legends: GPT-4, Claude-3, and Qwen-110B.
+The pass rates should be shown for three different turn counts: 3-turn average, 10-turn average, and 110-turn average.
+Use a different color for each model to distinguish them clearly.

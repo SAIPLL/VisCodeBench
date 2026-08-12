@@ -1,0 +1,4 @@
+For the given data in the variables "xticks", ''shot_5'', ''shot_10'', and "shot_20," show a curve graph.
+Please note that three subplots need to be drawn.
+Therefore, the above variables appear three times.
+For each subplot, the axis names and legends are supplemented according to the code settings, and the values are annotated at each point.

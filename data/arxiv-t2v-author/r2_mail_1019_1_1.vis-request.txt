@@ -1,0 +1,3 @@
+Create a line plot showing the mean entropy values over training steps for all 12 layers (Layer 0 through Layer 11) using data from text files in the 'data' directory named 'layer_X_entropy.txt'.
+Apply the viridis colormap to distinguish between layers.
+Format the x-axis ticks to show values in 'K' notation (e.g., '0K', '5K').

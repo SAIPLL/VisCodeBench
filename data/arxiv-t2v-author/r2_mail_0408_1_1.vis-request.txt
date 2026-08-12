@@ -1,0 +1,5 @@
+Plot a dual-axis line chart to depict the effect of the number of random resamples on electrode localization error and torso reconstruction error.
+The x-axis should represent the number of random resamples.
+The left y-axis should represent the error of electrode localization and the right y-axis represents the error of torso reconstruction.
+Each data point should include error bars indicating standard deviation.
+Add legends for both curves at last.

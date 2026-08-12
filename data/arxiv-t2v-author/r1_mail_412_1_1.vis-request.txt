@@ -1,0 +1,11 @@
+Create two subplots, each subplot is a stacked barplot.
+ On the left, there are two categories: NLP and Outside.
+ Outside is all the research fields that are not:  'Medicine', 'Social Science', 'Natural Science', 'Economics', 'Education',  'Psychology', 'Neuroscience', 'Humanities'  The x-axis of the left stacked barplot is years, from 19 to 24 (note that years are strings with the format: "'YY").
+The y-axis is a count of the number of papers.
+On the bars, starting from 19, present the percentages of papers that belong to this bar.
+The color map is 'Pastel2'.
+ The right subplot presents stacked barplots for different fields outside NLP.
+Again, x-axis is years from 19 to 24.
+The y-axis is the count of papers in each research field.
+Color map is 'Paired'.
+On the right subplot, percentages are not presented.

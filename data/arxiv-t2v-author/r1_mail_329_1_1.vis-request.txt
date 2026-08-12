@@ -1,0 +1,2 @@
+Generate a doubt matrix for each model (data in "result" folder).
+Plotting the confusion matrix-like visualization for medals and teams in a 1x5 layout

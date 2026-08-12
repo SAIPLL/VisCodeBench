@@ -1,0 +1,1 @@
+Visualize the f1 score as bar chart and confusion matrix for each model

@@ -1,0 +1,2 @@
+Plot a boxplot of cluster sizes with different models on the x axis and the cluster sizes on the y-axis.
+Draw a red line where the class size is.

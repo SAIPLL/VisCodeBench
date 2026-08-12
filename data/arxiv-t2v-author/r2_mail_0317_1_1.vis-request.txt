@@ -1,0 +1,2 @@
+Plot the data in three subplots, bar plots, clear, good looking figures and academic color.
+Times new Roman as the font, the baseline is plot as dashed lines, the legend be placed at the botton.

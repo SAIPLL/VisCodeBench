@@ -1,0 +1,17 @@
+I have BLEU score data for different GPT-2 model sizes (small, medium, large, xl) evaluated using different decoding methods: beam search, top-k sampling, nucleus sampling, and SimCTG for both B-3 and B-4 configurations.
+ 
+I want a line plot where:  
+- The x-axis represents the GPT-2 model types ('small', 'medium', 'large', 'xl').
+
+- The y-axis represents the BLEU scores.
+- Each decoding method should be plotted separately for both B-3 and B-4 configurations, resulting in a total of 8 lines.
+
+- The legend should clearly indicate the configuration and decoding method, e.g., 'B-3 beam', 'B-4 top-k', etc.
+
+- Different line styles (solid and dashed) and colors should be used to distinguish between the configurations.
+
+- The title of the plot should be 'Concatenation after mapping network'.
+
+- The x-axis should be labeled 'GPT2 Model Type', and the y-axis should be labeled 'BLEU'.
+
+- Data points should be marked with distinct markers.

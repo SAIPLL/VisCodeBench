@@ -1,0 +1,1 @@
+Given the data in npz, calculate the pearson correlation between two composing vectors and plot them in a scatterplot

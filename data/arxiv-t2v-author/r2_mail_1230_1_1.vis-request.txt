@@ -1,0 +1,5 @@
+Generate a plot comparing the F1-scores of six machine learning models (ALAD, DAE, DAE_LR, DUAD, DUAD_LR, NeutraLAD) across three datasets: KITS, CICIOT, and CIC-IMP.
+The plot should have three subplots, one for each dataset, arranged in a single row.
+Each subplot should display the F1-scores for all models at four contamination levels (0%, 5%, 8%, 12%) on the x-axis, with the F1-scores on the y-axis.
+Use different markers for each model to distinguish them, and include a shared legend below the subplots to identify the models.
+Label the x-axis as 'contamination (%)' and the y-axis as 'F1-score', with each subplot titled using '(a)', '(b)', or '(c)'.

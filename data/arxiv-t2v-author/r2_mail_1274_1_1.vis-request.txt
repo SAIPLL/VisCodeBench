@@ -1,0 +1,2 @@
+For the given data, plot a bar chart with different identifiers on the X-axis and the throughput on the Y-axis.
+Rather than putting the identifiers directly as x labels, please replace them with circled numbers and then provide a mapping between the circled numbers and the identifiers on the left of the plot.

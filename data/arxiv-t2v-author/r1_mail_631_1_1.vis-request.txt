@@ -1,0 +1,2 @@
+This plot provides a visualization of language confusion at the line level for each language, alongside their corresponding reconstruction performance in BLEU at each step of the evaluation in the crosslingual inversion attacks.
+It shows directly that lower-resourced languages present lower confusion, especially for non-Latin script languages, whereas they are also more vulnerable in terms of higher reconstruction performance, for example, Gujarati, Punjabi, and Urdu.

@@ -1,0 +1,4 @@
+For the given dataframe, plot one stacked bar per row in the dataframe, using seaborn's Set2 palette.
+Label the y axis as "words" and set its limit at 1.6 billions.
+The labels of the y axis should be labelled in terms of billions (e.g., a label for 1,500,000,000 should read 1.5B).
+Finally, reverse the legend so that "unique" appears on top and "par dup" last.

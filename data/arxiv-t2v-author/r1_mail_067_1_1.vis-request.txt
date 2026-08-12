@@ -1,0 +1,4 @@
+Draw two radar plots.
+Each has 4 spokes.
+Each plot denotes an evaluation metrics.
+Use the same color to denote the same technique across the two plots.

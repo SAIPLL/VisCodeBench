@@ -1,0 +1,1 @@
+Plot the majority vote vs number of rounds for all agents (2-6) using data at "data.json".

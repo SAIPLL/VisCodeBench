@@ -1,0 +1,4 @@
+Create a 2×5 grid of line plots comparing 'Unimodal Pixel' and 'Multimodal Latent' models across various atmospheric pressure levels.
+For each pressure level, plot the performance metrics against coarsening factors.
+Mark each data point with a circle.
+Include a legend, and ensure the plots share the x-axis.

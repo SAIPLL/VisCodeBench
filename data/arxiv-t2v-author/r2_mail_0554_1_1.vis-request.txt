@@ -1,0 +1,9 @@
+Using the data in `new2.csv`, create a boxplot to compare the 'Std Math/Reading' scores across different racial groups.
+The racial groups are encoded as binary columns: 'Race_Asian, Hawaii/Pac.
+Islander' (for Asian), 'Race_Black or African American' (for Black), 'Race_Hispanic' (for Hispanic), 'Race_More than one race' (for Multiracial), and 'Race_White' (for White).
+Assign each student to one racial group based on these columns and label them as 'Asian', 'Black', 'Hispanic', 'Multiracial', or 'White'.
+Plot the boxplot with the x-axis showing these racial groups in the order: Asian, Black, Hispanic, Multiracial, White, and the y-axis showing the 'Std Math/Reading' scores.
+Use a grayscale color scheme for the boxes.
+Add two horizontal dashed lines: one at y=49.86 labeled 'MARS knot=49.86' and another at y=59.75 labeled 'fairknot knot=59.75', with the labels placed to the right of the plot area.
+Finally, add a caption below the plot that reads 'Figure 1: Knot Selection fairknot vs.
+MARS'.

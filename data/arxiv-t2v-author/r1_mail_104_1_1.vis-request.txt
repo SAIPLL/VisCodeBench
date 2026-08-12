@@ -1,0 +1,2 @@
+Please plot the data for the 4 models ["llama2", "llama3", "baichuan2", "bloom"] in a line chart, showing the mean and the confidence intervals.
+Data is stored at "./data"

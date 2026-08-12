@@ -1,0 +1,14 @@
+The "data" folder contains six JSON files.
+
+Five of these store the BLEU Score, ROUGE-1, ROUGE-2, ROUGE-L, and BERT Score for the Original and Para outputs of the FT-A, FT-L, ROME, MEMIT, and UnKE models.
+
+The remaining file, fact_score_list.json, contains the Fact Score values for these five models.
+
+Your task is to visualize the data by plotting the BLEU Score, ROUGE-1, ROUGE-2, ROUGE-L, BERT Score, and Fact Score values from their Original fields.
+Each score should be displayed in a separate subgraph, arranged in a 3×2 grid in the following order:
+['BERT Score', 'BLEU Score', 'ROUGE-1 Score', 'ROUGE-2 Score', 'ROUGE-L Score', 'Fact Score']
+
+Each subgraph should be a line chart, where:
+- The horizontal axis represents the Number of Edits
+- The vertical axis represents the Score
+- The title corresponds to the respective score

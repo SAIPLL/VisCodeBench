@@ -1,0 +1,4 @@
+Given the data, which contains the following columns: ["dataset", "AUC ROC", "alpha"].
+Plot a line (AUC ROC vs.
+alpha) for each dataset with different markers and colors, and with a grid.
+In addition, place the legend of the datasets on top of the plot.

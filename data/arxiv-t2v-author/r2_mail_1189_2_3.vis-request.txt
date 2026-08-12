@@ -1,0 +1,3 @@
+For the given data in the benchmark "blackscholes", plot the reference breakdown of each vector sized with each simulated configuration (BC W/O, BC PF and WC).
+References must be plotted in a stacked bar, showing the percentage of each kind of cache reference (scalar hit, vector hit, scalar crosshit, vector crosshit and miss) in the total.
+In addition, the X axis should be nested, showing first each vector size (in ascending order), and, inside, the 3 simulated configurations.

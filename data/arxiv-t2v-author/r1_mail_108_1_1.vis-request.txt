@@ -1,0 +1,3 @@
+The model's result using two types of data separately under different languages and compare the performance.
+Training on real-life data yields better results compared to training on synthetic datasets.
+Synthetic data can significantly enhance the performance consistently.

@@ -1,0 +1,1 @@
+the data is stored in a dictionary, the traffic format is: [nodeID, [contentID, size, requirement]]

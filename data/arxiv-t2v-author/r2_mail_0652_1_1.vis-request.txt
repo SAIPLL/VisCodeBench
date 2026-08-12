@@ -1,0 +1,3 @@
+Given the plotting data, visualize the convergence of four different resenet model where x-axis should be communciation round and y-axis should be the accuracy.
+Scale the y-axis to make sure necessary data are properly visualized.
+Legend should be placed at the reasonable area and do not block the contant.

@@ -1,0 +1,2 @@
+You have multiple models, for each one calcluate the aggregated few shot performance.
+Then, show it as a graph where the x-axis is the model name and y-axis is the aggregated performance.

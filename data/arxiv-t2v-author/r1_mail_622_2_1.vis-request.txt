@@ -1,0 +1,4 @@
+I want to create a barchart visualization using python.
+It should contain two plots, each display the accuary differences between two methods.
+My data are stored in a csv file.
+The first colomn of the csv is the subject names, the rest two columns are accuracy differences of two combination of methods ("Plurality vs Ranked Pairs" and "Plurality vs Borda Count").

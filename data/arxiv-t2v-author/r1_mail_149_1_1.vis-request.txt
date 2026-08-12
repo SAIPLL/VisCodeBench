@@ -1,0 +1,2 @@
+I need a bar plot with 3 subplots, 2 of which are in the up line and the third in the down line.
+And I want to set the color, please give me the params to set it.

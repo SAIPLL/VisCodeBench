@@ -1,0 +1,2 @@
+Generate a stacked histplot of the number of the total number of scores grouped by Score_type and Model.
+Include Model in the y-axis and Score_type in the legend

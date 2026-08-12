@@ -1,0 +1,41 @@
+You are given a jsonl file ("metric_inference_latency.jsonl") containing data about the inference latency of various attention methods.
+
+Each line in the file represents a single measurement and includes the following fields: 
+- `attn`: A string indicating the name of the attention method.
+
+- `ctx`: An integer representing the context length in tokens.
+
+- `TTFT`: A numerical value representing the time-to-first-token (TTFT) in seconds, which measures the latency for the model to produce the first output token after receiving the input.
+ 
+
+Objective: Analyze the patterns and trends in inference latency (TTFT) across different attention methods and context lengths by visualizing the data in a clear and comparative manner.
+ 
+Steps: 
+- Read the data.
+
+- Handle missing values.
+
+- Visualize and save.
+ Key points for the figure: 
+- Plot context length (ctx) on the x-axis.
+
+- Plot TTFT on the y-axis.
+
+- Label the y-axis as: \"Time-to-First-Token (seconds)\".
+
+- Label the x-axis as: \"Context Length (tokens)\".
+
+- Use logarithmic scales for both axes to account for the wide range of values.
+
+- Add an appropriate title, such as: \"Inference Latency (TTFT) Across Different Attention Methods\".
+
+- Differentiate attention methods by using distinct colors and marker styles.
+
+- Ensure the visual distinction is consistent and easy to interpret.
+
+- Provide a clear, concise legend that identifies each attention method.
+
+- Make the figure clean and visually appealing.
+
+- Highlight any significant trends or patterns, if possible.
+ Output: Save the generated figure to a png file.

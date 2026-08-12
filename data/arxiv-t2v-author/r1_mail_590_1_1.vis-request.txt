@@ -1,0 +1,4 @@
+Please take the similarity scores and EDS labels and create a density graph, with similarity scores on the X axis and density on the Y.
+Color the EDS density curve orange and the non-eds curve blue.
+Scale the x-axis to match the data.
+Create a legend for the graph.

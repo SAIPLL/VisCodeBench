@@ -1,0 +1,2 @@
+Compare the latency for circuit establishment between Tor and Seldom for the given circuit lengths.
+Further, devide each circuit establishments into ints individual steps and show 95% confidence intervals.

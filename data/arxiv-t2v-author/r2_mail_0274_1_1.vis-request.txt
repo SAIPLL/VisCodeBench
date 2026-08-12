@@ -1,0 +1,4 @@
+Please visualize the reward as a line plot with smoothed curves.
+Ensure the labels are readable and use short forms for axis labels, eg.
+1M for 1.000.000.
+Also, use different line types and ensure the line colors are consistend for each method.

@@ -1,0 +1,43 @@
+The following dictionary specifies the files containing data to plot.
+The keys of the dictionary are the model name to be used in the plot and the values, which are lists, are the name of .json files containing the data.
+For each model, there are 3 .json files, which correspond to data taken from 3 random seeds:
+
+```python
+    models_eval_dict = {
+        "CA+CC(GNN)": [
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_4_agents_HSN_sacred_run_1.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_4_agents_HSN_sacred_run_2.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_4_agents_HSN_sacred_run_3.json"
+        ],
+        "CA(GNN)": [
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_CASKIP_4_agents_HSN_sacred_run_1.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_CASKIP_4_agents_HSN_sacred_run_2.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_SC_CASKIP_4_agents_HSN_sacred_run_3.json"
+        ],
+        "CA(MLP)": [
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_MLP_4_agents_HSN_sacred_run_1.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_MLP_4_agents_HSN_sacred_run_2.json",
+            f"eval_{n_robots}_agents_CA_unseen_bc_default_MLP_4_agents_HSN_sacred_run_3.json"
+        ],
+        "ID(GNN)": [
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_SC_ID_4_agents_REDO_sacred_run_1.json",
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_SC_ID_4_agents_REDO_sacred_run_2.json",
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_SC_ID_4_agents_REDO_sacred_run_3.json"
+        ],
+        "ID(MLP)": [
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_MLP_ID_4_agents_HSN_sacred_run_4.json",
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_MLP_ID_4_agents_HSN_sacred_run_5.json",
+            f"eval_{n_robots}_agents_ID_unseen_bc_default_MLP_ID_4_agents_HSN_sacred_run_6.json"
+        ]
+    }
+
+```
+
+For n_robots = [3, 4, 5], make a box plot where the x-axis has the model names (e.g.
+CA+CC(GNN), CA(GNN), etc.) and the y-axis is Pairwise Overlap Area metric for each of those models (given as "overlap" in the data).
+Save the results to [environment_eval_dir]/eval_outputs with the figure name: "new_teams_only_{n_robots}_robots_overlap.png".
+
+
+For the color of the box plots, use the following mapping that specifies which color belongs to which model:  _colors = {"ID(MLP)":"#003f5c", "ID(GNN)": "#58508d", "CA(MLP)": "#bc5090", "CA(GNN)": "#ff6361", "CA+CC(GNN)":"#ffa600"}.
+Place the model in the following order, left to right: "ID(MLP)", "ID(GNN)", "CA(MLP)", "CA(GNN)", "CA+CC(GNN).
+Lastly, don't put the labels or tick names for the x-axis, because these will be given by a separate legend.

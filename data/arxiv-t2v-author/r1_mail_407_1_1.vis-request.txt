@@ -1,0 +1,2 @@
+Draw a line chart representing the average performance changes in the NER task from January 2019 to July 2023 based on the provided data.
+To better illustrate the best performance at each time point, please include a line indicating the highest performance as well.

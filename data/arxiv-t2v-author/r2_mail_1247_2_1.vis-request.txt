@@ -1,0 +1,5 @@
+Plot the "r_Lin" values against the "Hour" values contained in the csv file "Figure7data.csv".
+Each value should be displayed as a green circle.
+Add a dashed blue horizontal line at y=0.6 with the label "Static policy".
+Add x and y axes labels describing the quantities plotted, as well as a legend.
+The label for the green circles should be "ScaleLin heuristic".

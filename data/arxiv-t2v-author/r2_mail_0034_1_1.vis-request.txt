@@ -1,0 +1,3 @@
+The json file contains 8 datasets, each datasets contains result scores of 3 methods, under 4 KV cache budgets: 256, 512, 1024, 2048.
+For each dataset, plot a figure with dataset name as the tile, budgets as x-axis and scores as y-axis.
+And the 8 figures should be composed into a whole figure, arranging in 2 rows and 4 columns.

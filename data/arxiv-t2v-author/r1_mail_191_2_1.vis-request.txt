@@ -1,0 +1,3 @@
+Please draw a bar plot with three categories (sr_left, sr_right, sr_both) for each method.
+The data are ...
+I want there are grid lines in the background.

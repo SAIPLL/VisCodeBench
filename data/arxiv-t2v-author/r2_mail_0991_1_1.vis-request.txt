@@ -1,0 +1,5 @@
+For the given data, perform K-means clustering where K=5.
+Perform a principle component analysis on the results.
+Plot each cluster as a scatter plot, with the first principle component on the X axis and the second principle component on the Y axis.
+Ensure the scales are ascending in the plus-X and plus-Y directions.
+Place a legend box in the lower right-hand side.

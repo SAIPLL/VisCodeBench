@@ -1,0 +1,15 @@
+For all the json files, load each of them into 'all_results'.
+Calculate the accuracy with `accuracies = [all_results['{}back_model{}'.format(n, m)]['test_accuracy'] for m in range(50)]; avg_accuracy = np.mean(accuracies)`, and calculate the std_error with `avg_accuracy = np.mean(accuracies)`.
+
+For both accuracy and std_error, n will loop through n = 1,2,3.
+
+Then plot the Accuracies across different json files against n, with error bars showing std_errors.
+
+This is the left panel.
+
+Below is for the right panel of the figure: load '1_layer_1_head_all_results_0907.json' to 'all_results'.
+
+For n from 1 to 6, do 'accuracies = [all_results['{}back_model{}'.format(n, m)]['test_accuracy'] for m in range(50)]     avg_accuracy = np.mean(accuracies)', and 'std_accuracy = np.std(accuracies);      se_accuracy = std_accuracy / np.sqrt(num_models)', then fit a logarithmic curve for the avg_accuracies against n(1 to 6).
+
+plot the fitted curve and the avg_accuracies with se_accuracies as error bars.
+Finally, add label 'a' and 'b' to the left and right panels and save the figure.

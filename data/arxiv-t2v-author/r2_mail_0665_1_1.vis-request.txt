@@ -1,0 +1,7 @@
+Draw the box plot and analyse the statistical significance of paired samples, which are the evaluation results of three different models on 10,000 instances.
+Test whether the data follows a normal distribution first and accordingly choose the method for the significance test.
+Input is an Excel file, including three columns, i.e., results of three models, each with 10000 rows, i.e., 10000 instances.
+The output is the plot pdf.
+Indicate the significance between pairs in the box plot.
+The plot style is academic.
+Use the font Times New Roman.

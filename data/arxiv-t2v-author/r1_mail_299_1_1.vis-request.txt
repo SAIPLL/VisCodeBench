@@ -1,0 +1,12 @@
+I'd like to create a bar chart comparing the performance of 8 different language models across 27 BBH (Big Bench Hard) subtasks plus their average scores.
+
+The models are: - Qwen1.5-7B with and without LogicPro - Deepseek-7B with and without LogicPro - Yi-1.5-9B with and without LogicPro - Qwen1.5-14B with and without LogicPro  
+Each model pair should be represented in similar colors (e.g., light and dark red for Qwen1.5-7B versions, light and dark blue for Deepseek-7B versions, etc.).
+ 
+The x-axis should show the names of all BBH subtasks (like 'boolean_expressions', 'causal_judgement', etc.) with labels rotated 65 degrees for readability.
+ 
+The y-axis should show performance scores as percentages, ranging from 10% to 100%, with a grid for easier reading.
+ 
+Each model's performance should be represented by bars grouped by task, with narrow bars (0.1 width) placed side by side for easy comparison.
+ 
+The chart should be wide (14 inches) and tall (8 inches) to accommodate all the data clearly, with a title 'Model Performance on 27 BBH subsets' and a clear legend identifying each model.

@@ -1,0 +1,1 @@
+For the given data, plot a scatter diagram based on its x and y coordinates, using different marker shapes to represent different model architectures.

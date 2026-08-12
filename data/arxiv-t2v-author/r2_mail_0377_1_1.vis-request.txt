@@ -1,0 +1,2 @@
+For a given pair of number of points, center, and radius sample points from the circle.
+Plot the result, using distinct colors for each circle.

@@ -1,0 +1,1 @@
+For the given data, generate a horizontal bar chart visualizing the distribution of "Status" values in the two columns "Status 3RE" and "Status J3RE." Distinguish the two distributions in the two columns by different colors.

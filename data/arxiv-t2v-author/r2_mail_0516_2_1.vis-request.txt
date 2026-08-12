@@ -1,0 +1,4 @@
+read the input csv files.
+for each, create a line plot with the values of the right most column.
+make the line plots different colored, and the first lined.
+Name the x axis Checkpoint and they Y axis Delta Compression as Percentage of Original Size (%).

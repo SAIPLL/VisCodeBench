@@ -1,0 +1,2 @@
+With the data given, create a boxplot that  conveys the distribution of total duration of air alerts per day in minutes across all the regions.
+Use variables "started_at" and "finished_at" for manipulating with the time and duration, and "oblast" to specify the region

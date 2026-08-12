@@ -1,0 +1,2 @@
+Based on the given data, please plot two side-by-side bar charts comparing the Average AUC of STL and MTL methods under two settings: (1) different number of layers (2-6) (using data 'STL_layer_auc' and 'MTL_layer_auc'); (2) different number of attention heads (1, 2, 4, 6) (using data 'STL_head_auc' and 'MTL_head_auc').
+Plot these two settings in two subplots.

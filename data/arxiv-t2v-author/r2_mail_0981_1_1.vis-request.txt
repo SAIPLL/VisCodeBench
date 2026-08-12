@@ -1,0 +1,4 @@
+For the given data in the csv file, generate two convergence plots.
+One of them will plot "nm(right)" against "error(right)" for each value of "nm(left)".
+The other one follows the same procedure, but with left and right reversed.
+The y-axis is expected to be displayed in a log scale.

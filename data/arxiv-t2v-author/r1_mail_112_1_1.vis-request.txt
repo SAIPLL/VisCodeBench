@@ -1,0 +1,23 @@
+Please generate a Python script to create a radar chart that compares the performance of two systems (e.g., Copilot and AWS) on multiple categories.
+
+The data consists of the total number of questions and the accuracy of each system for each category.
+
+The chart should include the following: Radar Chart: The chart should display the accuracy values for both systems across several categories (e.g., 'Hate Speech', 'Illegal Content', etc.).
+
+Data: The accuracy for each system should be calculated as a percentage (e.g., number of correct answers divided by total questions).
+
+Customization: Ensure the chart has the following features: A polar plot with data points for each category.
+
+The categories displayed as angular labels around the plot.
+
+The chart should have two lines for each system, one in blue (#3e90d2) and the other in red (#e85d5b).
+
+A filled area to highlight the performance of each system with transparency (alpha = 0.5).
+
+Axes and Grids: Set the y-axis to display percentages from 0% to 100%, with grid lines for clarity.
+
+Legend: Include a legend to identify the two systems.
+
+Labels: Add the accuracy values as labels on the chart, showing the percentage for each category.
+
+Layout: The chart should be visually appealing, with appropriate color choices and a clear, readable layout.

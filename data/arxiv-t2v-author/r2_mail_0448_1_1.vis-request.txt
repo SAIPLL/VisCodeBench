@@ -1,0 +1,1 @@
+For 2 given sets of trajectory data, one in which a robot was performing risk analysis and the other was not, provide a raincloud plot with bar charts overlayed, comparing the average perceived risk during each trajectory on the same plot.

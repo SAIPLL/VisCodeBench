@@ -1,0 +1,2 @@
+shows message exchange latency for different message counts (100, 300, 500, 700).
+It compares GoldFish, Spin, and OpenFaas with error bars indicating variability.

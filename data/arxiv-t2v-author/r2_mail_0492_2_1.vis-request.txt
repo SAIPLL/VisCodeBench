@@ -1,0 +1,7 @@
+For each trial in the trial_used folder, calculate the jump energy and jump time.
+Jump energy is found using the kinetic energy plus potential energy from the video tracking data.
+Jump time is the time between when the force first starts to when liftoff happens (force==0).
+For each trial, plot a point where the x axis is jump time and y axis is jump energy.
+Color the points based on what configuration it used (Springless, SEA, PEA).
+For each configuration, plot the mean (call it "category mean") as a hollow circle with the same color as the actual data points.
+Add a legend showing what each category each color is, and clarifying that the hollow circle is the category mean.

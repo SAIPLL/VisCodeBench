@@ -1,0 +1,3 @@
+For the given data in variables "P" and "Q", calculate the corresponding value under the function "g_p_js" with lmd=0.5, and visualize the function in 3D contour.
+Use the colormap provided in variable "cmap", display x and y labels using "Times New Roman" font with "fountsize=40", and lastly, initialize the view using "25, -135".
+Use transparent background.

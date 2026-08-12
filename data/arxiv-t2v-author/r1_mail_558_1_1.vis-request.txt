@@ -1,0 +1,2 @@
+given the data, for both language pairs, create plots of the antecedent and context attributions against the context type (explicit, generic).
+You will have 4 plots in total, each plot will have two datapoints for each model, use a distinctive marker for each model, and connect the two model datapoints with a line.

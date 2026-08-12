@@ -1,0 +1,29 @@
+I need to visualize both final sparsity and final accuracy of my models across different parameter configurations to better understand the tradeoffs.
+
+For that, I want to plot the Pareto frontier of my pruning experiments.
+
+There should be two plots displayed side by side: the first should be on the MNIST dataset with the Lenet network, the second should be on the CIFAR-10 dataset with the Conv6 network.
+
+
+I also want the number of NN parameters `d` indicated in the title of each of the two plots: `d = 265,200` for Lenet and `d = 2,258,624` for Conv6.
+
+The y axis should have the column `Acc` in linear scale and the x axis should have the column `Wrem` in log scale.
+
+The x axis should go from 50% to 0.1% weights remaining for Lenet and from 50% to 0.01% for Conv6.
+
+The y axis should be adjusted to properly include the whole visible data.
+
+The methods I want to see are `cs` and `arms`.
+
+For the latter, only include entries with `s_to_theta` equal to `escort` and `n` in 2, 10 or 100.
+
+There should be one separate curve for each included `n`.
+
+Furthermore, multiple runs were performed for each hyperparameter combination.
+
+Each run will correspond to one pair of (final accuracy, final weights remaining), I want the multiple per-parameter combination runs to be averaged, so each combination only corresponds to one (average final accuracy, average final weights remaining) point.
+
+Moreover, I only want to show points that belong to the Pareto frontier.
+
+The points should be displayed, with a different color per method (i.e.
+CS vs ARMS (n=2) vs ARMS (n=10)...) and there should also be a line with the same color connecting the points for the same method, which should facilitate visualization.

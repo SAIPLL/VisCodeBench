@@ -1,0 +1,2 @@
+For the given data in the variables "ln(images)" and "yolov8-human" of "df", draw a line graph.
+Draw horizontal and vertical lines for each dot on SDM, line to distinguish color and line, mark the intersection of extension line and human discount, and the value is drawn out with a short line.

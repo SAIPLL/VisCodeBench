@@ -1,0 +1,9 @@
+Please create a collection of six plots in a 3x2 pattern.
+For the upper row use factuality as the x-axis feature and relative frequency as the y-axis feature.
+ For the bottom row use bias as the x-axis feature and relative frequency as the y-axis feature.
+The first column should be stacked bar plots that show the relative frequency of helpfulness status across x-axis features.
+The second column should be relative frequency of the "Rated not helpful" helpfulness class across x-axis features.
+The third column should be relative frequency of the "Rated helpful" helpfulness class across x-axis features.
+Add the legend at the bottom middle (under the second row).
+Do not add title to the plot.
+Please put z-score 99% intervals on the bars and also put the number of datapoints on top of each z-score interval.

@@ -1,0 +1,1 @@
+For the given data in the variables "accuracy" and "percentage," show a line plot for the CIFAR10 dataset under the IID and non-IID data distribution.

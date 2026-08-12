@@ -1,0 +1,1 @@
+Draw the data table into a trend chart.

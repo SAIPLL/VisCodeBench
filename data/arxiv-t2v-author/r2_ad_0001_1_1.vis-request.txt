@@ -1,0 +1,5 @@
+Given the data in "classification_single_curvature.tsv", please create a box plot of F1 scores grouped by curvature.
+  Each of the following models should be represented with its own colored boxplot: productRF, ambientRF, tangentRF, knn, MLP, and kappa-GCN.
+ Put brackets with asterisks that mark whether there is a statistically-significant difference between two box plots (Bonferroni-corrected Wilcoxon test) for the SAME CURVATURE.
+Make sure that the brackets do not overlap one another!  The boxplots should be entirely colored, including flyers, except for the mean, which should be black; the text and lines of the legend should be colored accordingly.
+ Do not display gridlines, or the top/right spines of the plot.

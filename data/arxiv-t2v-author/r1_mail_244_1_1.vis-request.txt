@@ -1,0 +1,12 @@
+I have a dataset that represents the comparison of LLMs and human performance in a blind test experiment.
+
+You need to find the best way to visualise it, make it easy to understand, and show the main insights from the data.
+ 
+There are five criteria in all, and five tiers.
+
+The five criteria are: overall evaluation, understanding and contextualization, neutrality and impartiality, empathy awareness, resolution quality.
+
+on the five criteria, based on the different performance, the five tiers are: LLM is significantly better, LLM is slightly better, LLM and human are about the same, Human is slightly better, Human is significantly better.
+
+
+The specific data are as follows: categories = [     "Overall\nevaluation",     "Understanding and\ncontextualization",     "Neutrality and\nimpartiality",     "Empathy\nawareness",     "Resolution\nquality", ]  data = {     "LLM is significantly better": [18, 7, 11, 7, 8],     "LLM is slightly better": [12, 7, 9, 13, 13],     "LLM and human are about the same": [12, 33, 28, 20, 23],     "Human is slightly better": [7, 2, 1, 10, 4],     "Human is significantly better": [1, 1, 1, 0, 2], }

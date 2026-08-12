@@ -1,0 +1,4 @@
+Based on the given results of different evaluation strategies on 8 dimensions, I would like to have a radar plot to visualize the data.
+ The radar plot should have 8 axes representing 8 dimensions, and each axis should be labeled with the corresponding dimension.
+The radar plot should have 3 curves, each curve represents a different evaluation strategy.
+The radar plot should have a legend to indicate the meaning of each curve, and a grid to help readers understand the data better.

@@ -1,0 +1,1 @@
+Plot the balanced accuracy of regular k-NN, adaptive k-NN and kk-NN for training set sizes from 10% to 95% of the number of samples.

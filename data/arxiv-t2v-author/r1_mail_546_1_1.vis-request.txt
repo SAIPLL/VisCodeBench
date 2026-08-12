@@ -1,0 +1,8 @@
+You are given the following win rate data for three models:    - **A: Whisper-base**   - **B: Text-PE (Open)**   - **C: Vision-PE (Open)**    ### **Task:**   Generate a **horizontal bar plot** visualizing the win, tie, and loss rates for each matchup.
+The bar plot should have:    - Each matchup as a separate horizontal bar.
+  - Three distinct color-coded segments per bar: **Win**, **Tie**, and **Loss**.
+  - A clear **legend** identifying the colors for Win, Tie, and Loss.
+  - **Percentage labels** inside or at the end of each segment if space allows.
+  - A title such as **"Win Rate Comparison Across Model Matchups"**.
+  - The x-axis representing **percentage (0% to 100%)**, and the y-axis displaying the matchups.
+   Ensure the visualization is clean, informative, and easy to interpret.

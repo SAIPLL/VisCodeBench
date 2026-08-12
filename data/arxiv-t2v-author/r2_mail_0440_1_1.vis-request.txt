@@ -1,0 +1,4 @@
+Use matplotlib and pandas to draw a plot.
+Specifically, follow steps: open the csv file \"experiment_1_3.csv\", plot line: tracs_c w.r.t.
+epsilon, plot line: tracs_d w.r.t.
+epsilon, set x-axis: privacy parameter epsilon, set y-axis: average error (AE), use legend, save the plot and show it.

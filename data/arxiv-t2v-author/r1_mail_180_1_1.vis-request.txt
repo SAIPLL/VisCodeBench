@@ -1,0 +1,3 @@
+Please help me draw a line chart.
+The horizontal coordinate is' Layer ID 'and the vertical coordinate is' Token Percentage (%)'.
+Each line represents the data of different Epoch

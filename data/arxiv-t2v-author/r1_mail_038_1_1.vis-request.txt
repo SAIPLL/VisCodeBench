@@ -1,0 +1,8 @@
+Plot the 'combined' score vs # of EM Steps 'steps' in data.csv for each model 'type'.
+Use blue #3E4770 for the noisy channel type with solid circle markers, and gold #BF9A1F for the greedy type with X markers.
+Add a legend in the upper left.
+Title it "Noisy Channel vs.
+Greedy (Combined)".
+The font size for the title and axis labels should be 28, and 22 for the tick labels and legend, and axis labels should be capitalized.
+Make sure the x axis tick labels are integers.
+Save it to combined_vs_steps.png.

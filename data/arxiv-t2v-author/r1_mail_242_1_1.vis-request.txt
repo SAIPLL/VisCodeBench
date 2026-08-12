@@ -1,0 +1,2 @@
+I want to draw a scatter plot to learn the distribution of each data entry.
+The x-axis is the perplexity while the y-axis is the different settings.

@@ -1,0 +1,3 @@
+For the given data in the file "result_o2.csv," create a hatched bar chart for the benchmark results of "zipFlatMapFlatMap" and "decoding," comparing the differences across conditions.
+ The file contains multiple benchmark results, each labeled in the format `{benchmark name}_{condition}`.
+The bars should be grouped by benchmark name, with each bar representing the "Mean" value and including an error bar for "Mean-Error."  Use Libertine as the font, and set the maximum range of the vertical axis to 6000.

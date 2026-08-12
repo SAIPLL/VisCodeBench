@@ -1,0 +1,25 @@
+Write me a python function that:
+1.
+Loops through two model architectures ('gido', 'gigo') and 4 values of $N_{past}$ (1,2,3,4).
+
+2.
+Fetches the corresponding pickle files: f"data/{arch}_n_past_{n_past}.pkl".
+
+3.
+Unpacks the resulting dicts, which each contain a 2D embeddings numpy array ('e_chars') and a list of integers specifying corresponding labels ('user_preference').
+
+4.
+Clusters the embeddings using TSNE.
+
+5.
+Plots a 2x4 grid of the results, with points colour-coded by user preference.
+
+6.
+For each plot, insert a grey point at the overall data mean.
+
+
+Draw a coloured line from this point to the centroid of each cluster (i.e.
+user preference, with the same colour), to give an indication of class separation.
+Ignore label '3' for this.
+Only rows and column titles should be labelled (i.e., no axis tick labels).
+There should be a single legend for the entire plot.

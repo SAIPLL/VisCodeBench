@@ -1,0 +1,4 @@
+Each .pt file in "data/" contains samples in the form  {sample_id: sample_data}.
+The sample data is dict as well, and the key `feat` in the sample_data is a 2D vector that represents two feature dimension of the pre-computed TSNE.
+the key `view` is a zero-one value that indicates whether the sample is real or generated.
+ Plot a grid of subplots, where each subplot is contains TSNE from one .pt file.

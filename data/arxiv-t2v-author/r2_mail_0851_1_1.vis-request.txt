@@ -1,0 +1,5 @@
+Using this data, draw a stacked bar chart that shows the change in sentiment across different cluster groups, where the y axis is between 0-1 and denotes the ratio, and the x-axis denotes the timestamp.
+The positive ratio should be the top stack colored with blue, gray for neutral in the center, and red for negative on the bottom.
+For better readability, use a green line to denote the average.
+Each cluster should be plotted in a subplot, and the overall trend should be the topmost subplot.
+Since the plots all share the same illustration, draw only one legend.

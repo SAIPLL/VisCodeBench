@@ -1,0 +1,3 @@
+I want to compare the change of emotions (confident, hopeful, motivated, worried, anger, disgust, fear, and sad) before and after using the two versions of the system (simulation only) and (simulation+feedback).
+I want to do this for both Situation 1 and Situation 2.
+Plot point plots with error bars.

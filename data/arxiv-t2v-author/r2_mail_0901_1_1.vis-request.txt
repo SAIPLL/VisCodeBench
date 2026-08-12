@@ -1,0 +1,2 @@
+given v_dim, plot the P at topm=2,8 and 256.
+And show the shaded area where number-wise communication is bigger than dimension-wise

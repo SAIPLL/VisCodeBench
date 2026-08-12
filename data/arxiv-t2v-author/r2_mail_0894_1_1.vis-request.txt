@@ -1,0 +1,9 @@
+Load the data from opt.pkl, which contains three components: BIAS, BIAS_b, and BIAS_ob.
+The variable BIAS is a single number representing the plug-in estimate.
+The variables BIAS_b and BIAS_ob are arrays of shape (b,3), containing data for bootstrap and orthogonal bootstrap, respectively.
+The b rows correspond to the total number of Monte Carlo replications (ranging from 2 to 10), and the three columns contain data for the 5%, 50%, and 95% quantiles, respectively.
+Using this data, plot the bias values for the plug-in estimator, bootstrap, and orthogonal bootstrap against the number of Monte Carlo replications.
+Draw a solid black line for the plug-in estimate.
+For the bootstrap estimate, use blue circles connected by a dashed line and shade the area between the quantiles in light blue.
+For the orthogonal bootstrap estimate, use red circles connected by a dashed line and shade the corresponding quantile range in light red.
+Label the axes appropriately, set the title to Entropy, and include a legend to distinguish the three methods.

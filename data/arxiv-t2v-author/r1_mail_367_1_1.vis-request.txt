@@ -1,0 +1,6 @@
+I have 7 datasets and 2 settings.
+One label is "QV" and the other is "QVMLP".
+Now draw a plot using matploblib.
+The x-axis represents seven data sets, with each set comparing data from two settings.
+QVMLP is depicted in light blue, while QV is shown in light red.
+The y-axis is expressed in accuracy percentages.

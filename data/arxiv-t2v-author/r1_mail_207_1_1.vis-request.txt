@@ -1,0 +1,19 @@
+I have run six experiments, each with a binary outcome True or False.
+
+The sample size for each experiment was 50, and the frequencies of True were 0.72, 0.54, 0.62, 0.7, 0.24, 0.02.
+ 
+Construct a matplotlib plot, where the x-axis is the experiment and the y-axis is the frequency of True.
+  
+You must also include Bayesian error bars: for each point, draw three bars.
+
+The first bar must encompass all the hypotheses which, in contrast to the maximum likelihood hypothesis of the observed frequency, have a likelihood ratio of at least 1 : 10.
+
+The second and third bar are similar, but with ratios 1 : 100 and 1 : 1000.
+  
+The error bars should be drawn simply as rectangles of darker and lighter shades of blue, with darker for the 1 : 10 region and lighter for 1 : 1000.
+
+The bars should have equal x-axes.
+ 
+The points marking the observed frequency should be larger than the width of the error bars, to be clearly identifiable, and the shades of blue in the error bars should have enough contrast to make it easy to separate the different regions.
+ 
+The x-axis should be labeled "Variation" and the y-axis "Refusal rate".

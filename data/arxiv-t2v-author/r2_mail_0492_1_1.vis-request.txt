@@ -1,0 +1,17 @@
+For each of PEA, SEA, and Rigid configurations (each with separate dataset), create a plot with 3 vertically stacked subplots with a shared x axis representing time.
+ 
+The top subplot shows the trajectory of the spring input angle for link B and the spring output angle for link D.
+
+Highlight the area between the two curves.
+
+When the spring input position drops below the spring output position, make the spring input position curve dotted instead of solid.
+ 
+The middle subplot shows the same as the top subplot but with input angle A and output angle C.
+
+Use a different color than the top subplot.
+ 
+The bottom subplot shows the X, Y, and net force trajectory.
+
+Make the lines solid and use colors not used in the previous 2 subplots.
+
+Make the net force line black.

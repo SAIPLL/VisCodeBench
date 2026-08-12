@@ -1,0 +1,1 @@
+Draw the prediction frequency distribution against the direct decoding results of the forerunner token.

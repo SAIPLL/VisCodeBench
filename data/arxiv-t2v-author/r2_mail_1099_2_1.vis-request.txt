@@ -1,0 +1,10 @@
+For the given data, consider `LossType` = `table_loss` and `nn_loss`.
+Also, consider only learning rate (`lr`) equal to 0.1 and parametrization (`Param`) equal to sigmoid.
+You will generate a plot aggregating multiple runs.
+Specifically, considering the number of samples `n` and problem dimension `d`, generate one plot for `n=4;d=10` and another for `n=10;d=10`.
+Present them side by side.
+In each of these plots, each curve should be the average of the runs from the method.
+You can get such an average by grouping by the `Method` column.
+Note, however, the the data should be presented per iteration: the x-axis should be the column `Iter`, in log-scale, whereas the y-axis should be the column `Loss`.
+Finally, in addition to all of that, there should be a horizontal dashed line with the true solution of the problem.
+To obtain the data for this line, look at the variable `Solution` for the relevant problem dimension `d`.

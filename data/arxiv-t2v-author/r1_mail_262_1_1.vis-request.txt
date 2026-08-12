@@ -1,0 +1,11 @@
+I have evaluation results for editing NLLB translations with two systems: Tower and gpt-4.
+
+For each source, I have the the original translation, the TowerInstruct and gpt-4 post editions and the comet scores for all three translations.
+
+The results are in a data.csv file with the columns: tower_scores, gpt4_scores, nllb_scores, tower_sentences, gpt4_sentences, nllb_sentences, and lp.
+
+For the zh-en language pair, I want a figure with two plots.
+
+On the right, I want a bar plot with the percentages where no system edited the translation, Tower edited it, gpt-4 edited it or both did.
+
+On the left, I want to display the delta in comet scores between the Tower and gpt-4 post-editions, separated by whether only Tower edited, only gpt edited and both edited.

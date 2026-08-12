@@ -1,0 +1,6 @@
+For the given data, consider the following variables as demographic variables "Age", "Gender", "Country", "Relationship", "Live Alone", "Occupation", "Economic".
+Create a radar plot in which the corners are the demographic variables.
+The radar plot must include four visualizations, one for each "feature" in the data ("Misc", "Artists", "Songs", "Genres") with respect to demographic variables.
+Assign to the visualizations the following colors in order: blue, orange, green, red.
+Use a circular frame for the radar plot, and place the labels of the demographic variables at the edge of  the frame.
+Show the legend of the features on top left.

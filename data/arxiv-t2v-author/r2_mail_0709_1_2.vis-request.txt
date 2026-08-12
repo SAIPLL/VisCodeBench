@@ -1,0 +1,3 @@
+Plot the empirical coverage for all the 20 image datasets using five columns and four rows (one dataset in each cell) using target coverage on the x-axis.
+Share the x-axis.
+Add the legend on top and use the name of the dataset as a title for each subplot.

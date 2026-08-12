@@ -1,0 +1,21 @@
+I need a line chart to compare two sets of data, FIM-SE and FIM, showing how they change under different conditions.
+
+The data comes from a file called fim_se.json.
+
+It includes labels for the horizontal axis, two sets of vertical axis values (for FIM-SE and FIM), and information about the range and step size of the vertical axis.
+
+Use a serif font (like Times New Roman) for all text, with a clean and professional appearance.
+
+The markers for the two lines should be different shapes, like circles and squares, and the lines should have contrasting colors.
+
+The markers should also be outlined but not filled.
+
+Add a legend inside the chart that explains the two lines.
+
+It should be neatly organized and not have a border around it.
+
+The vertical axis should match the range provided in the data, with evenly spaced ticks.
+
+The horizontal axis should use the labels from the data and align with the data points.
+
+The chart should be saved as a PDF file with high resolution and minimal extra space around it.

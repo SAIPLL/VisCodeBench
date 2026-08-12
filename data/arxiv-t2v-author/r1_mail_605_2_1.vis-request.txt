@@ -1,0 +1,13 @@
+To visualize the relative pruning performance of pruned Llama 3 8B models calibrated in different languages, the data from `diffs_a.json`, located in the `data` directory, should be loaded into a Python dictionary.
+This dataset contains performance metrics across different layers, where each value corresponds to a specific calibration language and an evaluation language.
+The values can be accessed using the structure `value = diffs_dict[layer_number][calibration_language][evaluation_language]`.
+ The visualization should consist of a single large image containing 32 subplots, one for each layer, arranged in an eight-by-four grid.
+Each subplot should be titled according to the corresponding layer, following the format `"Layer X"`, starting with `"Layer 1"`.
+Within each subplot, the performance values should be plotted as solid lines, iterating over each calibration language and plotting its corresponding values against the evaluation languages.
+To enhance readability, a dot should be placed on each solid line at the position of every categorical x-label representing an evaluation language.
+ To clearly differentiate between calibration languages, distinct line colors should be used: Arabic (AR) in `#045275`, German (DE) in `#089099`, English (EN) in `#7CCBA2`, Spanish (ES) in `#FCDE9C`, Russian (RU) in `#F0746E`, Swahili (SW) in `#DC3977`, and Chinese (ZH) in `#7C1D6F`.
+The x-axis should display the upper-case evaluation language codes and be labeled "Evaluation Languages," while the y-axis should be labeled with `$\Delta$ magnitude`, where `$\Delta$` is formatted as a LaTeX expression.
+ Additionally, the background color of each subplot should reflect the relationship between its maximum y-value and the maximum y-values across all subplots.
+The subplot with the lowest maximum value among all layers should have a white background (`#FFFFFF`), while the subplot with the highest maximum value should have a dark gray background (`#666666`).
+For all other subplots, the background color should be linearly interpolated between these two extremes, ensuring a smooth gradient effect that visually conveys the relative magnitude of pruning performance variations.
+ Finally, the visualization should be stored as `lang_agnostic_feature_diffs.png` in high quality to preserve clarity and detail.

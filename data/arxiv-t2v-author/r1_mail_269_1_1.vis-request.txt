@@ -1,0 +1,2 @@
+The data contains multi-label annotations of implicit discourse relations from the DiscoGeM corpus.
+Plot distribution of majority label senses across all splits of the DiscoGeM corpus

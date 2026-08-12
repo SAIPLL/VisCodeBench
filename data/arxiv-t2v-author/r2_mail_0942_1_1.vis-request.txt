@@ -1,0 +1,1 @@
+A radar chart with 6 samples in blue and orange

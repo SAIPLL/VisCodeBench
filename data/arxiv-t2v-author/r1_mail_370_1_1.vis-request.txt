@@ -1,0 +1,13 @@
+Load the JSON files located at {"./data/"} with the following file names:  w_qqp_opt_p0_df.json hp_w_qqp_opt_p0_df.json w_qqp_opt_p2_df_dipper.json hp_w_qqp_opt_p2_df_dipper.json w_qqp_opt_p5_df_dipper.json hp_w_qqp_opt_p5_df_dipper.json, 
+
+For each file, read its contents into a Pandas DataFrame and ensure the data is properly formatted.
+
+Then, plot a Receiver Operating Characteristic (ROC) curve for six configurations using the following details:  
+- Colors: ['b', 'r', 'b', 'r', 'b', 'r'] 
+- Line styles: ['-', '-', ':', ':', '--', '--']
+- Labels: ['pp0', 'hp_pp0', 'pp2', 'hp_pp2', 'pp5', 'hp_pp5']
+
+On the plot:  Display the AUROC, TPR@1%FPR, and Accuracy for each configuration in the legend.
+Include a diagonal baseline (gray dashed line) for reference (AUROC = 0.50).
+Set both the x-axis (False Positive Rate) and y-axis (True Positive Rate) to range from 0 to 1.
+Add a legend at the bottom-right corner and enable a grid.

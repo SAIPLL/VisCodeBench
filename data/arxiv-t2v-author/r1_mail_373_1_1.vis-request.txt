@@ -1,0 +1,15 @@
+Create a visualization with 3 subplots, two on the top row and one on the bottom row.
+
+The top left visualization should show the "Unigram Frequency Distribution" and be a line chart with all of the distributions in "uni_hist.txt" in color and the distribution in "all_uni_perc.txt" in black.
+
+The top right visualization should show the "Bigram Frequency Distribution" and be a line chart with all of the distributions in "bi_hist.txt" in color and the distribution in "all_bi_perc.txt" in black.
+
+The y-axis for the top visualizations is "% of word frequency".
+
+The data for these top visualizations is binned histogram data, so the x-axis is just counts from 0 to 50.
+
+The bottom visualization should show the "Sentence Length Distribution" and be a line chart with all of the distributions in "sent_hist.txt" in color and the distribution in "all_hist_perc.txt" in black.
+
+The y-axis for the bottom visualization is "% of sentences" and the x-axis for the bottom visualization is "Sentence Length".
+
+The values for the bottom visualization's x-axis can be found in the second sublist of "all_hist.txt".

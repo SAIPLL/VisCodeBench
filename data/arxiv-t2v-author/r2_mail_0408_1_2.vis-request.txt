@@ -1,0 +1,3 @@
+Generate a scatter plot with linear regression line to visualize the relationship between Torso reconstruction error and electrode localization error, and relationship between BMI and electrode localization error (2 subplots).
+Then fit a linear regression line in both plots and display Pearson and Spearman correlation coefficients on the top left.
+Try to use different colors to make the different subplots more clear and the scatter must be circles.

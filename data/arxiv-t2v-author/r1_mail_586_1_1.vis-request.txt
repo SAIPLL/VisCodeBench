@@ -1,0 +1,4 @@
+You are given 6 datasets.
+Each of them contains the accuracy of reliability, generality, and locality on 200, 400, 600, 800, and 1000 samples.
+Please give me 6 line charts, with the x-axis to be the number of samples and the y-axis to be the accuracy.
+Each line chart has 3 different color lines representing three cases, namely, "all layers", "three layers", and "one layer".

@@ -1,0 +1,2 @@
+Using the list variable data, plot a heatmap with values ranging from -1.5 to 1.5.
+Label the x-axis as "Stars" with ticks from one-star to five-star, and the y-axis as "Attributes" with the following labels: Noise_negative, Noise_unknown, Noise_positive, Service_negative, Service_unknown, Service_positive, Ambiance_negative, Ambiance_unknown, Ambiance_positive.

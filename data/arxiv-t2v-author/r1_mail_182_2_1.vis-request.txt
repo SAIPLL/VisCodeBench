@@ -1,0 +1,7 @@
+Please use Weighted F1and Meta-Elo from the file meta_elo_baseline to prepare a scatter plot with F1 on the X-axis and Metal-Elo on the Y-axis.
+
+The file deployment_mapping contains the number of parameters of each model that can be used to weight bubble sizes representing the different models.
+
+Please drop the cases with F1 below 0.70 and use "Source" from the deploymnet_mapping file to give different colours to the points/bubbles of the scatter: pastel green for open-source modes, pastel red for closed models, and pastel violet for BERTs.
+
+In addition, draw the quadratic trend and report the R2, the number of unique models, and how many times were tested as an upper left caption.

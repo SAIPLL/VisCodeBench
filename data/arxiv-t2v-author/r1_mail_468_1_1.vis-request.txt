@@ -1,0 +1,1 @@
+Plot using different quantile values for uncertainty threshold estimation in single-inference with ChatGPT  and LLaMA2-70B.

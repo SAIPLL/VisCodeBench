@@ -1,0 +1,5 @@
+To plot the leakage ratio on Androzoo data, I would describe it as: I have four arrays corresponding to different labeling budgets (50, 100, 200, and 400), each containing 18 values representing the leakage values for each test data point.
+The test months range from 2020-07 to 2021-12, covering a total of 18 months.
+Plot all four arrays in a single figure using different colors, the color can be customized values.
+Set the x-axis ticks to represent test months (e.g.
+'2020-07', '2021-12') and label the y--axis as 'Leakage Ratio'.

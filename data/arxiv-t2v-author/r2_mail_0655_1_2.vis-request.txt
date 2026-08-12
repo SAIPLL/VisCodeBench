@@ -1,0 +1,4 @@
+Generate a line plot to visualize the impact of adversarial noise on CNN model performance.
+The x-axis represents the number of filters, and the y-axis represents f1-scores.
+Different lines should correspond to different experimental conditions or models.
+Include a legend, axis labels, and appropriate title to clarify the trends in performance.

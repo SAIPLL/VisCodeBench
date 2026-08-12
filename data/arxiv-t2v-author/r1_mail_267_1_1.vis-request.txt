@@ -1,0 +1,15 @@
+The data provided is in the form of four lists, two for each model.
+The firsts two lists (val_1 & val_2) are the results for LEGO-Prover, the last two lists (abl1_1 and abl1_2) are the lists for our ablated model.
+
+Each list consist of numbers: these are the time steps at which the model successfully solved a problem.
+For example, the list [1,1,1,2,10] would indicate that a model solved 3 problems at time step 1, solved a 4th problem at timestep 2, and solved a 5th problem at timestep 10.
+ 
+Please draw a linegraph with the percentage of problems solved on the y axis, and the timestep on the x axis.
+
+There is a total of 12 problems in the dataset, and both models were run for 50 timesteps.
+
+Each model should have it's own line.
+The lines should be the average number of problems solved at a given timestep.
+The lines should be surrounded by a shaded region of 1 standard deviation.
+Please colour code the lines and include a legend indicating which line is which model.
+The legend should not overlap with the lines.

@@ -1,0 +1,1 @@
+For the given data in the two files, do the following: (1) extract two columns named xxx from df_judgment, extract all columns named xxx from df_qualtrics, (2) plot a bar plot for the five interface conditions, (3) for each bar, include its corresponding condition at the bottom of the bar, (4) add a legend for the interface conditions.

@@ -1,0 +1,5 @@
+Create a barplot that shows the tifa_score accuracy by element_type for each model individually.
+The element_type is one possible value in the question_details column.
+The model name is given in the model column.
+Samples with {'all_black': True} in the question_details should be filtered out.
+Above each group of bars, the number of samples with this element type should be indicated.

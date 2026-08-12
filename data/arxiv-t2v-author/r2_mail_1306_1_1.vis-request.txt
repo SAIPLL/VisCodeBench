@@ -1,0 +1,1 @@
+Plot the estimated probability ('dyal_001_probs.txt') as well as the learning rate ('dyal_001_rates.txt') as a function of time t (x axis will be time), from t=1 to 20000, and also plot the actual (true) probability too, and also show  roughly where the learning rate spikes with a red dot near the x-axis.

@@ -1,0 +1,4 @@
+Create a plot with two side-by-side plots showing scalability performance metrics.
+The left plot should illustrate 'Scalability with total number of data samples' with the x-axis labeled 'Total number of data samples (n)' and y-axis labeled 'Runtime(s) in 3PC passive setting'.
+The right plot should display 'Scalability with total number of data holders' with the x-axis labeled 'Total number of data holders (N)' and y-axis showing 'Runtime(s) in 3PC passive setting'.
+For given data points for each plot, connect them with a solid blue line with circle markers, without gridlines and appropriate font sizes.

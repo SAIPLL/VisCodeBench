@@ -1,0 +1,1 @@
+Create a spider plot for the following data ENCODINGS = ['Keyboard Cipher', 'UpsideDown', 'Word Reversal Cipher', 'Grid Encoding', 'Word Substitution'] GPT_4o = [3, 4, 6, 3, 6] Gemini = [2, 5, 4, 1, 8]

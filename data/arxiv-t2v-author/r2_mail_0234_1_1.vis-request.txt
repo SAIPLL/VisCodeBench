@@ -1,0 +1,6 @@
+Columns in the data represent: dataset, target, surrogate, task, type, ratio, nothing, accuracy, nothing, and fidelity.
+From the given data, select only the rows where the dataset is 'citeseer_full' and the target is 'gin' and task is 'embedding'.
+Create 4 subplots for (type I, accuracy), (type ii, accuracy), (type I, fidelity, type ii, fidelity).
+In each subplot, plot three curves corresponding to the surrogates (gin, gat, sage).
+Each curve should represent accuracy or fidelity on the y-axis and ratio on the x-axis.
+Additionally, add a horizontal constant line to each subplot with values 0.755, 0.795, 0.780, 0.820

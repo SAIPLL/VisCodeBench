@@ -1,0 +1,2 @@
+Generate 4 graphs, starting from the top left, that show the relation between model perplexity and performance for each model.
+Plot trendline for the graph and add dataset labels to the points.

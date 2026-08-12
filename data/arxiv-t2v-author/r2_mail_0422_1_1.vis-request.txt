@@ -1,0 +1,8 @@
+Read the data in the tflops.json file.
+There are three models: PRIMA, GLaMM and LISA.
+For each model, you have the following information: mIoU, TFLOPS and tokens_per_sample.
+Make a scatterplot, where "mIoU (%)" is the y-axis and "TFLOPS" is the x-axis.
+The markers for each model should be round and the size of the markers should be proportional to "tokens_per_sample".
+Similarly, select the colors from a continuous scale of green to red based on "tokens_per_sample", where green is lower and red is higher.
+Add a legend on the right to explain the color.
+Name the legend "# visual tokens per sample".

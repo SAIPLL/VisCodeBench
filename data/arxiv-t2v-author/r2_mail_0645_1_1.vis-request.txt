@@ -1,0 +1,18 @@
+Begin by writing code to load both "data/train.json" and "data/val.json," and extract the lists of annotations and images from each file.
+
+Combine these lists so that all annotations and image data are in single respective collections.
+
+For each annotation, extract the bounding box, which is provided as [x, y, w, h].
+
+Then convert each bounding box into the [x1, y1, x2, y2] format by calculating x2 as x + w and y2 as y + h.
+
+Meanwhile, from the image data, obtain the width and height for each image.
+ 
+Next, create a heatmap as a 512×512 array initialized with zeros.
+
+Iterate over each bounding box and, using the corresponding image's dimensions, check whether the image is square.
+If it is not, adjust the x-coordinates by subtracting half the difference between the width and height.
+Then, scale the coordinates of the bounding box from the original image dimensions to the dimensions of the heatmap grid.
+Use these scaled coordinates to determine which region of the heatmap should be incremented to reflect the presence of an annotation.
+ After all bounding boxes have been processed, normalize the heatmap by dividing every element by the maximum value found in the heatmap, ensuring that the highest value is 1.
+Finally, display the heatmap with a "hot" colormap, add a color bar to provide a scale for the values, save the resulting image as "heatmap.png", and display the final plot.

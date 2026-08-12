@@ -1,0 +1,9 @@
+Please provide a Python code for plotting a multi - line chart.
+The inputs are the noise ratio x and the Recall results of 5 models.
+The figure size is (4,2.8).
+The figure title is "Baby".
+The x-axis and y-axis label font sizes are 12.
+The x-axis is named "Ratio", which font size is 14.
+ The y-axis label is "Recall@20", which font size is 14.
+For the 5 lines, LightGCN is black, LATTICE green, SLMRec blue, SGL orange, and OURS red, all with marker = 'o' and linestyle = '-'.
+The output file is "add_interaction_baby_recall.png".

@@ -1,0 +1,6 @@
+For the given "Parameter.xlsx", this code generates a comprehensive visualization to analyze the impact of the beta parameter on model performance across three datasets (ECAD, SMEsD, and DBLP).
+The visualization consists of three subplots, one for each dataset, displaying the variation of three key performance metrics (Accuracy, F1, and AUC) as beta changes.
+Each metric is represented by a distinct line style and color (green for AUC, blue for F1, and a viridis-derived color for Accuracy) with unique markers (triangle, square, and circle).
+The y-axis ranges are customized for each dataset to better highlight the performance variations.
+The plots feature a grid layout, Times New Roman font, and are saved as a high-resolution image (800 DPI) named 'PA.jpg'.
+The legend is strategically placed at the bottom of the last subplot for better readability.

@@ -1,0 +1,4 @@
+Please give me two scatter plots.
+For both of them, set the x-axis as the sample index and the y-axis as the z-score entry value.
+Use one scatter plot to record the "reliability" data ("r_record.pkl" with corresponding index "r_idxs.pkl"), and another one to record "generality" data ("g_record.pkl" with corresponding index "g_idxs.pkl").
+Finally, plot a line to indicate the average of the data for each of them.

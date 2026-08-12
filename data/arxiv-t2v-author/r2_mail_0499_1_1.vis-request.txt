@@ -1,0 +1,1 @@
+For the given data in the variables "lexical_diversity", show a histogram.

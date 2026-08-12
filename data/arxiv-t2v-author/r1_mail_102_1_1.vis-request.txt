@@ -1,0 +1,2 @@
+Plot the average DICE score versus the number of point prompts for the FluoroSAM, MedSAM, and original SAM models.
+Separate the performance on bones from that on soft tissue.

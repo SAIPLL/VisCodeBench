@@ -1,0 +1,3 @@
+Create a bar graph, with 3 sets of 4 bars.
+each set for a specific model - Granite, Llama 3.1, Olmo, and the values are the numbers in the corresponding entry for the rows Original, Byte grouping under the ZSTD row and the rows Original, Byte grouping under the Huffman row.
+Show values above the bar, rotated.

@@ -1,0 +1,2 @@
+The figure shows a horizontal bar chart titled "Readability of Healthcare Apps using the Simple Measure of Gobbledygook (SMOG) Index." It displays readability scores for multiple healthcare apps (labeled A1-A28) with bars extending rightward indicating higher scores.
+The bars are color-coded by readability level, ranging from purple (easier to read) to yellow (more difficult to read).

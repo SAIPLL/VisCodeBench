@@ -1,0 +1,1 @@
+Draw the curves of MRR with respect to alpha variation on the BGE-M3 and Multilingual-E5-Large models respectively

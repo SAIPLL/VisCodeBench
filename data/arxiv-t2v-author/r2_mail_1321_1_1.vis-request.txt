@@ -1,0 +1,4 @@
+I have the data for two datasets (Epic-Kitchens and Epic-Sounds) and each dataset is evaluated (accuracy) at 4 levels (0, 4, 8, 11) for 2 methods (Baseline and Ours) for 3 missing rates(0, 50, 100).
+I want you to have 2 subplots (1 per dataset) positioned horizontally and the levels and methods should be shown in the legend.
+Missing rate is displayed in X-axis and Accuracy is in Y-axis.
+Please provide the code to produce such figure.

@@ -1,0 +1,1 @@
+Given the data in the variables X, Y and Z, show a 3D surface.

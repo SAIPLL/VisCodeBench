@@ -1,0 +1,1 @@
+Plot 1: plot the comparison of the different honeypot deployment strategies (FS50-FS90 and VS) with and without false positive penalties

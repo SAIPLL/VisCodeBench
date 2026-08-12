@@ -1,0 +1,2 @@
+For the given data, make a scatter plot with the column morans_i_mine on the x axis (labelled "Moran's I of the residuals") and the OT error (column "OT") on the y axis.
+Furthermore, the scatter points should be coloured based on the value of the column "MSE").

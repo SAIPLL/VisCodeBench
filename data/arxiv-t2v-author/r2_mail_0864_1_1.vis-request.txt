@@ -1,0 +1,3 @@
+Plot a plane graph with two clusters labeled as -1 and 1.
+For the nodes associated with the sensitive attribute = 'Woman' use color 'red' and for the nodes associated with the sensitive attribute = 'man' use blue.
+Try to draw nodes in the same cluster closer to each other.

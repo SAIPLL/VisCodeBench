@@ -1,0 +1,13 @@
+Please write Python code to load the following data and plot regression lines for the data.
+
+The data has three columns: structure_type, sentpos, and top_ll.
+
+The structure_type column contains three values: no-reduction, structure-reduction, and linear-reduction.
+ 
+For each value, I would like to draw a regression line using the least squares method, where the x-axis is the value of sentpos + 1, and the y-axis is top_ll.
+
+This should result in three regression lines, and I want to plot all three lines in a single figure.
+
+Please label the x-axis as Word Position and the y-axis as Parsability.
+
+Additionally, set the color of the three regression lines in order to: #FF4B00 for no-reduction #005AFF for structure-reduction #03AF7A for linear-reduction.

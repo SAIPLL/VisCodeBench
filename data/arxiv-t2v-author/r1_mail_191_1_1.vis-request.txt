@@ -1,0 +1,4 @@
+Please draw me a radar plot with five fields, i.e.
+['DC', 'NU', 'LR', 'RR', 'VM'].
+The data for different methods are ...
+Please make the last method as dashed line.

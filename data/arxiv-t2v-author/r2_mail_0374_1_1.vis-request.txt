@@ -1,0 +1,9 @@
+Generate an aggregated scatterplot figure where the classification performance (variable auc) is plotted on the x-axis and the nearest neighbor distance (variable average_mindistance) on the y-axis, with one scatterplot created for each dataset.
+
+Each scatterplot should include a vertical line indicating the clean performance based on the baseline results (using the non-anonymized dataset).
+ 
+Each dataset's scatterplot must be annotated with a suptitle in the format "Dataset (training samples, classes)", with the details extracted from the map_datasets dictionary.
+
+Data points for various methods should be displayed using distinct colors and marker shapes, while the "CVAE" method should be particularly emphasized through a unique marker or color.
+ 
+Additionally, adjust the x-axis (xlim) and y-axis (ylim) limits to improve clarity, and include a horizontal legend at the bottom of the figure that clearly distinguishes the different methods.

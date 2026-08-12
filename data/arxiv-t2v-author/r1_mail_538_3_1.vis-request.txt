@@ -1,0 +1,7 @@
+For the given data in "data_heatmap.tsv" which provides the language (first column), model (second column) and rank (third column) for all models across 18 languages.
+Make sure all language codes are in alphabetical order.
+Plot the ranks for the models (y axis) across all 18 languages(x axis) as a heatmap using seaborn and matplotlib.
+ Plot the models following order from top to bottom: [GPT-4o, GPT-4, Llama-3 (70B), Mixtral (8x22B), Command R, Command R+, Qwen-2 (7B), Aya-23, Mixtral (8x7B), GPT-3.5, Llama-3 (8B), Mistral-v0.3 (7B), Phi-3 (Medium), Gemma-1.1 (7B), Mistral-v0.2 (7B), Phi-3 (Small), Qwen-2 (1.5B), Gemma-1.1 (2B), Phi-3 (Mini)] and use pandas to load the results into a dataframe.
+Use the color map of 'coolwarm_r' with annotations being True and a size of 13.
+The title of the plot should be "LLM-as-a-Judge (GPT4o) Pairwise Evaluation" and plot the xtick labels on top of the plot instead of bottom.
+Save the heatmap as png as `gpt-4o-judge-arena-results.png` with tight bounds.

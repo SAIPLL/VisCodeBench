@@ -1,0 +1,1 @@
+Show a consistency score in a bar chart.

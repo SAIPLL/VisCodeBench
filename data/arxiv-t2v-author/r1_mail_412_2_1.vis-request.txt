@@ -1,0 +1,11 @@
+Generate a Python script that visualizes the trends in explained mechanisms over time within the NLP field and compares the percentage distribution of these mechanisms inside and outside of NLP.
+The output should be a figure with two subplots:  Left subplot: A stacked area plot that shows the percentage of papers for each mechanism in the NLP field from 2017 to 2024.
+The x-axis represents the years, and the y-axis shows percentages.
+Mechanisms include:  input-output concept-output input-internal internal-internal word embeddings The data should be smoothed using a simple moving average with a window size of three, and normalized to ensure percentages sum to 100% for each year.
+Use distinct colors for each mechanism, with a legend ordered in reverse.
+ Right subplot: Two concentric pie charts showing the percentage distribution of the mechanisms.
+ The inner chart represents the NLP field, and the outer chart represents fields outside NLP.
+Use the same color scheme for mechanisms as the stacked area plot.
+Add labels inside the inner pie chart for the mechanisms, and include percentage values for both pies.
+Display text annotations at the center of the pie charts to indicate the data range (% Papers '17-'24) and differentiate NLP from non-NLP.
+Apply a custom function to slightly adjust the saturation of colors for the outer pie chart.

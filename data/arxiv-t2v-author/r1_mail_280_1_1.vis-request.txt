@@ -1,0 +1,5 @@
+1) For the given data in the variables "Emotion" and "Number_of_Instances," show a bar chart.
+Place the values on top of the bars.
+2) In the same plot, the given data in the variables "Emotion" and "Accuracy" are shown in a line chart.
+Use dots to point to the values in the plot.
+3) Where the x-axis is variable "Emotion," the first y-axis is "Number_of_Instances," and the second y-axis is "Accuracy."

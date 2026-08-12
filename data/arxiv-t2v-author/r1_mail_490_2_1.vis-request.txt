@@ -1,0 +1,4 @@
+Visualize this dataset (in "./data" folder) for me by generating a line chart for each of the six models.
+The x-axis represents input length, and the y-axis represents performance.
+Different lines in each chart represent different capabilities (format, logits ...).
+Make sure to use different colors for different capabilities.

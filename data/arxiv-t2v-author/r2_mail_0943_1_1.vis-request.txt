@@ -1,0 +1,4 @@
+show a bar plot for the counties count.
+It is stored as strings "count/0".
+Make it in green color.
+I want the x to be the county number, stored in counties.

@@ -1,0 +1,4 @@
+Make a heatmap showing how models perform when trained and tested on different datasets.
+Put 'Train' on the x-axis and 'Test' on the y-axis.
+Show the numbers in each cell, between 0 and 100, and use colors to show how high or low the values are.
+Include a color bar to indicate the value scale, and annotate each cell with the actual numeric value.

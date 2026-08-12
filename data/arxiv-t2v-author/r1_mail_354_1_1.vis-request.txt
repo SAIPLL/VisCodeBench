@@ -1,0 +1,4 @@
+data.json contains performance metrics for MELoRA on four datasets regarding the number of mini lora n under the conditions of rank r=2 and r=4.
+Draw a graph containing 2x2 subgraphs, where each subgraph corresponds to a dataset.
+The subgraph is a line graph, with the x-axis representing the number of mini lora n and the y-axis representing performance indicators.
+The graph contains two lines, representing rank r=2 and r=4, respectively.

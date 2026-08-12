@@ -1,0 +1,8 @@
+here is the watermarking bit accuracy applied with different attack strength.
+these attacks are cropout, dropout, affine, and JPEG.
+ please plot the figure with four subfigures, each corresponds to one type of the attack.
+all the four subplots share the same y axis as bit accuracy (%), the x axis refers the degree of strength for each attack, the higher the more severe of the attack strength.
+for each attack, we provide the data for three testing neural codecs, they are Balle2018, Minnen2018, and Cheng2020.
+please draw one line for each neural codec on each attack subplot.
+the subplots should be stacked in 2x2 layout.
+place the legend for the three codecs on a proper subplot which has free space without blocking anying visually.

@@ -1,0 +1,4 @@
+Plot a figure to visualize the trend of development of audio description datasets in terms of number of videos/images w.r.t number of audio descriptions/video captions.
+The scaling should be in log space.
+Use red color to represent more recent datasets.
+The scatter size should correspond to the size of the dataset.

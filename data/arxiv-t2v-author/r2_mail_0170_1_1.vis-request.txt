@@ -1,0 +1,4 @@
+For the given data in the variables 'repo' and 'count,' create a horizontal bar chart.
+Use 'repo' for the y-axis and 'count' for the x-axis.
+Sort the bars so that the repository with the highest count appears at the top.
+Label the axes appropriately and use a light blue color for the bars.

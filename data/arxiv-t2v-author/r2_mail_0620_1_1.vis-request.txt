@@ -1,0 +1,3 @@
+Example of point regression versus interval regression.
+In the plot on the left, which shows point regression, the model line tries to pass close to all the target points.
+In the plot on the right, which illustrates censored interval regression, the model line aims to intersect all the intervals.

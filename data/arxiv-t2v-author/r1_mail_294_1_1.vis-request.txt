@@ -1,0 +1,3 @@
+Please help me write code to visualise the following experiment results stored in a dictionary.
+The visualisation should: (1) present results for each metric (e.g., ROUGE-1, ROUGE-2, ROUGE-L) across layers and modules; (2) use a 3x3 grid layout, where each row represents a category (e.g., Transformer layers, Attention modules, Feed-Forward modules) and each column represents a metric; (3) save the plots as PDF files.
+The data is structured as follows.

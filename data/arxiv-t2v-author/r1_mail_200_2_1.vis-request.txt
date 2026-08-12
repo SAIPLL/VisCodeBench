@@ -1,0 +1,9 @@
+Create a Python script using `pandas`, `seaborn`, and `matplotlib` to visualize average model performance from a CSV file named `general-lvlm.csv`.
+
+The script should preprocess the data by converting values to percentages, calculate model-wise averages, and generate a bar plot with a custom inverted colormap.
+
+Ensure the plot features a clean white background, bold labels, formatted percentage values above each bar, and an elegant grid style.
+
+Customize the graph with readable fonts, rotated x-axis labels, and set y-axis limits to enhance clarity.
+
+Save the figure as high-resolution files (`bar-average-model-all-tasks.png`) and ensure it is visually appealing, effectively showcasing average performance across models.

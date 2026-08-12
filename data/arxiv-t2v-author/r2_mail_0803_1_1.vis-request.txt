@@ -1,0 +1,1 @@
+To obtain the MCMC examples contained in the two .txt text files and their respective .paramnames files (with the free parameter information), plot the 1D and 2D posterior distributions (corner/triangle plot) with getdist, overlaying the results of both samplings.

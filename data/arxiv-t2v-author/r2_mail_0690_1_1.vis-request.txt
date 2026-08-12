@@ -1,0 +1,15 @@
+Load data from CSV file "ARMCautomata-all.csv".
+
+First, drop from CSV such rows that have 
+1) NaN values, 
+2) the value "states" is not grater that "NPDA_states", 
+3) "NPDA_states" equals to zero, or 
+4) the value "NPDA_transitions" equals to zero.
+
+
+Then, create a scatter-plot that visualizes the reduction (portion) between "RABIT_states" (bigger number) and "NPDA_states" (smaller number).
+
+Use heatmap (inferno) to show the density of the points in the graph.
+Add blue distribution function of points on the right (Y-axis) and top (X-axis) site of a graph.
+
+X-axis (log scale) is "RABIT_states" with a label "State count after RABIT/Reduce" and Y-axis (log scale) is the reduction (portion) from greater "RABIT_states" to smaller "NPDA_states" with a label "State reduction proportion".

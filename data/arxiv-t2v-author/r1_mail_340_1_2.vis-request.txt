@@ -1,0 +1,1 @@
+Help me draw a figure about \"The distributions of human-rated scores and the predicted scores.\"  Use hist plot of matploblib.

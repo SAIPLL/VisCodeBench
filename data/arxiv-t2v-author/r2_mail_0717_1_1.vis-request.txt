@@ -1,0 +1,3 @@
+Each file in the plotting data contains the model accuracy (["Model"][index]["acc"]) and the attack results from different attack strategies ([attack][index][metric]).
+Remove the outliers with the IQR method and illustrate a bar plot of the average results against PLG-MI attacks, grouped by each metric.
+Place an error bar on each bar and show the scatter plot of real data points.

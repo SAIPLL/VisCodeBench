@@ -1,0 +1,7 @@
+Imagine six bars lined up on a chart, each corresponding to a different model.
+The first bar, for Llama-2-7B, is a bit above 0.25.
+The second bar, Falcon-7B, is lower, at around 0.16.
+Then comes a much taller bar for Mistral-7B at just over 0.60.
+After that, Zephyr-7B-β stands around 0.46.
+Near the end, GPT-3.5 reaches about 0.67, and finally, GPT-4's bar tops them all at roughly 0.75.
+The x-axis labels these models by name, while the y-axis shows their accuracy, ranging from 0.0 at the bottom to about 0.75 at the top.

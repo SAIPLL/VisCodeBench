@@ -1,0 +1,3 @@
+The plotting data contains a file of threshold (classwise_threshold.tar) and similarity scores of the public set (classwise_cos_gan.tar) and the target sets (classwise_cos_*.tar).
+For each target set, plot the histogram of its similarity score with the public one.
+Place a vertical line for the threshold and show the recall and AUC score at the title.

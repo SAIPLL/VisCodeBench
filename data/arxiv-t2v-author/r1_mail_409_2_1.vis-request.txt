@@ -1,0 +1,3 @@
+In a scatterplot, visualise the 4 quality tiers of Wikipedia, with fraction of characters remaining after filtering on the y axis, and fraction of articles remaining after filtering on the x axis.
+Each wikipedia should be a point on the scatterplot, weighed by its original size.
+The 4 distinct clusters should be distinguished by colour.

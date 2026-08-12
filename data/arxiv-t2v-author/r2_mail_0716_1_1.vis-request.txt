@@ -1,0 +1,2 @@
+The input array gives multiple input signal [0, :] and output signal [1, :] as a timeseries for a SISO system.
+Plot the input over time, output over time, and configuration plot (output versus input).

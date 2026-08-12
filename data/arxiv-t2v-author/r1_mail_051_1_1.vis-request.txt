@@ -1,0 +1,1 @@
+Plot data to compare MindSkip and Attention Drop at the same skipping ratios, demonstrating that MindSkip, with its dynamic skipping mechanism, achieves significantly better performance.

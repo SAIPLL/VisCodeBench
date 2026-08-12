@@ -1,0 +1,21 @@
+For the given data plot two vertically stacked subplots where the top one shows imbalance prices over a day and the bottom figure shows Battery SoC over a day.
+
+
+Columns of the data indicates minute of the day, indicative imbalance price, real imbalance price, teacher model SoC, and distilled model SoC, respectively.
+
+
+xaxis shows hour of the day with a granularity of 2 hours.
+
+Make the teacher model SoC line dashed and orange.
+
+Use blue for distilled model SoC, dark blue for real imbalance prices, and green for indicative imbalance prices.
+
+ylabel for the top figure is Imbalance Price (€/ MWh) and for the bottom one is SoC.
+
+Use semi-transparent grid for both figures.
+
+Put x and y ticks in.
+
+Use Times New Roman font with a size of 12.
+
+Limit both figures from left and right between 0 and 24.

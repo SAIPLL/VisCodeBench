@@ -1,0 +1,5 @@
+I have experimental data, averaged experimental data, and a model for the polarization curve.
+They have current and voltage.
+I want a graph for I-V to compare the model and average behavior.
+Furthermore, I want a zoom for a specific range, that is, the operation range of my power converter.
+For example, for 19A to 30 A.

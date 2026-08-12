@@ -1,0 +1,1 @@
+For the given alpha values along the x axis and accuracy scores along the y axis, show the accuracies in a line graph for each category, "all", "many", "med", and "few".

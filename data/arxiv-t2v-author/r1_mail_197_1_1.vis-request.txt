@@ -1,0 +1,25 @@
+The file data_dicts.json has all the data necessary for the following visualizations.
+
+
+On the first level, there are keys for the two models, 'Mistral' and 'Qwen'.
+
+For each of the models, there are keys called 'data_', 'bracket_boxplots', and 'brackets'.
+
+
+The final figure consists of four panels, organized in a 2x2 grid.
+
+The two panels in the top row (called a and b) visualize results for the Mistral model and the two panels in the bottom row (c and d) visualize results for the Qwen model.
+
+Panels a and c show boxplots of the two data series stored with the key 'data_' for the respective models - the first series is captioned 'pers.', the second series is captioned 'no pers.'.
+
+Panels b and d also show boxplots.
+
+The data for panels b and d is primarily coming from the key 'bracket_boxplots' for the respective models.
+
+In order of their appearance in the dictionary, for each of the 90 keys in 'bracket_boxplots' a boxplot is generated based on the series contained in the key's corresponding value.
+
+At the same horizontal locations as for the 90 keys, a red circle marker is added for each of the 90 values stored in the respective 'brackets' keys.
+
+The resulting 90 boxplots are vertically separated by two dotted lines both in panels b and d drawn after 30 and after 60 boxplots.
+
+Beneath panel d, the thereby resulting three sections are captioned '30 min personas', '30 median personas' and '30 max personas'.

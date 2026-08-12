@@ -1,0 +1,4 @@
+Use the provided result data on gasil, gasildense, gasilneg and gasildenseneg to plot a bar chart with error-bar (std).
+The labels for the for approach is GASIL, AGASIL, NGASIL and NAGASIL.
+The y axis label should be "Avg.
+Episodic Reward".

@@ -1,0 +1,2 @@
+Compare the model features of the third convolutional layer for the experiments of Independent Models, Vanilla WM, Dropout WM and Dropout & Limited WM, to see the distribution of the neurons' outputs for each case.
+Showing the full distribution is not necessary, but show the same interval across all experiments, find appropiate limits for both axes that allow a clear comparison of the active (non-zero) neurons.

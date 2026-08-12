@@ -1,0 +1,4 @@
+I want to use the above data to create a bar chart.
+Please compare the situations before and after training.
+Plot different clusters for different models, and use two colors to represent them.
+Also, mark the results at the very top of each bar.

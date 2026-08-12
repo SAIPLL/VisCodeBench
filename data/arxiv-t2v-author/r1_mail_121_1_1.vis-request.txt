@@ -1,0 +1,8 @@
+Plot the relationship between the parameter theta, and the associated performance degradation (computed over the task-specific random baseline) of the model.
+
+This needs to be plotted for three tasks as in the data (each task is a column) and for different kinds of theta (each kind of theta is a row).
+
+On each plot, we will show this relationship for 7 languages, coded by colour, and we'll show the mean trend over languages in black (black dots for points, black dotted trend).
+
+Next, plot the trend of posterior thetas for real dialects versus observed performance degradation, and showcase these as different from the other plots, using purple triangles.
+Show the mean "real" trend in red.

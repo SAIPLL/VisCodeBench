@@ -1,0 +1,2 @@
+Given data contains accuracy values of different LMMs split across 5 anomaly categories.
+Plot a scatter plot with accuracy vs categories and label results of different LMM models with distinct symbols/legend.

@@ -1,0 +1,3 @@
+For the given data in "object_sets_data.csv" plot the polygonal radar chart with custom axis ranges, where each axis corresponds to a property, and a colored radar chart for each of the three object sets data.
+First column collects the properties names for each axis of the radar chart, each following column collects the object sets values and last column has the maximum range values for each axis.
+This radar chart will serve for comparing the different cloth sets based on the extent of variability of the object's physical and mechanical properties.

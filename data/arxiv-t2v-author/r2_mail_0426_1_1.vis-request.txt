@@ -1,0 +1,5 @@
+For the given confusion matrix, which represents hallucination rates across different datasets for various model types, generate a heatmap using the "Greens" colormap.
+Ensure that all values are rounded to two decimal places and displayed as annotations.
+The model types should be listed along the y-axis, and dataset categories should be along the x-axis.
+Use bold text for axis labels and annotations.
+Save the visualization as "outputs/each_hallucination_rate.png" with a resolution of 700 dpi and tight bounding box settings.

@@ -1,0 +1,20 @@
+We perform a layerwise analysis to evaluate the importance of different layers in WavLM Large-based Speech Emotion Recognition (SER) models, which are trained using labels from various modalities: voice-only, audio-visual, and face-only.
+
+Our task is to extract layer weights from the best checkpoint of each model, normalize them using the softmax function to obtain values between 0 and 1, and average these weights across multiple partitions of the CREMA-D dataset.
+
+Below is a Python script that accomplishes this, followed by plotting the averaged weights for the 25 layers of the WavLM Large model across the specified modalities.
+ Problem Breakdown Objective: Analyze layer weights from WavLM Large SER models.
+
+Modalities and Folds: Voice-only ("Voice"): folds 1 to 5.
+
+Audio-visual ("AV"): folds 5 to 10 (noted as potentially overlapping with fold 5; assumed as a typo, corrected to 6-10 for distinctness, but we'll explore both possibilities).
+
+All-inclusive label set: folds 11 to 15 (to be skipped).
+
+Face-only ("Face"): folds 16 to 20.
+Data Source: Checkpoints named dev-best.ckpt within folders like wavlm_large_CREMAD_foldX_multimodal, where X is the fold number indicating the modality.
+
+Process: Load weights from ['Featurizer']['weights'] in each checkpoint.
+Normalize weights using softmax.
+Average weights across folds for each modality.
+Plot the results for 25 layers.

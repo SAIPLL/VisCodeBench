@@ -1,0 +1,4 @@
+Using the JSON files in benchmark_results and noise_results, create four different diagrams for the benchmarks HallmarksOfCancer, LongCovid, Ohsumed, and PharmTech.
+Each diagram compares the four classification methods biobert, pubmedbert, svc, and xgb with flipped data of a certain percentage (0 (baseline), 25, 50, 75).
+The baseline is stored in benchmark_results and the flipped data (25, 50, and 75) in noise_results.
+Plot the four different methods using a green dashed line for biobert, a red dash-dot line for pubmedbert, a blue solid line for svc, and a yellow dotted line for xgb.

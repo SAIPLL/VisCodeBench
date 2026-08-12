@@ -1,0 +1,24 @@
+For the given data plot three vertically stacked.
+
+
+Columns of the data indicate time steps (every 30 sec), imbalance price, SoC, Actual battery power consumption, and control signal in kW, respectively.
+
+
+The top subfigure shows a dark blue line plot for imbalance prices with an ylabel of Imbalance Price (€/ MWh).
+
+The middle subfigure shows a dark blue line plot for SoC with an ylabel of SoC.
+
+
+The bottom one shows a dark blue line plot for actual power consumption with an ylabel of Power Consumption (kW).
+
+In the bottom subfigure, color the background of the figure as follows: if the control signal is positive, make it red, if negative, green, and if zero, blue.
+
+
+The data covers 10:00 to 14:00 with a time resolution of 30 sec.
+Show xticks with a granularity of 30 min.
+xlabel is Hour of Day (h).
+Use semi-transparent grid for both figures.
+Put x and y ticks in.
+Use Times New Roman font with a size of 12.
+Limit both figures from left and right between 10:00 and 14:00.
+Place a color bar in the bottom of the figure to show red is for Charge, blue is for Ideal, and green is for Discharge in the third subfigure.

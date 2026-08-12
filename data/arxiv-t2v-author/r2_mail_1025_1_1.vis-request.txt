@@ -1,0 +1,1 @@
+Can you help me write Python code to visualize two subplots: one is different fields' cosine similarity values over time; the other is the density plot over time with a red dashed line in year=2014?

@@ -1,0 +1,1 @@
+reshape the tensor "confidences.pt" into a square and transpose and plot them as a heatmap with a colorbar

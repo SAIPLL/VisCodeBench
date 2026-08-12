@@ -1,0 +1,5 @@
+Create a figure with 4 subplots arranged horizontally, showing acceptance rate (α) curves for different models: LLaMA-13B, Vicuna-13B, LLaMA-33B, and Vicuna-33B.
+Each subplot should have the following characteristics: X-axis: Shows k values from 1 to 32 on a logarithmic scale, with marked points at 1, 2, 4, 8, 16, and 32 Y-axis: Shows acceptance rate (α) of each model.
+Plot 4 lines in each subplot: Blue solid line with X mark ("-X"): Alpca with Temperature=0 Blue dashed line with X mark ("--X"): Alpca with Temperature=1 Red solid line with dot mark (".-"): WMT with Temperature=0 Red dashed line with dot mark (".--"): WMT with Temperature=1 Include a legend in each subplot showing: "Alpca, Temp=0" "Alpca, Temp=1" "WMT, Temp=0" "WMT, Temp=1" Use line color "#00a8e1" for Alpca task, and use line color "#e30039" for WMT task.
+And fix fontsize=12 for x_label and y_label.
+Label each subplot with its respective model name at the top.

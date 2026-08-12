@@ -1,0 +1,2 @@
+Given the data, can you plot the figure using matplot lib and make it a figure of 2 by 5.
+I want to show the relation between steps and rmse on different prune_percent and scenarios.

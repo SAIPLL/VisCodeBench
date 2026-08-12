@@ -1,0 +1,8 @@
+I have an NPZ file containing token probability data from a model.
+The data consists of three arrays: latent_token_probs_1, latent_token_probs_2, and out_token_probs, each with a shape of (40 layers × 166 samples).
+These represent the probability of generating a specific token sequence at each layer of the model.
+ I need a visualization where:  The x-axis represents the model layers (0 to 39).
+The y-axis represents the mean probability across the 166 samples.
+Each of the three arrays should be plotted as a separate line showing the mean probability per layer.
+A shaded gaussian 95% confidence interval should be included around each line to indicate variability.
+Please label the curves as 'English_latent' for latent_token_probs_1, 'Japanese_latent' for latent_token_probs_2, and 'French_latent' for out_token_probs in the legend.

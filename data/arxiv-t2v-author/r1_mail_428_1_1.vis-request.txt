@@ -1,0 +1,2 @@
+Create a line graph that depicts the relationship between the Character Error Rate (CER) and the number of trainable parameters.
+For each approach, use a single line to represent the data, with solid lines illustrating results for Normal languages and dashed lines for Few-shot languages.

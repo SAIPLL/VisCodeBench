@@ -1,0 +1,4 @@
+Given a JSON file where the keys follow the format "<metric>_score_<model>_<temperature>" and the values are lists of scores for each instance, write a script to generate heatmaps for each metric's correlation (except likableness) between all models at each temperature appearing in the keys of the JSON file.
+The plots should be arranged in a grid with n columns, where n is the number of metrics.
+Each column should contain a heatmap, and all heatmaps should share a common scale bar at the bottom.
+The subtitle, which contains the name of the metric, should be located at the top of each heatmap.

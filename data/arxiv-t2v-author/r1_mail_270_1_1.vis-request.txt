@@ -1,0 +1,2 @@
+Plot the normalized fraction of any tag, [IN] tag and no tags for every 5% win probability window with the sentence data given.
+You can derive the number by looking for comments within a win probability window, and counting the number of each tag, dividing by the total number of comments within that win probability window.

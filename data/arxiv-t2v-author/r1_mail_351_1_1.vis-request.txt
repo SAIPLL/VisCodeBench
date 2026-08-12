@@ -1,0 +1,1 @@
+I want you to take the accuracies given and generate a plot comparing different models in the model list

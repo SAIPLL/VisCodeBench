@@ -1,0 +1,1 @@
+This is a 4x4 box plot that visualizes the win rate across different checkpoints (100, 200, final) for different methods.

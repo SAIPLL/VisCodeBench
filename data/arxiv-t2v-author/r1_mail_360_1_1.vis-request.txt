@@ -1,0 +1,1 @@
+For the results based on different α values across GSM8K, StrategyQA, LogiQA, and SVAMP, plot them in 4 separate line charts.

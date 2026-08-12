@@ -1,0 +1,2 @@
+Plot the single value from the "high" row and "high" column in the files langspec_ex1_e15.xlsx, langspec_ex5_e15.xlsx, pruning_langspec_ex2.xlsx, pruning_langspec_ex6.xlsx, and ft_all_pairs_epoch15_ex4.xlsx as a line chart according to the training epoch (e1-e15).
+Additionally, compare these values with the corresponding value from pretrain_baseline_new.xlsx, which remains constant across all phases.

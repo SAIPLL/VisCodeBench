@@ -1,0 +1,4 @@
+Plot a bar figure with the given data.
+It should reflect the participant rate of four different ResNet models.
+The x-axis is model name and each bar reflects the participant rate.
+The interval should be reasonable.

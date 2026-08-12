@@ -1,0 +1,2 @@
+Show me with a bar chart the distribution of the type of semantic relation (x-axis) with respect to the human judgements (1-2-3-4).
+For each semantic relation, show me the percentage frequency of the different human judgements.

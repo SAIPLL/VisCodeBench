@@ -1,0 +1,5 @@
+In the given .csv file "figure8_data.csv", each column represents a distinct variable to be plotted.
+Create a group of subplots with 2 rows and 3 columns.
+['torque_stage2_case1', 'torque_stage2_case2', 'torque_stage2_case3'] need to be plotted in the first row, while ['torque_stage3_case1', 'torque_stage3_case2', 'torque_stage3_case3'] need to be plotted in the second row.
+Add subtitle 'process parameter at stage II' to the first row, and 'process parameter at stage III' to the second row.
+The y-axis of each subplot is 'Motor torque (Nm)', and x-axis of each subplot is time ranges from 0 to 300 seconds.

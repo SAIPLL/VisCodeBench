@@ -1,0 +1,2 @@
+The CSV file ("calibration_data_analysis.csv") includes the perplexity of LLaMA-2-13B model for various calibration samples using different compression methods.
+Plot the perplexity of different methods vs the number of samples.

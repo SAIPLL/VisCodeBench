@@ -1,0 +1,3 @@
+Generate a bar plot to visualize the impact of adversarial noise on CNN model performance.
+The x-axis represents the models, and the y-axis represents computation times with and without verinet.
+Include a legend, axis labels, and appropriate title to clarify the trends in performance.

@@ -1,0 +1,1 @@
+graph category, the color and the font and the size of the label and legend should be stated.

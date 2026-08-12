@@ -1,0 +1,1 @@
+For the given data "data/4drones_hover-cf4_crashes.csv" and "data/cf4_hover.csv" in the variables "time" and "voltage", show a scatter chart.

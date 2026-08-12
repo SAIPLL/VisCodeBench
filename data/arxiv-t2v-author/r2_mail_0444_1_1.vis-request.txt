@@ -1,0 +1,3 @@
+Generate a scientific figure showing the learning progress over iterations of the proposed method "Meta Agent Search".
+For comparison, plot the baselines as a flat line across the iterations since they are not learning-based.
+Plot the 95% bootstrap confidence interval with a shaded area and put the legend of the proposed method and baselines at the bottom of the figure.

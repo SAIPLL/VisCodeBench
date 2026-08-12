@@ -1,0 +1,4 @@
+Plot on one image a line plot of the gain versus the streamID for each of the five stream in loss_NN_selector_budget.csv independantly.
+On the same image, create a second line plot of the gain versus the streamID for each of the five stream in loss_NN_aggressive.csv independantly.
+For both plots, add a red dotted line with label "Classifier baseline" at the y-axis coordinate 0.
+Add the text "Save Selector Budget" on the first plot and "Save Selector Budget and Curtail Easy Runs" on the second plot.

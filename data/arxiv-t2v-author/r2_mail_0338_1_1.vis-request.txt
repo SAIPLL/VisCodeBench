@@ -1,0 +1,2 @@
+Show a bar chart for the given data in the variables "accuracy" and "participation rate.
+"

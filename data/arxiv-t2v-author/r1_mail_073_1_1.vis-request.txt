@@ -1,0 +1,1 @@
+For the given average embedding data in "tensor.csv" plot the average embedding value across all the 4096 dimensions.

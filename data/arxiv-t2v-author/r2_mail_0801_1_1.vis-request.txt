@@ -1,0 +1,1 @@
+generate the vector field flow for x' = -x + tanh(u[0,1;1,0]x) just when the pitchfork bifurcation forks

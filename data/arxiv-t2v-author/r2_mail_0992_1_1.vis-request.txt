@@ -1,0 +1,2 @@
+For the time from January 2018 to January 2024, plot the average bandwidth requirements in Mbit/s including 95% confidence intervals.
+Moreover, show the total storage needed to store this data by integrating the bandwidth used between January 2022 and January 2024.

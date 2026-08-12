@@ -1,0 +1,1 @@
+For the given data, show a bar chart to demonstrate the performances (F1) of KICP and BERT over different training sizes.

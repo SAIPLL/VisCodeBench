@@ -1,0 +1,3 @@
+Please generate two figures.
+The first figure should be a scatter plot illustrating the average LongBench benchmark performance versus the latency for each method, with each method's name labeled beside its data point.
+The second figure should show the average performance of each model over varying target compressed lengths.

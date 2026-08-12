@@ -1,0 +1,1 @@
+Can you make a precision vs recall graph and sort x axis (based on sorted Scott's Pi alignment with Human alignment) ? Also, add grid lines and add circle indicators for data points? Calculate R2 for precision and recall and add a caption for the image.

@@ -1,0 +1,8 @@
+For each language, show the mean degradation over all kinds of theta.
+Plot this separately for each task: 3 tasks showed on the X axis, with mean degradation showed on the Y axis for each language (colour coded).
+
+We'll make the following plots:
+- One plot per task
+- X axis: noise types
+- Y axis: mean degradation
+- One point per language (scatter plot)

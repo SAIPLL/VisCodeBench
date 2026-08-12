@@ -1,0 +1,22 @@
+Please produce as single plot with two respective histograms (10 bins each) of the samples in distribution1.npy and distribution2.npy.
+
+he histograms should be respectively coloured '#E6194B' and '#3CB44B'.
+
+The histograms should have an alpha value of 0.5.
+ 
+The levels.npy file gives the quantisation levels and boundaries in order from smallest to largest.
+I.e.
+there are three elements (centre 1, boundary, centre 2) in this case, since there are two distributions.
+
+You should plot the centre of each histogram 
+- given by levels[0] and levels[2] 
+- in the same colour as the respective histograms, as vertical double dashed lines.
+
+You should plot the boundary (levels[1]) as a black vertical single dashed line.
+The vertical lines should have width 6.
+ 
+A legend should be provided, titled 'Quantisation Level' for the two histograms, with the distribution centres as the values.
+ 
+The distribution data is given in Ohms, but the legend labels and the x axis should be in kOhms.
+ 
+Produce the plot with a figure size of (16, 12), a font size of 30, and use the seaborn 'dark' style.

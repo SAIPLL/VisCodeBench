@@ -1,0 +1,4 @@
+Generate a heatmap visualisation of the decoder cross-attention weights from sample index 171.
+The x-axis must use a percentage scale (0%, 25%, 50%, 75%, 100%) to indicate frame progression.
+The y-axis must list the translated words (excluding the initial token).
+Save the image as "attn_weights_heatmap_decoder_layer_sample_171.png" in high quality.

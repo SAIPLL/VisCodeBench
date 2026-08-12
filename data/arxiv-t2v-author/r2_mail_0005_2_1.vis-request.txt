@@ -1,0 +1,4 @@
+Generate a 3 * 8 subplots.
+Each row is a vari and each column is a distribution.
+The last column is the true with a colorbar.
+The content of each subplot is the weight matrix returned by the function visualize_linear defined above.

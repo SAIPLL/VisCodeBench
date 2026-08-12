@@ -1,0 +1,6 @@
+Create a figure with 5 rows and 2 columns.
+Every two panels in the row show the same result with different y-axis scales (one uses probability, and another uses log probability).
+Different rows visualize different settings.
+In each panel, draw two lines representing the distribution before and after the model and learn one example.
+Blue is for the updated one, and gray is for the initial one.
+Also, put a red arrow pointing to the dimension of the supervisor signal and put the label around it.

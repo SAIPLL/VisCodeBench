@@ -1,0 +1,1 @@
+for each type of clean energy, generate a Kiviat/radar plot showing the values on the 7 given dimensions, with a lighter color showing 2024 data and a similar but darker / less transparent color showing 2034 data.

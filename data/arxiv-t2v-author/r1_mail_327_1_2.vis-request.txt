@@ -1,0 +1,2 @@
+Data in "Results/DiscoGeM/DiscoGeM_0", show confusion matrix for the individual per-class results of each sense in level-1 on the test set of DiscoGeM.
+senses = ['Temporal', 'Contigency', 'Comparison', 'Expansion']

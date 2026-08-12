@@ -1,0 +1,4 @@
+Given a directory "tcdiff_intraclass_cosine_similarities" containing N subfolders, each corresponding to a dataset, write a Python program that loads all the intraclass cosine similarity matrices.
+The .npy files contain cosine similarities between all samples, while the .pkl files contain cosine similarities of each sample with respect to the mean embedding.
+After loading, the program should create one figure with N histograms of these intraclass cosine similarities, displayed side by side.
+Add parameters to receive the path of the main directory and the names of N datasets, separated by commas.

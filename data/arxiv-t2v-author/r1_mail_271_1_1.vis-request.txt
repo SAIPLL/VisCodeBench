@@ -1,0 +1,2 @@
+The order of the colors here represents the order of their evaluation according to the level of creativity.
+One color may come before another based on the evaluation results as shown in the paper.

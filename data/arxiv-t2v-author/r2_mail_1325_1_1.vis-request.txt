@@ -1,0 +1,5 @@
+I want a learning-curve graph for our synthetic experiments in the env3.
+It should consist of two rows: the first row is our method, and the second is the traditional RLAIF.
+It consists of four columns: 90% ranking acc to 60% ranking acc from left to right.
+In each figure we plot the curves about 1-query to 10 query.
+I want the figure to be compact to save space, and its text should be bold.

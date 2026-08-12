@@ -1,0 +1,4 @@
+The plotting data (mrs1_human_eval.tsv) includes the human evaluation results that map perceived trolling strategies to preferred response strategies for troll-response pairs.
+In the plotting data, the column 'MRS_1' indicates the most preferred response strategies, with values ranging from 1 to 7 representing 'Engage', 'Ignore', 'Expose', 'Challenge', 'Critique', 'Mock', and 'Reciprocate' respectively.
+The column 'Troll' indicates perceived trolling strategies, with values ranging from 1 to 6 representing 'Aggression', 'Shocking', 'Endangering', 'Antipathy', 'Hypocriticism', and 'Digression' respectively.
+Based on this plotting data, we can visualize the distribution of response strategies for each trolling strategy.

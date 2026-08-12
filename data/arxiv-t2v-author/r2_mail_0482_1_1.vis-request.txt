@@ -1,0 +1,3 @@
+Plot the data from psd_true and psd_pred for each dimension where the line for psd_pred should be dashed.
+Include a legend in the upper right corner, not blocking the lines.
+The label for the x-axis should be "frequency" and the label for the y-axis should be "PSD".

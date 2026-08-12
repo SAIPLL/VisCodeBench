@@ -1,0 +1,6 @@
+Plot a dumbbell chart to compare two series of data, which are computed from "method1.json" and "method2.json", respectively.
+Specifically, each json file contains a dictionary.
+Each key represents a category, and the corresponding value is a list of frequencies.
+You should compute the entropy in bits of each list of frequencies, and the entropy is the data to plot in the dumbbell chart.
+The label of the x axis is "Entropy (bits)", the label of the y axis is "Category", and the legends are "Method 1" and "Method 2".
+The width and height of the chart should be 3 inches and 2 inches, respectively.

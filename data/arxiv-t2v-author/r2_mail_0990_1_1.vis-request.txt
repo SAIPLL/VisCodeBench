@@ -1,0 +1,2 @@
+Given the data provided, plot a line plot highlighting the binned gaze eccentricity and how much the head contributes to these shifts.
+Highlight the 50% line in red.

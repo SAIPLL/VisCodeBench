@@ -1,0 +1,2 @@
+Plot the historical areal density of transistors from 1970 to 2023 in blue and create a best-fit line, with a linear X-axis and logarithmic Y-axis.
+Augment this plot with a second red line which projects the future areal density of transistors from 2023 to 2040.

@@ -1,0 +1,1 @@
+For the given data in the file Probabilities.pt, show the boxplot of the corresponding probabilities of arrival for different noise levels for "errors[0]"

@@ -1,0 +1,2 @@
+For the given data plot predictions of the model for BoydDist station for our model, vs.
+ground truth and HRRR predictions as line plots, indicate the dates as x-axis and Average 1.5m Air Temp as y-axis

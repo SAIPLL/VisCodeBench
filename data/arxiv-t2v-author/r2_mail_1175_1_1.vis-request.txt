@@ -1,0 +1,2 @@
+For the data of the five lists, construct error intervals based on the three lists within each group and display a line chart.
+Place the legend at the top of the bar

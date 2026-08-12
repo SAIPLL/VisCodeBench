@@ -1,0 +1,17 @@
+Write a Python code that uses the numpy and matplotlib libraries to create a scatter plot visualizing the relationship between mini-batch size and accuracy of two different methods, with marker size representing processing time.
+
+An array of mini-batch sizes is given as list_bs.
+
+For each method, _mean and _time represent the accuracy and processing time, respectively.
+
+Use two different colors for two methods.
+
+Scale the marker size by SIZE_SCALE_FACTOR to make the sizes visually distinguishable.
+
+The X-axis and Y-axis are labeled as "Mini-batch size" and "Accuracy (%)" respectively, with font sizes set using LABEL_SIZE.
+
+Ticks on both axes are formatted with size TICK_SIZE, and the x-axis uses a logarithmic scale (base 2).
+
+A legend is added in the bottom right corner to label the two methods, with a font size set using LEGEND_SIZE.
+
+A grid is displayed for better readability.

@@ -1,0 +1,2 @@
+Based the frame number key and corresponding "outputs" field, use the BertScore-Cls, Word2Vec-Mean, and BertScore-Mean classes and functions to generate a figure with 3 subplots.
+Each subplot should measure the similarity between an "outputs" sentence, and each of the five intentions at a given frame, and graph this with 5 separate lines, one for each intention.

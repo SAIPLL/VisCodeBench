@@ -1,0 +1,37 @@
+**Task**   Write Python code using `matplotlib` to visualize the provided data, illustrating the model's performance metrics across training steps for different `ratios`.
+Specifically, create a line plot for each of the following metrics:    
+- A 2-row by 3-column grid of six subplots.
+From left to right and top to bottom, the subplots should display:     
+1.
+`train/loss/reward`     
+2.
+`train/accuracy`    
+3.
+`train/margin`     
+4.
+`eval/loss/reward`     
+5.
+`eval/accuracy`     
+6.
+`eval/margin`   
+
+- The first three subplots represent training set metrics, and the last three represent validation set metrics.
+The x-axis values for each set should follow the instructions provided below.
+Data points are already aligned with the x-axis.
+ 
+
+---  **Data Loading**   Load the data using the following command:   ```python data = np.load("vis_data.npy", allow_pickle=True).item() ```  
+
+---  **X-Axis Values**   - For training-related data, use:     ```python   x_train = np.array([1] + [i for i in range(10, 3210, 10)])   ```   
+
+- For validation-related data, use:     ```python   x_eval = np.arange(80, 3201, 80)   ```  
+
+---  **Data Format** 
+- The `data` is a dictionary where keys represent `ratios`, and values are dictionaries containing data for each metric.
+  
+- Each `ratio`-specific dictionary has metric names as keys and corresponding results as 1D `numpy` arrays.
+   
+
+---  **Mapping Between Data Keys and Subplot Titles**   
+Use the following mapping to relate the dictionary keys in `data` to the titles of the subplots:   
+```python MAPPING = {     "train/loss/reward": "train/loss/reward",     "train/rewards/true_margins": "train/margin",     "train/rewards/true_accuracies": "train/accuracy",     "eval/loss/reward": "eval/loss/reward",     "eval/rewards/true_margins": "eval/margin",     "eval/rewards/true_accuracies": "eval/accuracy" } ```

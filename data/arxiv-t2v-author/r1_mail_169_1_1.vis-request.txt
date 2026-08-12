@@ -1,0 +1,7 @@
+I have an excel file with 3 sheets containing data about 3 category of formal languages - "Counter", "Star Free", "Non Star Free".
+
+Plot separate graphs for each category, but stack them on the horizontal axis.
+
+In each category, there are several language instances, for each of the instances, plot 4 bars - in distribution (solid) and out of distribution  (dotted) accuracy for Transformers (blue colour) in distribution accuracy (solid) and out distribution accuracy (dotted) for Mamba (orange colour) on it.
+
+Name the languages on the X axis, and the Y axis should display the Accuracy.

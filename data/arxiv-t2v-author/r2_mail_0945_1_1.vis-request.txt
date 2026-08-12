@@ -1,0 +1,1 @@
+For the given data in the variables "Appeal Score" and "Aesthetic Score",  show a scatter plot with title "DIAA on Food Dataset"

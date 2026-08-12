@@ -1,0 +1,45 @@
+I want to create a scatter plot of the performance of different voice conversion models, with the x-axis being the speaker embedding cosine similarity, and the y-axis being the pitch correlation.
+I will provide these data in Python dicts, namely "secs_dict" and "pcorr_dict" for x and y axis respectively.
+The keys in these dicts are the model names.
+There are different types of model names: 
+1.
+For "Baselines": plot the scatters in gray color.
+Annotate model name (such as "FACodec") besides the scatter.
+
+2.
+For "vec2wav2.0" and "CTX-vec2wav" models, there will be three tokens, "vq-wav2vec", "HuBERT" and "wav2vec2.0".
+Please use red, blue and green color for each three types of tokens.
+Please annotate "vec2wav2.0" or "CTX-vec2wav"  besides the scatters.
+
+3.
+For "vec2wav2.0-ab1" and "vec2wav2.0-ab2", there will only be "vq-wav2vec" tokens.
+
+
+Please annotate the model name besides the scatters, just as others.
+So, in summary, gray color denotes baselines, and red, blue and green colors denote three types of input tokens.
+Model names are annotated on the plot.
+Other visualization requirements: 
+1.
+Entitle "Ablations on tokens and models".
+
+2.
+Use grid background.
+The grid lines should be dashed lines.
+
+3.
+the x-axis tick interval should be 0.02.
+And y-axis tick interval should be 0.05.
+
+4.
+When annotating text, please prevent overlapping.
+Please adjust the annotation position properly to prevent overlapping.
+
+5.
+Set the range of x and y axes so that the image looks full without wasted spaces.
+
+6.
+Scatter shape is upper triangle.
+
+7.
+Please a small arrow on the end of each axis to denote directions (x-axis: arrow to the right.
+y-axis: arrow to the up.)

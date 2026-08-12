@@ -1,0 +1,1 @@
+For the given data in the dictionaries named, "fine_tuning_data, linear_probing_data, clip_adapter_data, coop_data, fine_tuning_data2, linear_probing_data2, clip_adapter_data2, coop_data2" and corresponding model names in "models" list, visualize a line plot.

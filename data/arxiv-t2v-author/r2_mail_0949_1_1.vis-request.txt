@@ -1,0 +1,2 @@
+For the given data, show three bar charts for them in the color of red, green, and blue, respectively.
+Each chart has its y-axis with the name of "Frequency." Place the legend for each chart with the corresponding color whose label is the name of the json data file.

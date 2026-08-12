@@ -1,0 +1,6 @@
+I have a big list of features and these features are selected by 8 different genetic algorithms.
+Create a segmented bar chart and have each bar represent which genetic algorithms selected that feature.
+Let the graph have 8 segments, with each bar representing a feature.
+If a genetic algorithm has selected a particular feature, fill in the corresponding part of the bar; if not, leave it blank.
+ Use 8 different shades of green to distinguish genetic algorithms.
+These shades should not blend together, but they should all be on the green scale.

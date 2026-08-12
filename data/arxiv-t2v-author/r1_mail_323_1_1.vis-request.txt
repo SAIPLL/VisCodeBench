@@ -1,0 +1,2 @@
+Given the data of the average cross-lingual KE results across 52 target languages on three datasets.
+I want to first use a bar chart to show the overall performance across all metrics on different tasks and languages.

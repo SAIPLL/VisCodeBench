@@ -1,0 +1,2 @@
+Visualize the frame-wise distribution of isolated words within a signed sentence video dataset.
+Highlight each word's duration with horizontal bars and mark annotation points with scatter dots to analyze consistency in segmentation.

@@ -1,0 +1,2 @@
+Plot the given data in a bar graph.
+Please put all subfigures in a complete large figure and share the x and y axis captions.

@@ -1,0 +1,3 @@
+I have accuracy vs missing rate data for 2 datasets with 3 results per dataset (unimodal, audiovisual (baseline), and audiovisual (ours)).
+Please produce the code for a figure showing this data, with the datasets located as subplots attached horizontally.
+The subplot should share the legend on the top.

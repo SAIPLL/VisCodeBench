@@ -1,0 +1,2 @@
+visualizes the two-dimensional data using a scatter plot, followed by linear fitting of the data.
+It also labels the coefficients of the fitted line and the R² value.

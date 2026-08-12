@@ -1,0 +1,1 @@
+For the given data in the variables "x1" and "x2" and "data_name", show a bar chart.

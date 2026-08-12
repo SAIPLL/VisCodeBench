@@ -1,0 +1,6 @@
+I'd like to create a radar chart (also known as a spider or star chart) comparing five different models or systems: LLaMA-3-8B-Instruct, Qwen2-7B-Instruct, GPT-3.5, GPT-4, and Ours.
+The chart should measure five key metrics: Stability, Memorisation, Values, Personality, and Hallucination.
+Each metric should be plotted on its own axis, radiating from the center point.
+The axes should be equally spaced around the circle, creating a pentagon shape.
+Each model's performance across these metrics should be connected to form a closed shape, with different colors for each model to distinguish them easily.
+Please include a legend to identify each model.

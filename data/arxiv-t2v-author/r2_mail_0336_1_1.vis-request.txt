@@ -1,0 +1,8 @@
+For the given data in dx.npy, dy.npy and dphi.npy, plot boxplots in one figure.
+First box is data dx in red color, second box is data dy in green color and third box is data dphi in blue color.
+Color of median should be black.
+Use horizontal grid lines.
+Under each box, set the xtick to delta x[mm], delta y[mm] and delta phi_z [°] respectively.
+Dont label the y or x axis.
+Use LaTeX style formatting.
+Save the plot to boxplot_errors.png without borders or padding and with high quality.

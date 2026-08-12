@@ -1,0 +1,11 @@
+Create a set of three scatter plots showing the relationship between the  number of speakers of a language and the mean scores achieved on the benchmark.
+
+The number of speakers should be measured on a log scale, being careful about dead languages.
+
+Each point in the scatter should be the mean score of a single model on all questions in a single language.
+
+Separate the models into "Open" and "Closed" weights models, coloring them green and blue respectively using scientific colormaps.
+
+Include linear regressions through the data with 95% confidence intervals.
+
+The figure should have three panels, one for exact match scores, one for Delta NC scores, and one for Delta NC scores which excludes questions with the Match-up format.

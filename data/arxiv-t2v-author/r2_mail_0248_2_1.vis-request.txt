@@ -1,0 +1,2 @@
+For the given data in the CSV file, plot a line chart showing the request rate per second for different input sizes.
+Use a logarithmic scale for the y-axis and distinct markers for each dataset.

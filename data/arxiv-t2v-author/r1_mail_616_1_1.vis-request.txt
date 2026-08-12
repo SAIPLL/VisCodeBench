@@ -1,0 +1,2 @@
+Create a horizontal bar chart to compare the dHM distances of different models.
+Specifically, stack the individual metric level distances for coherence (dhm_c), visual grounding (dhm_g), and repetition (dhm_r) by depicting their contribution to the overall dHM value for each model.

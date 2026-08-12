@@ -1,0 +1,10 @@
+Based on the input file I'd like you to generate a figure with size (10, 5) and 600 dpi containing two plots on the same graph, one x-axis and two y-axes.
+For the x axis display time in units of hours instead of the provided time in seconds with x axis label "Time [hr]".
+For the first y-axis I'd like to convert power from units of kW to units of MW and plot it against time on the x-axis.
+The plot should be purple colored with y-axis label "Power [MW]".
+For the second y-axis plot tr_pri_avg against time.
+The plot should be dark orange colored with y-axis label "Temperature [\u00b0C]".
+At the bottom center of the figure there should be a legend for the two plots specifying "Total Power" and "Avg.
+CDU Primary Return Temperature".
+Set the y limits for the power plot to (5, 30) and the y limits for the temperature plot to (25, 50).
+Use a tight layout and save the plot as a png.

@@ -1,0 +1,5 @@
+Load the scene_count.json; using the statistics in the json,  generate two histograms in two distinct colors with matplotlib pkg: 1.
+Multitraversal Scenes, with y axis being number of scenes per location, and x axis being location indices.
+2.
+Multitraversal Average Durations, with y axis being the average number of frames per scene at each location and x axis being location indices.
+Put the two figures together vertically since the number of locations is quite large and may result in a horizontally-wide figure.

@@ -1,0 +1,2 @@
+Generate 2 heatmap plots, one on top of the other, that show how changing the model parameters impacts performance.
+The top plot will be for EM, and the bottom will be for F1.

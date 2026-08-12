@@ -1,0 +1,15 @@
+We're comparing two models, GPT-4 and LLaMA2-70B, across six categories of reasoning errors.
+
+These categories include Base Rate Fallacy, Conjunction Fallacy, Disjunction Fallacy, Insensitivity to Sample Size, Misconceptions of Chance, and Regression Fallacy.
+
+For each category, we show a stacked bar split into four sections corresponding to different conditions labeled TT, TF, FT, and FF.
+
+Each stacked section indicates the percentage of responses (out of 100%) belonging to that condition.
+
+We place the GPT-4 results on the left side and the LLaMA2-70B results on the right side.
+
+Each chart thus has six bars (one per fallacy), and each bar is colored according to the four conditions.
+
+The y-axis goes from 0 to 100, representing the total percentage for each bar.
+
+This layout allows for a quick visual comparison of how the two models distribute their responses among the four conditions in each fallacy category.

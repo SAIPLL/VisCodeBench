@@ -1,0 +1,1 @@
+For the given data in the variables for different model names, show a bar plot with different colors.

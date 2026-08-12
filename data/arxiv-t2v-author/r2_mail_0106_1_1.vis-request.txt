@@ -1,0 +1,1 @@
+Draw two two-color bar charts based on the given data, one horizontal and one vertical

@@ -1,0 +1,1 @@
+Given the PR metrics for each tracker on five datasets, display a scatter plot using different marker styles for different trackers.

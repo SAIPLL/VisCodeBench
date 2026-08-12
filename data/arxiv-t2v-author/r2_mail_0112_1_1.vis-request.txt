@@ -1,0 +1,2 @@
+For the given data in variables "dimension" and "execution time", show a curve from dimensions 200 to 1000 for the following six algorithms: quantum angular LSH, classical angular LSH, quantum spherical LSH, classical spherical LSH, quantum spherical LSF, classical spherical LSF.
+Moreover, include a smaller plot inside the big one on the top left corner with the dimension range from 400 to 500.

@@ -1,0 +1,2 @@
+Load df_plot = pd.read_csv('data/e-2-plot.csv') and 
+Plot the E-2 signal between timestamps 1403000000 and 1422500000, showing the actual value of the signal, and the forecasted value by the LLM.

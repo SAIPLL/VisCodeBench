@@ -1,0 +1,20 @@
+The plot shows the **extrinsic reward over time (steps)** for four different agents in a multi-agent reinforcement learning scenario.
+
+The x-axis represents the number of steps (up to 50,000), and the y-axis represents the extrinsic reward each agent receives.
+
+Each agent's reward data was smoothed using a rolling average with a window size of 1,000 steps to reduce noise and highlight the overall trend.
+
+
+The lines are color-coded:   
+- **Agent 1** (blue) consistently receives the highest rewards, stabilizing around 20 after about 20,000 steps.
+  
+- **Agent 2** (red) stabilizes around 12-13.
+  
+- **Agent 3** (green) shows more fluctuation, peaking early but then dropping and remaining volatile.
+  
+- **Agent 4** (cyan) receives almost no extrinsic reward throughout training, suggesting it may not be participating effectively or is being blocked.
+
+
+The data was loaded from CSV files (`reward_1_cleanup.csv` to `reward_4_cleanup.csv`), and each reward series corresponds to a column named like `'final_empathy_cleanup_seed_1 - reward_X'`.
+
+The plot is created using Matplotlib and Seaborn, with a clear axis label and a legend placed in the upper left for clarity.

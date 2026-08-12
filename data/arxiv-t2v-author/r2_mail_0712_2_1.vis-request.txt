@@ -1,0 +1,6 @@
+Please generate two box plots (next to each other).
+The first box plot has agreement score on y-axis and factuality class on x-axis.
+The second box plot has agreement score on the y-axis and bias class on x-axis.
+Add the outliers as well to the plot.
+Do not add any title.
+Add the average agreement score over the whole dataset with a black dotted line on both subplots.

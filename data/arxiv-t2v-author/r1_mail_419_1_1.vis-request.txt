@@ -1,0 +1,2 @@
+For the given data, show a plot with multiple subplots, having two columns, one per dataset, and one row per loss function.
+Plot the Macro F1 values, where each column in the subplot corresponds to a sampling method, and within the sampling method, each color corresponds to a sample size.

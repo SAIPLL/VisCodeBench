@@ -1,0 +1,1 @@
+draw a curve figure with x axis being "training steps ", and y axis being harmful loss

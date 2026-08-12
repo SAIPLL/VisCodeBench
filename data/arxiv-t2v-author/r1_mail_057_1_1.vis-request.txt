@@ -1,0 +1,3 @@
+For each dataset and n-hop setting, plot a line chart comparing the performances of the different approaches; these should be arranged in a 3 wide by 2 tall subplot grid.
+Use the same colors but with dotted lines for CoT-prompt variants.
+Set an appropriate y-limit for the charts.

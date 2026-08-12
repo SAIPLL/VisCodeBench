@@ -1,0 +1,4 @@
+plot the `acc` data as a barplot.
+The x-axis is "Number of inputs per fuzz target", which ranges from 20 to 100, with 20 increase each step.
+Please make the bars in "skyblue", and width of 10.
+Please add a plot line to each data plot with color "red" and marker "o".

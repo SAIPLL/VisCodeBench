@@ -1,0 +1,2 @@
+Read the CSV files (df_llama.csv, df_gpt.csv, df_mistral.csv, df_mixtral.csv) from the data folder using Pandas and visualize the distribution of 'Entropy' for each model using Matplotlib and Seaborn.
+Generate separate histograms for four models: "GPT-3.5-turbo";"Llama3.1-8B-Instruct";"Mistral-7B-Instruct-v0.3"; "Mixtral-8x7B-Instruct-v0.1" and arrange them in a 2x2 grid.

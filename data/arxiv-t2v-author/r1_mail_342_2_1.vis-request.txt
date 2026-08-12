@@ -1,0 +1,8 @@
+Consider the 'final output', 'final output weighted' and minimum bias score of among 20 samples of each entry from data entries with "source" == "billionaire_20outputs".
+
+Now consider the outputs from data points with tag "source" == "billionaire_20outputs_blender" call the outputs of this file "Pair Ranker".
+
+I define "reliability" as the similarity of an embedding to the average of all 20 output embeddings.
+
+Draw a violin plot for "Minimum bias output", "Pair Ranker", "Unweighted Final Output", and "Weighted FInal Output".
+Use the embeddings of each output that is included in the file for every entry.

@@ -1,0 +1,11 @@
+For the given data, plot the CHRF scores (in the column "CHRF") for every language pair in the data (unique "source_language" and "target_language" combinations), for different context window sizes.
+
+The context window sizes should be in the x-axis and CHRF in the y-axis.
+
+Context window values are 0, 2, 6, 10, 15, 20, 100, and are in columns `no_context_empty_sys`, `full_context_empty_sys_2_turns`, `full_context_empty_sys_6_turns`, `full_context_empty_sys_10_turns`, `full_context_empty_sys_15_turns`, `full_context_empty_sys_20_turns`, `full_context_empty_sys`, respectively.
+
+The x-ticks should be labeled "No", 2, 6, 10, 15, 20, "Full".
+
+Use the seaborn colorblind palette, and lines with scatterplot markers (squares for XX-EN language pairs, and circles for EN-XX).
+
+Finally, lines should be full for XX-EN language pairs, and dashed for EN-XX.

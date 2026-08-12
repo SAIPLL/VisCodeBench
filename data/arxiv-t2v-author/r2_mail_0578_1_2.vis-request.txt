@@ -1,0 +1,4 @@
+For the given embedding data of \"fusion_text,\" \"fusion_audio,\" and \"fusion_vision,\" generate a precision-recall curve in a single plot (look at prd_score.py).
+
+Use distinct colors for each fusion type: blue for \"fusion_text,\" orange for \"fusion_audio,\" and green for \"fusion_vision.\" Label the x-axis as \"Recall\" and the y-axis as \"Precision.\" Add a legend to differentiate the fusion types.
+Ensure smooth curves and save the visualization as \"PRcurve_misa_bert_mosei.png\" with high quality.

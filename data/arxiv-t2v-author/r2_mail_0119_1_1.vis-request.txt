@@ -1,0 +1,2 @@
+Based on my data, please plot curves showing the trends of AWD (cm) and SCS as functions of Voxel size.
+The plots should conform to the standards and style of professional academic journals in English.

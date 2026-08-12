@@ -1,0 +1,2 @@
+Arrange the results for the four models in a 2x2 grid for each model.
+Each figure should be a line graph with the ratio at which a particular distractor is selected on the horizontal axis and each reasoning step on the vertical axis.

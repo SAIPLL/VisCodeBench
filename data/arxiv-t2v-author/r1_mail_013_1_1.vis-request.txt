@@ -1,0 +1,3 @@
+Build a scatter chart of language frequency, except for English.
+put full releases on the x axis, and sampled documents on the y axis.
+Label 11 most frequent languages, and draw an identity line

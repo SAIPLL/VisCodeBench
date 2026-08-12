@@ -1,0 +1,5 @@
+Compute the dot product similarity after applying rotational positional embedding (RoPE) to an embedding of length 250 and 64 respectively using the same frequency scaling.
+Visualize the results as a heat map.
+Call the 250-length sequence "audio token" and use it as the x-axis.
+Call the 64-length sequence "visual token" and use it as the y-axis.
+Plot the output dot product similarity as a heatmap.

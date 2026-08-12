@@ -1,0 +1,8 @@
+Plot for the experts "anisodiff_rgb" and "texture_rgb" a scatter plot showing the segmentwise recall of a given class (y-axis) and the size of the ground truth segments on the x-axis.
+
+For each expert the opacity should be reduced and a label added.
+For the "anisodiff_rgb" it is "S_EED-RGB" and for the "texture rgb" it is "T_RGB".
+The labels should then be written into a legend which is located outside the plot in the upper left corner.
+Font should be TeX writing style.
+The scale is a logarithm scale from 1 to 10^6.
+For better readability of the x and y axis use a fontsize of 40.

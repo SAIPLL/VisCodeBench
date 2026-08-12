@@ -1,0 +1,5 @@
+Plot the given discrete data from the csv file with sigma on the x-axis and the corresponding r_N values on the y-axis.
+Connect the dots with a line.
+Additionally, plot a red dot at x = 0.04 and y = 0.6, a horizontal dashed red line from x=0 to x=0.04 at y=0.6, a vertical dashed red line from y=0 to y=0.6 at x=0.04, and a legend.
+The label corresponding to the red dot should be "Current practice: $r_N=0.6, \\sigma \\approx 0.04$".
+Add x and y labels describing the data in words and the corresponding symbol.

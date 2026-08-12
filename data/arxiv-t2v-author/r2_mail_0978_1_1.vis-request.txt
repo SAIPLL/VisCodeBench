@@ -1,0 +1,6 @@
+Please create a grouped bar chart comparing the energy consumption for FP32 and INT4 across the three configurations: LW, Perf², and Perf⁴.
+Label the x-axis with these configuration names and the y-axis with 'Energy (mJ)'.
+Use blue bars for FP32 and red bars for INT4.
+Place the numeric energy values on top of each bar.
+Include a legend to identify FP32 vs.
+INT4.

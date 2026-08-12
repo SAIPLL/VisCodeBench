@@ -1,0 +1,4 @@
+Plot six heatmaps.
+Each heatmap shall have the perturbation level on the y-axis and the group of music entities (FMT Passed, FMT Failed, Post-Cutoff) on the x-axis.
+The numbers in the cells shall be the proportion of items for a given perturbation level and music entity group, which are associated with an error.
+In total there are six errors (WoA spurious, WoA incorrect, WoA missed, Artist spurious, Artist incorrect, Artist missed) and for each you shall produce exactly one heatmap.

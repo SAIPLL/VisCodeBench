@@ -1,0 +1,2 @@
+Plot one spider web per result of language model.
+Each spider web contains the stance of the model towards the 8 policy domains.

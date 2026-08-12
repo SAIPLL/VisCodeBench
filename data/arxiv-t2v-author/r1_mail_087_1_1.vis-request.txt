@@ -1,0 +1,2 @@
+Find the percentage of samples that has at most 1 unique chapter code, 2 unique chapter codes, ..., up to 15 or more unique chapter codes.
+The visualisation should represent a cumulative distribution, where each step shows the percentage of samples containing up to that number of unique chapter codes.

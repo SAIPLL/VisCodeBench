@@ -1,0 +1,4 @@
+(1) CEP (LLaMA-3-8B) outperforms all other methods in both clearness and vagueness judgment.
+(2) Proactive (conversationonly) and environment-only approaches are inclined to request clarification, indicating that these agents struggle to make accurate judgments when either type of observation is absent.
+(3) ProCoT, Direct, and ICL (GPT-3.5) tend to not clarify the conversation, suggesting that full observations or invoking agents to engage in deeper reasoning might bring about hallucinations in judgment.
+(4) CEP (Mistral-7B) performs worse than CEP (LLaMA3-8B) in both clearness and vagueness judgment, correlating with findings from static tool learning that LLaMA-3-8B's larger parameter size and better pretraining data lead to superior performance.

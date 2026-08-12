@@ -1,0 +1,4 @@
+For the given logs of model evaluation on train and val data during training epochs stored at "data" folder, show a convergence plot.
+Use circle for train and triangle for val markers and connect them with dashed lines.
+Use griding and legend for better representation.
+Add \"epoch\" to x axis and \"f1 score\" to y axis as labels.

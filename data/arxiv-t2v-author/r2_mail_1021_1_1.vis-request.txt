@@ -1,0 +1,8 @@
+In the given .csv file, each column represents a distinct variable to be plotted.
+In two subplots, plot ['y_stage2_tension_pred', 'y_stage2_tension_truth', 'y_stage3_tension_pred', 'y_stage3_tension_truth'] in the first subplot, and ['y_stage2_pitchlength_pred', 'y_stage2_pitchlength_truth', 'y_stage3_pitchlength_pred', 'y_stage3_pit.chlength_truth'] in the second subplot.
+ The change between the last value of 'y_stage2_tension_truth' and its initial value is the tension disturbance.
+The change between the last value of 'y_stage2_pitchlength_truth' and its initial value is the pitch length deviation.
+The difference between the last value of 'y_stage2_pitchlength_truth' and the last value of 'y_stage3_pitchlength_truth' is the pitch length deviation.
+Mark those changes/difference as annotations in the plot.
+The subplots should share the same x-axis, which is time ranges from 0 to 100 seconds.
+Add legends to the plots

@@ -1,0 +1,2 @@
+Draw the anchors with 2 categories, and color the background w.r.t.
+the radial density of these categories.

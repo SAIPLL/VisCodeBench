@@ -1,0 +1,4 @@
+Use matplotlib and pandas to draw a plot.
+Specifically, use Latex format for the plot, and follow steps: open the csv file experiment_3.csv, plot line: SW w.r.t.
+epsilon, plot line: TraCS-D w.r.t.
+epsilon, set the x-axis label: Privacy parameter epsilon, set the y-axis label: Average error (AE), show the legend, save the plot as a pdf file and show it.

@@ -1,0 +1,2 @@
+Give me a code to visualize average MSE loss after each reconstruction stage, with the corresponding standard deviation in a bar plot.
+Also add an additional average bar, which shows average MSE and std, between all samples in the validation set and the average image of the set.

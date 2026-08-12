@@ -1,0 +1,5 @@
+Please create a bar chart showing the jailbreak success rate across different image categories.
+The x-axis should represent image categories, such as Pure white, Natural, Gaussian Pure black, and Baseline.
+The y-axis should show the jailbreak success rate in percentage.
+Use different patterns, like stripes and dots, to represent each category.
+Add a baseline value of 68% to show the comparison between the image categories.

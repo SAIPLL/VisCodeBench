@@ -1,0 +1,2 @@
+For the given data, please plot three subplots, each consisting of four line segments.
+The first and third segments represent the performance changes of the Victim update, while the second and fourth segments represent the performance changes of the Attacker update.

@@ -1,0 +1,3 @@
+Show the best two and worst two methods by RelErrRate vs.
+target coverage c, using only binary image datasets.
+Place the legend on top.

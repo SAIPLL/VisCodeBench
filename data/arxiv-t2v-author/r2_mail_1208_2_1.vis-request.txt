@@ -1,0 +1,17 @@
+Please create a plot using Python to illustrate the error caused by the offset of breakpoints when applying linear approximation to the nonlinear activation function of a quantized neural network.
+
+Specifically: 
+First, plot an exponential (exp) function within the range of -4 to 0.
+Perform a linear approximation of the function.
+You can directly define seven breakpoints to divide the function into eight segments for approximation.
+
+Plot the approximated function after the linear approximation.
+
+Quantize the breakpoints using INT8 precision.
+In the top-left corner of the main plot, create two subplots labeled A and B.
+
+Subplot A should show the error introduced by linear approximation at a specific breakpoint based on the unquantized breakpoints, with the error represented as an area.
+
+Subplot B should display the error at the same breakpoint but using the INT8-quantized breakpoints.
+
+Both errors should be visually represented as areas.

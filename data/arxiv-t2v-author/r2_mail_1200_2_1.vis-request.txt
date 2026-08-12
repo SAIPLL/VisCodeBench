@@ -1,0 +1,4 @@
+From the data, plot "s_K" against the mean profit Π for the finite (FIN) and infinite (INF) population assumption.
+On the secondary axis plot the probability of budget infeasibility for the finite (FIN) and infinite (INF) population assumption.
+Keep the legends for the two axes separate.
+Finally, include dashed lines for the underage and overage costs, the average cost and two times the underage cost.

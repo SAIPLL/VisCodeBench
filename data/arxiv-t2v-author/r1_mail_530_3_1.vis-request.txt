@@ -1,0 +1,7 @@
+Read the CSV files (df_llama.csv, df_gpt.csv, df_mistral.csv, df_mixtral.csv) from the data folder using Pandas and visualize the relationship between entropy and error rate (1 - Accuracy) for different categories across multiple LLMs.
+The dataset contains five categories (D, F, C, S, M), and the data should be filtered and analyzed separately for each category.
+ Create density plots (2D histograms) to show how entropy correlates with error rate across these categories.
+Use a logarithmic color scale (Blues colormap) to highlight density variations and normalize bin edges globally to ensure fair comparisons.
+The visualization should be arranged in a 4x5 grid, where each row represents a different LLM (GPT-3.5-turbo, Llama3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, Mixtral-8x7B-Instruct-v0.1), and each column corresponds to a category (D, F, C, S, M).
+The x-axis should represent entropy and be labeled only on the bottom row, while the y-axis should represent 1 - Accuracy and be labeled only on the first column.
+Titles should be displayed in the center column of each row, corresponding to the model name, and category names should be placed beneath the x-axis of the bottom row.

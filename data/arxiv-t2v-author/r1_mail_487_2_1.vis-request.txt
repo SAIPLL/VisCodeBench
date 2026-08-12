@@ -1,0 +1,5 @@
+Generate a line plot visualisation of the decoder cross-attention weights from sample index 171 with a figure size of 12×3 inches.
+The x-axis must use a percentage scale (0%, 25%, 50%, 75%, 100%) to indicate frame progression.
+The y-axis must represent the attention weights for each translated word (excluding the initial token).
+Display a legend at the lower right to differentiate the tokens.
+Save the image as "outputs/attn_weights_lineplot_decoder_layer_sample_171.png" in high quality.

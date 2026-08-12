@@ -1,0 +1,4 @@
+For the given data in the variable "$\delta \pho$" and "CLIP-Score", please draw a line chart to show the change of CLIP-Score according to the $\delta \pho$.
+The color of the line is blue with a circle mark.
+Additionally, draw a dotted line of the baseline performance in red when $\delta \pho$ = 0.
+The name of x and y axes are "$\delta \pho$" and CLIP-Score.

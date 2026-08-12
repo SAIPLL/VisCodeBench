@@ -1,0 +1,4 @@
+I need a line plot to compare the L1 distances of four models (NG, ALIBI, AB, and our model M-CELS) over seven datasets, labeled from 0 to 6.
+Each model should be uniquely represented by different colors and markers.
+ The y-axis should use a logarithmic scale to accommodate the range of distance values.
+Please include a legend for model identification, and ensure the plot has grid lines for clearer visualization.

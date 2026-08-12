@@ -1,0 +1,12 @@
+For the given data, please create a scatter plot with a figure size of (4, 2.7).
+The x-axis represents the "GFLOPs" column in the "Cell_flops.csv" file.
+The y-axis shows the "mean" Dice Scores in the "Cell_each_dsc.csv" file, with standard errors in the "std" column.
+ The series in the two files are the same, so you can merge them into one.
+However, merge the mean and standard values into one dataframe with the FLOPs data, and then merge the values of each fold with the computation data.
+Therefore, we have two dataframes.
+The scatter plot will draw mean and standard values only, but the Dice Scores per seed are used for setting the scale of the y-axis.
+The markers for mean are "*" and for standard errors are ".", while the color map is "tab10".
+After drawing the values, create a dashed horizontal line corresponding to the mean of the "Ours" series.
+ From this dashed line, draw vertical dashed lines to the mean values of the other series.
+The y-axis shows ticks every 5 units with a label of "Dice (%, $\uparrow$)", but the x-axis labeled "FLOPs (G, $\downarrow$)" shows ticks every 20 units.
+Use a tight layout and the "darkgrid" theme.

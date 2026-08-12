@@ -1,0 +1,5 @@
+Make me a line plot with one line for completeness (dashed), one for selectivity (dotted), and one for reliability (solid) for the AlterRep method.
+The y-axis is each of those metrics, the x-axis is hyperparameter alpha; you only need to show alpha from 0 to 4.
+The relevant columns in the CSV are tclindc-causal/envir/mlp/cfinlp for completeness; for selectivity it is tclinde-envir1 rather than tclindc-causal.
+reliability is the harmonic mean of completeness and selectivity, which you will have to compute yourself.
+so in total, there should be 3 lines, one for each of the metrics for this method.

@@ -1,0 +1,3 @@
+In statistics, the 68-95-99.7 rule is an empirical rule in normal distribution, indicating that in a normal distribution, the proportion of data within one, two, and three standard deviations from the mean is 68.27\%, 95.45\%, and 99.73\%, respectively.
+Taking the experiment conducted on the Stanford Dogs dataset under the 1-shot experimental setting as an example, we plotted a probability distribution histogram of the average weights of local descriptors for support set images, as shown in Figure \ref{zhengtai}.
+We found that it follows a normal distribution, thus in our study, we utilized this rule to determine the filtering threshold for local descriptors.

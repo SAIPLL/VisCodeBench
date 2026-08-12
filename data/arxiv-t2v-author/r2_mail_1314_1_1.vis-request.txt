@@ -1,0 +1,8 @@
+Given a train_labels.txt file with sample ID and respective city, state, country, continent labels, extract the continent labels, and get a list of counts for each continent class.
+Plot a histogram with the continent counts with 8 bins, size (16.73, 11.07),  color '#fdc376', transparency 0.6 and edgecolor white.
+Title of the plot should be "Distribution of Number of Samples Across Continents", xlabel should be "Number of Samples" and ylabel should be "Number of Classes".
+Limit the yticks to [1,2,3].
+Font size for title, all labels and ticks should be 30.
+Include gridlines with dash style, transperency 0.5 and linewidth 1.5.
+Remove the top and right spines.
+Apply tight layout and save the figure.

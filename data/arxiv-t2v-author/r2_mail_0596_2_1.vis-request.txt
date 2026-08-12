@@ -1,0 +1,5 @@
+Please create six line plots that compare 3 different algorithms: "IG", "CMA-ES", and "CMA-ES-IG".
+The top row will show the metric "alignment" and the bottom row will show the metric "quality".
+Compare the dimensions 8,16, and 32 as the columns of the 6 graphs.
+The algorithsm should be denoted with different colors and each line should have a shaded region that shows +- the standard error.
+The x-axis should be the number of queries, and the y axis should be the value of the metric.

@@ -1,0 +1,2 @@
+For different sampling algorithms, plot histogram for perplexity in y1 axis and line for diversity in y2 axis with x axis labeled by sampling algorithms.
+For different T, use different colors.

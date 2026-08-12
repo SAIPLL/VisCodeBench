@@ -1,0 +1,3 @@
+The data is visualised in a 3x3 grid of figures, with each figure containing a bar chart with seven bars for the seven models of interest.
+The rows of figures represent the three datasets and the columns represent the three metrics.
+95% confidence intervals are shown for every bar.

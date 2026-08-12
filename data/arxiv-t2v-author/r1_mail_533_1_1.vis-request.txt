@@ -1,0 +1,34 @@
+We would like to plot the MT scores of 3 retrieval strategies (SONAR, bm25 and Random) in few-shot (1, 5, 10) for different values of the selection pool [10, 100, 500, 997, 1997, 5997, 10997, 20997].
+  
+
+You are given a json file ("robustness_lacomet.json") which contains a dictionary.
+ 
+The structure of the dictionary is a follow: {     "1" : {         "SONAR": [v1, ..., v8],         "bm25": [u1, ...., u8],         "Random": [{"mean": m1, "std": s1}, ....
+{"mean": m8, "std": s8}]     },     "5" : {         "SONAR": [...],         "bm25": [...],         "Random": [...]     },       ...
+}  
+
+- The scores are values between 0 and 1, convert them into value between 0 and 100, rounded to one decimal place.
+
+- You should output a figure of size (12, 4) with 3 subfigures organized horizontally.
+Each subfigure corresponds to a number of shots (1, 5, 10).
+ 
+- Each subfigure should have 3 curves, one for each strategy (SONAR, bm25 and Random), representing the score as a function of the size of the pool.
+ 
+- Each plot use the marker "^", of size 4.
+
+- Use a special marker '*' of size 10 for the values at pool size = 997.
+
+- The scores for the random strategy are given as a mean and a standard deviation; you should plot the plot for the means and add a `fill_between(linewidth=0.0, alpha=0.1` to account for the standard deviations.
+
+- Each subfigure should have an individual title "k-shot".
+
+- The common xlabel between all the subfigures (i.e.
+the xlabel of the figure should be "Size of the pool") 
+- The common ylabel between all the subfigures (i.e.
+the ylabel of the figure should be "Language-Aware COMET") 
+- The xticks of each subfigure should correspond to the different pool sizes.
+Each pool size x should be written as x if it is less than 1000 and 997 + YeT (T is an exponent, Y is a digit) and 45 degrees rotated from the axis.
+
+- Each subfigure should use a logscale on the x-axis.
+
+- There should be a common legend (placed on the top right corner) with three horizontal elements stating that the blue curves correspond to SONAR, the red ones to bm25 and the black curves to Random.

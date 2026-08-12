@@ -1,0 +1,6 @@
+The visualization should show how test accuracy varies with rank for CP decomposed fully-connected matrices in different GPT-J layers on the BiosProfession dataset.
+The x-axis represents rank, while the y-axis represents test accuracy.
+Multiple series, each corresponding to a different GPT-J layer, should be plotted with distinct colors and markers.
+Additionally, horizontal reference lines should indicate baseline and LASER accuracy levels, and the highest accuracy achieved should be marked.
+A legend should clarify the different layers and reference points, ensuring the plot is clear and interpretable.
+Only plot the last few layers because they have the best performance.

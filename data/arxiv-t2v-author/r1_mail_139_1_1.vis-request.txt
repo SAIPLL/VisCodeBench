@@ -1,0 +1,2 @@
+Arrange the results for the two models in a 1x2 grid for each model.
+Each figure should be a stacked line graph with the number of cases where a particular distractor is selected on the horizontal axis and each reasoning step on the vertical axis.

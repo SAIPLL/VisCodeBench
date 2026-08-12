@@ -1,0 +1,1 @@
+Visualize Dice across training sizes using a box plot comparing U-Net baseline and two strategies.

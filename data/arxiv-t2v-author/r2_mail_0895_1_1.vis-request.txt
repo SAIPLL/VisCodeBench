@@ -1,0 +1,1 @@
+Plot the training accuracy versus training rounds, where the solid line denotes the average accuracy across 10 clients, and the shaded region represents the range of their individual accuracies.

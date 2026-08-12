@@ -1,0 +1,9 @@
+Using the data in the mw_w1s dataframe, find the median value of the w1 column between each unique pairing of the task_a and task_b columns.
+Produce a distance matrix from these medians, imputing the unmeasured self-distances to zero.
+  Using the viridis colour map, plot the distance matrix using colour to indicate the relative distances across the matrix.
+Put text in the center of each distance matrix location with the median distance of that pair to 2 decimal places.
+On both the x and y axes, use a label of "MDP index".
+Make sure both axes' ticks include every integer between the minimum and maximum task index in the data.
+Include a legend for the colour gradient that indicates the distance.
+Do not use a title for this plot.
+  This figure should be a square of 4.4 inches on each side.

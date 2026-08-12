@@ -1,0 +1,8 @@
+This dataset is about 6 patterns (ER, PT, WL, ME, AG, RB) and, for each one, you have two tasks, e.g., ER1 and ER2.
+For each task, you have a pattern version and a non-pattern version, e.g., ER1P and ER1N.
+The dataset contains the correctness and duration for each of these, e.g., ER1P and ER1PTime.
+  First, calculate mean TAU (Timed Actual Understandability) for each individual task and version (24 in total).
+The formula for TAU for a given participant = correctness * (1 - {duration[current participant] / max_duration[all participants]}).
+ Then, provide a boxplot that makes mean TAU nicely comparable between the different versions per task and pattern.
+Use different colors for the bars of the versions (pattern vs.
+non-pattern).

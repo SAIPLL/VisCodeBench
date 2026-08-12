@@ -1,0 +1,1 @@
+For the given data, can you generate img that show x-axis: log scale runtime and y-axis: recall@20? less than 1 seconds:filled with red color

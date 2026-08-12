@@ -1,0 +1,16 @@
+For the given "Data #1" and "Data #2, plot these data in one image consisting of two plots.
+
+For the second plot, use a linear scale with the following xticks: [512, 1024, 2048, 4096, 8192].
+  
+Additional rules: 
+- Use latex to write greek letters 
+- Always use "o" as a marker 
+
+- Plot1: xlabel="\eta_{inv} forward" and ylabel="Mean Absolute Value" 
+- Plot2: xlabel="d^{lr}" and ylabel="Accuracy (%)" 
+- Include a grid with alpha=0.6 
+- Do not include titles  
+
+\# Data 1 x1 = ["No decay", 20000, 15000, 10000, 5000] y1_no_decay = [4810.600397, 4803.296997, 4777.982217, 4675.972101, 4061.038118] y1_eta_3000 = [4862.707789, 4854.867329, 4829.181060, 4716.740982, 4099.058142] y1_eta_1000 = [4960.584709, 4957.065890, 4930.105882, 4805.429557, 4132.502900]  
+
+\# Data 2 x2 = [512, 1024, 2048, 4096, 8192] y2_train = [68.275848, 80.367718, 96.462868, 99.443822, 99.707907] y2_test = [69.461138, 77.473958, 81.650641, 84.064503, 82.101362]

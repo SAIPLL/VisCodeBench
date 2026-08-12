@@ -1,0 +1,5 @@
+Prepare the data from the simulation results in Paraview as described at the beginning of the Python code (commented).
+You can also use the provided CSV file.
+Adjust the path to the CSV file in line 20.
+Run the Python script.
+Adjust the labels and headlines using Inkscape, for example.

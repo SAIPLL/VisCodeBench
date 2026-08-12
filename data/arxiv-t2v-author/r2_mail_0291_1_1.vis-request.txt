@@ -1,0 +1,6 @@
+For the given data, visualize stars and commits as follows:  The x-axis is time in years.
+Tick labels are only years, not months.
+The y-axis has two labels: left side is count of stars/total commits (same range) and right side has the number of monthly commits colored red.
+A red bar plot is showing the commits per month, with a green line plot in the background displaying accumulated commits over time.
+A second line plot shows the repository's stars over time.
+Add a legend for all plots.

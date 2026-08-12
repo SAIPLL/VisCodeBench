@@ -1,0 +1,5 @@
+Generate a boxplot to visualize the Euclidean distance distribution for different electrodes.
+First load data and reshape it into a long format with columns: 'Filename', 'Electrode name', and 'Euclidean distance'.
+X axis would be Electrode names: LA, RA, LL, RL, V1-V6, and y axis is the Euclidean distance value.
+Then use Seaborn's whitegrid style and light blue color for all boxplots.
+Finally, show outliers as individual circular markers.

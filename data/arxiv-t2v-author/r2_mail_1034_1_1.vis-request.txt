@@ -1,0 +1,11 @@
+I want to construct 4 plots in 1 figure with 2 rows and 2 columns.
+The upper row depicts the evolution of the network scale over training epochs.
+The lower row depicts the scatter plot of neuron angles against their relative scales.
+The left column corresponds to angle $\alpha = \pi/2$.
+The right column corresponds to angle $\alpha = \pi/3$.
+ Scale of the network over training epochs, relative scales of neurons, and angle of neurons are saved in files "scale.csv", "rel_scales.csv", and "angles.csv", respectively.
+The files are located in the folder "4_data".
+All files are encoded in matrix format.
+The first row of the matrix corresponds to $\alpha = \pi/2$ and the second one to $\alpha = \pi/3$.
+Columns of network scales correspond to training epochs.
+Columns of relative scales and angles correspond to neurons.

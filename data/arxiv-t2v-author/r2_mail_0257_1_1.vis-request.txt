@@ -1,0 +1,3 @@
+Plot the results for the survey question Q06 in a horizontal bar chart in descending order from top to bottom, with each category on the y-axis and the sum of students on the x-axis.
+Rename the columns by removing "Q06->" and show the percentages of the students for each category on the right side of the bar.
+Rearrange the x-axis from 0 to 250 with ticks of 50.

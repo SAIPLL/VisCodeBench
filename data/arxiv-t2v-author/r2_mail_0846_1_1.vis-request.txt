@@ -1,0 +1,5 @@
+Plot a grouped bar chart comparing the total time (in seconds) for different operations using four different approaches: Homomorphic Operation (blue), Decompress Data 1 (orange), Operation on Decompressed Data (green), and Compressed Result (red).
+Each group on the x-axis represents an operation (e.g., Neg, sadd, ssub, smul, mean, var, etc.), and the y-axis shows the total time in seconds.
+On top of each Homomorphic Operation bar, display the numerical value and the percent improvement over the 'Operation on decompressed data' approach.
+Add vertical arrows connecting the decompressed operation bars to the homomorphic bars to indicate the reduction.
+Include a legend at the top center.

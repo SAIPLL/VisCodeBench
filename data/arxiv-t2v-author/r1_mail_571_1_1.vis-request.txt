@@ -1,0 +1,2 @@
+Draw a bar chart that includes the F1 scores of three different models (DHR-train-3-ft, Qwen2.5-Coder-7B-Instruct, GPT-4) in six tool call scenarios (Tool_4, Tool_6, Tool_8, Tool_12, Tool_13, Tool_14), which expresses whether these models can correctly call these tools.
+The value of F1 score ranges from 0 to 1

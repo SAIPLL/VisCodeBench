@@ -1,0 +1,6 @@
+Create a dual-axis bar chart from data files in the 'data' directory showing both latency and communication metrics across different model configurations.
+Read configuration names, latency values, communication values, and PPL metrics (including SOTA values where available) from separate text files.
+Display latency and communication as adjacent bars with reduction factors shown above each non-baseline bar.
+Plot PPL values as a line with markers and add diamond markers for SOTA PPL points.
+Divide the chart into four sections with light background shading and dotted vertical separators: Baseline, Nonlinearity Reduction, FLOPs Reduction, and Entropy Regularization.
+Label each section at the top of the chart.

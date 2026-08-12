@@ -1,0 +1,40 @@
+To visualize the data, the intersection-over-union (IoU) values of pruning masks from the Llama 3 8B model, calibrated in different languages, need to be plotted using Matplotlib in a 2D regular raster.
+
+The data is stored in two JSON files, `ious_intra.json` and `ious_inter.json`, located in directory `/data`, and should be loaded into a Python dictionary.
+ 
+File `ious_intra.json` contains IoU values for pruning masks calibrated in three languages: English (en), German (de), and Chinese (zh).
+
+Each IoU value in the dictionary can be accessed by first selecting the calibration language, then specifying the layer number (out of a total of 32, indexed from zero), and finally choosing one of the submodule types, which include `q`, `k`, `v`, `attn.out`, `ffn.gate`, `ffn.up`, and `ffn.down`.
+
+For example, an IoU value corresponding to English calibration in layer 3 for the `attn.out` submodule can be accessed as `iou_value = dict["en"]["3"]["attn.out"]`.
+ 
+In contrast, file ious_inter.json stores IoUs of pruning masks between different calibration languages.
+
+Here, each IoU value is indexed using two calibration languages, followed by the layer number and the submodule type.
+
+For instance, to access the IoU value comparing English and Chinese calibration in layer 3 for the `attn.out` submodule, the syntax would be `iou_value = dict["en"]["zh"]["3"]["attn.out"]`.
+ 
+The goal is to generate a single image with multiple subplots.
+
+For file `ious_intra.json`, the IoUs should be plotted in a 2D regular raster, where each layer is represented against the submodule types.
+
+The x-axis should be labeled with layer numbers and the word "Layer", while the y-axis should be labeled with the categorical submodule types.
+
+There should be three subplots, one for each calibration language, arranged vertically in a column.
+
+The same approach should be used for file `ious_inter.json`, but this time for unique calibration language combinations only, meaning that redundant or identical comparisons should be excluded.
+ 
+To effectively visualize the differences in IoU values, a custom color gradient should be created, with white representing the highest IoU values and teal the lowest.
+
+The colors should be interpolated smoothly between these extremes.
+
+Importantly, the same color scale must be used across all subplots, ensuring a consistent representation of IoU values, regardless of whether they originate from file `ious_intra.json` or file `ious_inter.json`.
+
+This requires determining the global minimum and maximum IoU values across both datasets.
+ 
+To aid interpretation, a colorbar should be placed at the far right of the image, serving as a legend for the color mapping.
+
+Each subplot should be titled in capital letters to indicate the language(s) represented.
+
+To save space, the y-axis positioning of these titles should be adjusted downward, overlapping slightly with the subplot itself.
+Finally, the visualization should be saved as `pruning_mask_similarity_plot.pdf` with high quality.

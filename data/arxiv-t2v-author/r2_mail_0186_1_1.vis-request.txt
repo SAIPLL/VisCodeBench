@@ -1,0 +1,1 @@
+For the given data in the dictionary, display a bar chart showing the accuracy by network.

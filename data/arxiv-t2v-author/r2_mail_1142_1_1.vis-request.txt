@@ -1,0 +1,2 @@
+For each dropout_type in the data file, draw a line for its loss_value with its dropout_rate as x_value.
+The four lines should be in the same figure and be distinguishable with different line styles and colors.

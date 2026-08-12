@@ -1,0 +1,1 @@
+The trainer_state_short.json includes a key 'log_history' and its value is a list,  each item in it is a dict, there are 'loss', 'learning_rate' and 'grad_norm' with 'step' in it, please visualise the data using matplotlib, two rows, first row is loss with step, second row left is lr, right is grad_norm with step

@@ -1,0 +1,1 @@
+Create a line plot comparing the MRR@5 performance of COLIEE2022 and COLIEE2023 across different values of 'Hard Neg' in the csv file.

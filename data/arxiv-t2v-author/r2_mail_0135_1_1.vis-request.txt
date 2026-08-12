@@ -1,0 +1,7 @@
+Plot a line chart using the given dataset.
+The x-axis represents a set of numerical values (e.g., [0.1, 0.5, 1.0, 2.5]), and the y-axis represents the corresponding measurements for three different datasets: 'Amazon-Book,' 'Yelp2018,' and 'Tmall.'  The 'Amazon-Book' series should be plotted with a blue line, square markers, and a bold line style.
+The 'Yelp2018' series should be plotted with a magenta line, circular markers, and a solid line style.
+The 'Tmall' series should be plotted with a brown line, triangular markers, and a solid line style.
+Include a legend with bold labels inside a semi-transparent box.
+Add grid lines for readability.
+Ensure that the markers are distinguishable and match their respective dataset labels.

@@ -1,0 +1,4 @@
+For the provided data in the "latency (ms)" variables, create a bar chart where each bar represents the total latency, composed of its prefill and decode times.
+However, for QSpec, the bar is further divided into the latencies of its two distinct phases: draft and verify.
+Additionally, a gap percentage is displayed above the QSpec bar, comparing it to the W4A16 baseline.
+The draft and verify costs are also plotted as separate bars to provide a detailed breakdown of QSpec's latency components.

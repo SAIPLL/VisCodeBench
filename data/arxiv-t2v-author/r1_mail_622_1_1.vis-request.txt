@@ -1,0 +1,5 @@
+I want to create a visualization using python.
+I want to create 4 plots, each displays an accuracy comparison of voting ensembles of different sizes built on the same backbone models.
+The four plots speifically use following combinations: "Llama-3-8b on ARC", "GLM-4-9b on ARC", "GPT-3.5 on MMLU" and "GPT-4 on MMLU".
+My data are stored in a csv file.
+In my csv file, each columns are [base_model, benchmark, method, ensemble_size, acc], and the first row is column name.

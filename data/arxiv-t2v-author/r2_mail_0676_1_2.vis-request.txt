@@ -1,0 +1,1 @@
+For the given data in "./data/20241002_181356.csv", plot bar charts for {acceptance rate, runtime}, group by test groups (k1-only, k2-only and flexible) and split results by solvers (ILP, BnB*-infty, and BFN).

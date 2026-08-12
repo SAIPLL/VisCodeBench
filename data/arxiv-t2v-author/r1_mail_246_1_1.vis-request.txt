@@ -1,0 +1,5 @@
+Given the experiments in pittfalls_finished_exps, plot the training and validation losses and sequence accuracy over time for experiments 24, 28, 26, 30.
+ Make the sequence accuracy in dashed lines.
+ Ignore the positional accuracy data.
+  Label the experiments in the caption as exp.
+4 and 7 both with and without structured samples.

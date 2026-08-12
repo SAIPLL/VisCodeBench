@@ -1,0 +1,5 @@
+classes = ["Face", "Nose", "Hair", "Neck", "Earring", "Necklace"] image_wise = [1.000000, 0.999917, 0.976140, 0.971302, 0.264441, 0.059049]  performance = {     "FP-LIIF (CVPR 23)": [96.6, 94.0, 95.2, 91.4, 67.2, 42.2],     "SegFace (Ours)": [96.7, 94.2, 96.0, 92.1, 75.1, 63.4] }  Can you provide code to generate the bar graph so that bar of both the methods have same x-axis and are on top of each other with different colors.
+Also draw a line showing the probability of class occurrence which will highlight the difference between head class and tail class.
+  The x-axis will have class names.
+The y-axes are probability and F1 score.
+You can write probability on left side of the plot and F1 score on the right side.

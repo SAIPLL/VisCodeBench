@@ -1,0 +1,11 @@
+The JSON file contains true and predicted trajectories of a particle-based simulation for different materials.
+
+Each entry is a list, where for each timestep, there is a list of particle positions.
+
+Generate the visual comparison between the true and predicted trajectories for each material.
+
+For each trajectory, render a visualization of the simulation at some timesteps allowing for easy comparison between predictions and ground truth.
+
+Material names should be listed above the trajectories.
+The "true" and "predicted" captions should be displayed next to the trajectories.
+Particles should be colored according to their material name.

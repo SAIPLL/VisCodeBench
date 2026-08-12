@@ -1,0 +1,8 @@
+Please draw a figure to compare the performance of the two methods: NORTH and NORTH+RM.
+The source data should be stored in the same directory, and contain three folders: EnergySaveRatio, RTACalling, and Time.
+The important one is EnergySaveRatio.
+Within this folder, it contains several text file, each shows the algorithms' output for a test configuration.
+For example, "N5.txt" means when the task set has 5 tasks.
+ Each text file contains 2000 lines of data, the first 1000 lines are data from the NORTH, the second 1000 lines are data from NORTH+RM.
+You need to read the data and take average of each method to draw the figure.
+Eventually, the output figure's x axis are "N", and y axis are the average of the data.

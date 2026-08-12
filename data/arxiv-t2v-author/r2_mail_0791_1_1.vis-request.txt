@@ -1,0 +1,17 @@
+Please help me plot a figure consists of 3 subfigures.
+
+
+For fig A and B , it is scatter plot for embedings of different method.
+the embedding data is in "full_embs_umap" for method Ringformer and "gps_full_embs_umap" for method "GPS".
+In "ring_index", it is a dict where key is the number of rings and value is a torch.tensor binary mask indicate which data points have the corresponding number of rings.
+ plot only the first 200 data points in each number of rings and use different color for different ring number.
+fig A is for  method GPS with xlabel "(b) GPS UMAP", fig B is for method Ringformer with xlabel "(c) RingFormer UMAP".
+to form the whole figure, place fig C on the left half, while fig A  and B on the right half, while fig A is on the top, and fig B at the bottom, of their half figure.
+save the figure in "./ring_complexity.pdf".
+
+For fig C, it is a bar plot where x-axis indicat different number of rings and each bar represent the performance improvement of our method over different models.
+note that for each number of rings, there are three models results, in orthr words, three different bars lie closely together to compare their performance.
+
+Use variable "Num" as x-axis (x-label "Number of Rings") and variable VNGINE as performance improvement over model "VNGINE"  ; variable OGNN as performance imp over model "OGNN"   ; variable GPS as performance imp over model "GPS".
+Use different color for different method.
+The subtitle of fig C is "(a) Relative improvement".

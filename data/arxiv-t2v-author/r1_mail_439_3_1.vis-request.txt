@@ -1,0 +1,2 @@
+Plot horizontal bar chart to visualize the ratio of correct, undersegmentation, and oversegmentation for each model.
+Each row correspond to a model.

@@ -1,0 +1,1 @@
+For the given data, show a 3D decaying plot.

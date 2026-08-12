@@ -1,0 +1,1 @@
+the box plot shows the mean, mean and 25th and 75th percentile of the complete data, along with the lowest and the highest achieved value.

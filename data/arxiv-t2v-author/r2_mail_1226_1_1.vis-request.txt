@@ -1,0 +1,21 @@
+Dataset Pixel Change Analysis
+
+This script analyzes the percentage of pixel changes in frames across multiple datasets and generates a boxplot to visualize the distribution of these changes.
+
+Steps Performed:
+1.
+Reads CSV files from a specified directory containing pixel change data.
+2.
+Extracts the 'Percentage_Change' column from each CSV file and appends it to a DataFrame.
+3.
+Combines the data from all CSV files into a single DataFrame.
+4.
+Extracts data for specific videos, dropping NaN values.
+5.
+Creates a boxplot to visualize the distribution of pixel changes for each dataset.
+6.
+Customizes the appearance of the boxplot, including markers for outliers, means, and medians.
+7.
+Sets axis labels, tick positions, and labels for better readability.
+8.
+Saves the plot as a PNG file and displays it.

@@ -1,0 +1,5 @@
+"The regret data and the associate standard deviation computed for 4 different methods across 50 iterations starting from 5 initial samples.
+Each sheet in the excel corresponds to the regret data generated from a method.
+Given this data, generate me an overall simple regret plot that consolidates and depicts the trend in regret reduction for different methods over iterations plotted across X-axis.
+Differentiate each method by plotting them in different color and line styles.
+Also generate the legend to better understand the plot lines.".

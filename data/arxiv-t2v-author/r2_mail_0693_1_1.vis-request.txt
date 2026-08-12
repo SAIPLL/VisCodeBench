@@ -1,0 +1,2 @@
+Visualize the calibration term by plotting one condition entropy on the x and the other on the y axis.
+Fit a curve through the points and label them.

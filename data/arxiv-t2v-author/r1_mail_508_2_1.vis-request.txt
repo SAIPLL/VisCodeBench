@@ -1,0 +1,2 @@
+Please generate a plot that shows the raw waveform of my triaxial accelerometer data.
+The data includes accelerations sampled at 100Hz for x, y, and z axes.

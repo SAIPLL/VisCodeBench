@@ -1,0 +1,14 @@
+I need to create two radar charts to compare the performance of different models: 
+I have six sets of data representing the performance of two models, tau and openllama, under three different conditions (FASTNav, iteration, and fine-tuning).
+Each dataset contains four metrics: 1/NE, SR, 1/AT, and MTR.
+
+All data need to be normalized before visualization.
+
+
+- Chart 1: Compare the following four datasets:  tau with FastNav, tau with iteration, openllama with FastNav, openllama with iteration 
+- Chart 2: Compare the following four datasets:  tau with FastNav, tau with fine-tuning, openllama with FastNav, openllama with fine-tuning  
+
+Chart requirements: Use different colors for each dataset.
+
+Legend should be placed in the top-right corner.
+Ensure the charts are clear and visually appealing.

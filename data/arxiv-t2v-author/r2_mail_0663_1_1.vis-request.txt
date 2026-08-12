@@ -1,0 +1,1 @@
+shows the distance metrics $dist_{ac}^{(k)}$ and $dist_{eu}^{(k)}$ of reference models and surrogate models (including Fine-tuning -all, Retraining - all, Pruning - 0.3, Pruning - 0.6) with the target layer at different depths.

@@ -1,0 +1,3 @@
+Plot bidirectional horizontal bar charts to visualize the ratio of correct/incorrect prediction on the Affix (fewshot) task, breakdown by affixes for each model.
+Each row corresponds to an affix.
+The left greyed-out side of each subplot corresponds to wrong predictions.

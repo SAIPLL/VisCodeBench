@@ -1,0 +1,2 @@
+Given the Alpha and DS values, generate a plot with the X-axis as alpha values and Y-axis as the DS values.
+Make the X-axis logarithmic, and make sure values in the x-axis are sufficiently separated to be readable.

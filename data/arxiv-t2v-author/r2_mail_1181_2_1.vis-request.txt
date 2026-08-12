@@ -1,0 +1,1 @@
+Use the data of quantile 0.7 to create a barplot with the type of noise as hue, plot the total accuracy as well as the accuracy for men and women separately, use error bars and add a legend.

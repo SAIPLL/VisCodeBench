@@ -1,0 +1,2 @@
+Plot the data and place two figures together on one figure, arranging them left and right. No need for horizontal and vertical axis titles.
+The font size of horizontal axis is larger.

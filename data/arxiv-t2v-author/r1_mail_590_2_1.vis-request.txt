@@ -1,0 +1,5 @@
+Please create a precision-recall curve using the data in the "precision" and "recall" variables.
+Plot the new line in red and label it as "EDS Semantic Classifier".
+max_f2_row["recall"] and max_f2_row["precision"] to mark the point on the new line where the f2 score is maximized.
+Add text for the optimal threshold and the precision and recall at that threshold near the point.
+Create a blue dashed line at precision=0.5 and label it "no skill".

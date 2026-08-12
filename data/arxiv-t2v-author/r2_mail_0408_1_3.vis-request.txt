@@ -1,0 +1,2 @@
+Plot a correlation heatmap to visualize the relationship between electrode localization errors of each lead (x axis, labeled with electrode names: LA, RA, LL, RL, V1-V6) and ECG morphology dissimilarity (y axis, labeled with lead names: I, II, V1-V6).
+Then compute pearson correlation coefficients for each pair, display the values inside the heatmap, and tansform the value into 'RdBu_r' colormap from -1 to 1.

@@ -1,0 +1,1 @@
+For the given uncertainty scores of all objects, plot a histogram to show the uncertainty distribution.

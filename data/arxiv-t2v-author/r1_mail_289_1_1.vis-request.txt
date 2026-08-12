@@ -1,0 +1,4 @@
+Create a bar graph where each model is represented by a single stacked bar.
+Each bar should consist of six stacked segments labeled as follows: retained critical, discarded critical, retained minor, discarded minor, retained major, and discarded major.
+Ensure consistency in color coding: the same type of error (e.g., major, minor, or critical) should share the same base color, with discarded errors appearing in a lighter or shadowed shade of the corresponding retained error color.
+The graph should include eight models in total.

@@ -1,0 +1,10 @@
+For the given data in the attached files, plot two subplots for rainfall intensity and cumulative rainfall.
+
+For first subplots, plot interpolated rainfall in red dotted line, ManualRoI in green dotted line, and AutoRoI in blue dotted line.
+
+Use the same color for the second plots and plot the cumulative rainfall in mm.
+
+Use the following legends: rain gauge tips (truth), interpolated (truth), ManualRoI, and AutoRoI.
+
+Use timestamps hh:mm for x-axis, and Intensity, mm/min for y-axis of subplot 1, Cumu.
+Rainfall, mm for y-axis for subplot 2.

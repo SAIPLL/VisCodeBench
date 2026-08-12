@@ -1,0 +1,2 @@
+Please visualize the performance of three methods-STL, baseline, and Ours-on two tasks (task1 and task2) across three input settings: '1', '1&2', and 'All'.
+Each subplot corresponds to a task, showing mean accuracy with standard deviation as shaded areas.

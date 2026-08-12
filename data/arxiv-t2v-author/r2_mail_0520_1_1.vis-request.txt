@@ -1,0 +1,4 @@
+For the given data in the variables "Number of samples" and "Average entropy",  plot them using lines with different colors, markers, and labels.
+The x-axis uses a logarithmic scale.
+The titles of the x-axis and y-axis are the "Number of samples" and "Average entropy" respectively.
+Save the visualization as "2_visualisation_image.png" with high quality.

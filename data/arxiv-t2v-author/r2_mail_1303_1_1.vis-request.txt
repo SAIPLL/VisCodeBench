@@ -1,0 +1,1 @@
+Plot the three files in one plot, each  provide the y values given time t is discrete  from 1 to 20000 as the x axiz values, use blue color for dyal 0.01 rate, and orange color for dyal 0.001 rate, and  green color for true_probs, and don't connect the y via lines (use the point or dot format).

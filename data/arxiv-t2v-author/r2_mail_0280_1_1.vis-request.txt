@@ -1,0 +1,25 @@
+For the given "results.csv" data, create a 3D stacked bar chart visualizing grouped data along three axes.
+
+- The X-axis must contain the BRAMs and the Y-axis must contain the LUTs for each Implementation.
+
+- The Z-axis indicates the height of the stacked bars, corresponding to the value T, that is calculated by T=n*Sign+m*SignOpen.
+
+The value n is fixed and equal 1, while m varies from 1 to 3.
+
+
+Therefore, the plot consists of several vertical bars, where each bar is divided into three stacked segments, represented by different colors, which correspond to different values of m (e.g., orange for m=1, light blue for m=2, and gray for m=3).
+
+
+A horizontal reference plane must be drawn at a specific height (T=80) on the Z-axis, marked with the equation $P_T: T_c = 80ms$.
+
+The labels Cut 1, Cut 1+2, Cut 3, Cut 4, and Cut 5 must be positioned above the corresponding bars, and Cut 7.
+
+P=4 should be positioned below the corresponding bar.
+
+Mark in black the intersection between the reference place and the vertical bars.
+
+Also, color in gray a rectangle in the XY-grid with X from 0 to 50, and Y from 0 to 23500.
+
+Label it as $\mathcal{P}_R$.
+
+In the top right corner, a legend must explain the meaning of each color in the stacks, i.e., the meaning of the values of m.

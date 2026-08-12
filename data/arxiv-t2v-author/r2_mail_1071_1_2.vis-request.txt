@@ -1,0 +1,1 @@
+Plot 3: Comparison of Dependency Types (Token Usage)

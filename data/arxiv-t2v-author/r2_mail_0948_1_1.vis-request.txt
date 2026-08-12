@@ -1,0 +1,5 @@
+The results contain the elapsed time to download block files with each method.
+The methods were "rootful-pfd", "rootless-pfd", "b4ns-pfd", "rootful-vxlan", "rootless-vxlan", and "b4ns-multinode".
+Blocks were 1KiB, 32KiB, 512KiB, 1MiB, 32MiB, 128MiB, 512MiB, and 1GiB.
+Calculate the average throughput from the result logs and plot them as bars of each block size.
+The bars must have different patterns, and the same categories must be the same color.

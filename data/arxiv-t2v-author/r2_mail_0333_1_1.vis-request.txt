@@ -1,0 +1,2 @@
+Create two side-by-side heatmaps comparing 'Initial Fixed Class Prototypes' and 'Learnable Class Prototypes.' Each heatmap represents a symmetric similarity matrix for six class labels.
+hide the upper triangle

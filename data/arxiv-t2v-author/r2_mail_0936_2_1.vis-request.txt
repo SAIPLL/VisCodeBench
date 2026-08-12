@@ -1,0 +1,22 @@
+Using the data in sg_plotdata, bin the CHIRP column (denoted 'w1s' in the dataset) into 16 bins and use violin plots to illustrate the distribution of SOPR (denoted 'sopr' in the dataset) in each bin.
+
+Mark the median of the distribution rather than the mean.
+
+For the title, use "SOPR vs CHIRP, MetaWorld".
+
+On the y-axis, use "SOPR (lower is better)" and on the x-axis used "CHIRP distance from base MDP".
+
+The colour of every violin plot should be the same - blue.
+  
+Fit an example calibration b-spline to indicate the relationship between the median CHIRP and SOPR across each of the bins used in the previous step.
+
+Plot this calibration spline, matching the the x-axis range of the violin plots, as a dotted blue line.
+Have an alpha =0.4 for the calibration spline to avoid it dominating the plot too much.
+ Have the violin plot's widths maximise the space between the bins to avoid wasted empty space.
+
+Avoid having the violin plots overlapping where possible.
+ 
+As the figure size, use a width of 5.43 and a height of 3.56 inches.
+Make the layout tight.
+
+Include a legend that indicates the dotted line is a calibration spline, but avoid having the violin plots appear on the legend.

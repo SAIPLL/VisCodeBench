@@ -1,0 +1,23 @@
+Plot the performance of an anomaly detection algorithm against its runtime.
+ 
+The runtimes are found in "times.json", the results for image-auroc in "rocs.json", the results for pixel-auroc in "pixel_rocs.json" and for (pixel-)aupro in "aupros.json".
+ 
+Each json file contains a dictionary with the keys [25,50,75,...,300], where each key corresponds to the hyperparameter "k".
+
+For each of these "k" values, a list of values if found in the JSON files.
+
+Calculate the mean of the mentioned metrics and inference times for each "k".
+
+Then plot the three metrics (image-auroc, pixel-auroc and (pixel)-aupro) in a simple plot with different markers.
+
+Here, the x axis will be "inference time (s)", which still need to be converted from milliseconds to seconds.
+
+The y axis will be the "AUROC / AUPRO" metric, which should only include the range of [minimal value - 1, 100].
+
+Here, all metrics need to be scaled by multiplying with 100.
+
+At the top of the plot, additional ticks at the respective entries of the inference times should be plotted.
+
+The respective k values should be added with e.g.
+"k = 25", rotated by 45 degrees for readability.
+Include a legend and a grid in the background of the plot.

@@ -1,0 +1,3 @@
+Using the data grouped by half‐year (2021‐H1 through 2023‐H2) along the x‐axis and the number of publications along the y‐axis, create a stacked bar chart.
+Split each bar into segments for the different model types (DM, GAN, LLM, Other, Transformer, and VAE), and label the legend accordingly.
+Make sure the total height of each stack reflects the sum of all publications for that half‐year, and place a legend on the right (or any clear location) showing which color corresponds to each model type

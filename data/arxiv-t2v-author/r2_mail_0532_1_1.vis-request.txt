@@ -1,0 +1,3 @@
+Plot the curves result of "ours'' and "MAE'' methods, and appropriately label the values at each point.
+Label the abscissa as "# blocks fine-tuned" and the ordinate as "Average accuracy".
+Adjust the color and font size according code setting.

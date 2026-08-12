@@ -1,0 +1,2 @@
+Please mark on a timeline (in 40-minute intervals) when each code appeared based on the ID.
+Separate the L group and the H group in the visualization.

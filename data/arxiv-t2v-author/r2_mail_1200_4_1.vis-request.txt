@@ -1,0 +1,3 @@
+From the data plot a stacked bar chart of the mean data payments (t) against the reserve price (θ) times the number of consumers (N_M) divided by the budget (B(X_R)) for each consumer (M).
+On the secondary axis also plot the average total data payments as a percentage of energy costs (cost).
+Combine the axes legends.

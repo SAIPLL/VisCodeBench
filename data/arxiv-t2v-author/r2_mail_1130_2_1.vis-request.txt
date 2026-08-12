@@ -1,0 +1,6 @@
+For the given data, plot CWND over time plots for different scenarios.
+There should be 4 subplots horizontally.
+
+On the top of each plot, also mention the average queuing delay and average utilization.
+
+Moreover, in each plot, also indicate the bottleneck capacity and the ECN threshold with dashed horizontal lines.

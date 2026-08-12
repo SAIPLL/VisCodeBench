@@ -1,0 +1,7 @@
+Plot a bar chart showing the gas consumption and corresponding costs (in Euro) for different functions in a smart contract.
+ The x-axis should display the function names: 'deployment', 'setNode', 'setSubject', 'updateNodeStatus', 'updateSubject', 'deleteNode', and 'deleteSubject'.
+The y-axis on the left represents 'Gas' (the amount of gas consumed).
+Add a secondary y-axis on the right to represent the 'Cost in Euro'.
+Above each bar, display two pieces of information: The cost in Euro, e.g., '0.32\u20ac' The amount of gas used, e.g., '109,943 Gas'.
+The bar color should be cyan with black edges.
+Rotate the x-axis labels slightly for better readability.

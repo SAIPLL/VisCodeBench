@@ -1,0 +1,3 @@
+Plot Bit Error Rate (BER) for multi-bit watermarking under the copy attack with varying PSNRa and watermark payloads ℓ.
+The results are provided in './results/loss_cosine/copy_multibit' in csv files.
+csv filename follow this pattern `copy_multibit_attack_psnr_<PSNR_VALUE>_k_<NUMBER_OF_BITS>_cosine`  Dataframes have the following columns `bit_acc_copy` - bit accuracy of the copy and `psnr_copy` - target PSNR of the copy attack

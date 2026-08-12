@@ -1,0 +1,2 @@
+Help me to create a radar figure to show the data with no title.
+The legend should contain the model categories.

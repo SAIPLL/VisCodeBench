@@ -1,0 +1,3 @@
+Plot a scatter plot of the original and filtered eigenvalues and fit the trend to it with a line.
+Finally plot 
+on a single chart.

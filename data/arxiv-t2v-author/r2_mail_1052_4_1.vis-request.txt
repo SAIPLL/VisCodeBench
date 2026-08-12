@@ -1,0 +1,2 @@
+For the given data in the variables "temperature", show the bar plot for metrics CHAIR and Cover.
+Please generate the legend too.

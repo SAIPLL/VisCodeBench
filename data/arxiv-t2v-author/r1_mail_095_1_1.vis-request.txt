@@ -1,0 +1,5 @@
+I want to draw a figure of an ablation study on the language ID (lid) used for machine translation.
+The translation direction is ro-en, so the correct lid is "ro".
+Each lid corresponds to a COMET score, please draw a bar plot of them.
+Besides, I want you to draw two horizontal lines representing the correct lid and without lid separately.
+The data are given as: comet={'bn':75.28,'de':75.24,'et':75.27,'it':75.27,'si':75.28,'th':75.24,'zh':75.32} correct=75.28 without=75.17

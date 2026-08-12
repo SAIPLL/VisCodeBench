@@ -1,0 +1,2 @@
+produce a plot with 4 lines, one line for one experiment, where the x axes is the epoch and the y-axis is the METEOR score of that epoch.
+Each experiment is a single column in the csv, where the name of the experiment is the column's title (should be used for legend)

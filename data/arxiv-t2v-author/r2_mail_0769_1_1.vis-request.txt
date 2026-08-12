@@ -1,0 +1,4 @@
+Given the results of finetuning of the visual encoder or text encoder or both, plot the target and imagenet accuracy for all classes (moongate, tonometer, and gyroscope) in separate subplots.
+Color each fine-tuning differently, and use dashed lines for imagenet results.
+The X-axis represents the learning rate.
+Put a single legend in the upper right corner of the plot.

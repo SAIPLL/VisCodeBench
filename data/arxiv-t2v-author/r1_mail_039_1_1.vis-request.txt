@@ -1,0 +1,3 @@
+Correlation heatmap visualizing interobserver agreement between clinician reviews.
+Higher correlation should be coloured more red.
+Cohen's Kappa scores should be computed between pairwise clinicians based on the respective common submission(s) reviewed.

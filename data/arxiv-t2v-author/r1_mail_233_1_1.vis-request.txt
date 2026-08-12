@@ -1,0 +1,1 @@
+Use the data from "data" to write code to show how the MATH and GSM8K performance of SFT on Mistral scale with the number of training samples.

@@ -1,0 +1,3 @@
+Generate a line chart for comparing the results of WPO and DPO when trained for many epochs.
+There should be two y axes, left is Alpaca Eval result and right is mt-bench result.
+Use dashed line for DPO and solid line for WPO.

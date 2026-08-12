@@ -1,0 +1,1 @@
+visualizes the four data points using a bar chart.

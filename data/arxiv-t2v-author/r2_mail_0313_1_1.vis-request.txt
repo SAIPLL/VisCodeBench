@@ -1,0 +1,5 @@
+Create a radar (spider) chart to compare the performance of four models: CLIP, CLIP-KD, CLIP-PING (ours), and A-CLIP-PING (ours), using the data stored in the variables "clip", "clipkd", "clipping", and "a_clipping".
+Label each axis according to the dataset names in the variable "axis_labels".
+Represent each model as a different colored polygon.
+Display numeric values for our proposed methods (CLIP-PING and A-CLIP-PING).
+Place a legend in the lower right corner to identify the models.

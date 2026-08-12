@@ -1,0 +1,2 @@
+Creating a line chart based on the following data:  | Budget | Multi-View Car | CUB-200-2011 | | ------ | -------------- | ------------ | | 50     | 66.77          | 32.22        | | 100    | 82.29          | 55.12        | | 250    | 89.18          | 65.57        | | 500    | 90.13          | 71.24        |  The title to the y-axis is "Attack Success Rate (%)", the title to the x-axis is "Budget".
+The range of y-axis is 0 to 100.

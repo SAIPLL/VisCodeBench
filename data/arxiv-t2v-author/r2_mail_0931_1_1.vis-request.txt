@@ -1,0 +1,5 @@
+I would like to generate a figure with the caption \"Figure 3: Detection and delineation accuracy at level 1 (raw predictions) and level 2 (after combining predictions from different checkpoints).
+Different bars represent different checkpoints.
+The Y axis represents detection accuracy, and the X axis shows bars grouped by input image chip size.
+The text on top of each bar shows the mean IoU value for that group.\" Please provide a Python script using matplotlib that produces a bar chart meeting these specifications: the Y-axis should display detection accuracy, while the X-axis groups the bars by input image chip size; within each group, different bars should represent different checkpoints, and each bar should have the corresponding mean IoU value annotated on top.
+Additionally, include clear labels, a legend, and a title that reflect these details, and ensure that the code is well-commented for clarity.

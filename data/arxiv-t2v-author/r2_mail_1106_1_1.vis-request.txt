@@ -1,0 +1,4 @@
+Plot the data to show:
+The x-axis is the years from the smallest year in the data to 2020 due to there are some data missing in year 2021, and the y-axis shows the count of scientific entities.
+A blue line means Scientific Entity before disambiguation.
+A green line means the Scientific Entity after disambiguation A red line means how many Scientific Entity before Disambiguation appears for the first time in that specific year The orange line for the '3-degree Polynomial Fit' for numbers of paper.

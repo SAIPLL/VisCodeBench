@@ -1,0 +1,8 @@
+Make me a line plot with one line for completeness (dashed), one for selectivity (dotted), and one for reliability (solid) for each of 3 methods: FGSM, PGD, AutoAttack.
+
+The y-axis is each of those metrics, the x-axis is hyperparameter epsilon; the x-axis should be log scale.
+
+The relevant columns in the CSV are tclindc-causal/envir/mlp/fgsm (or /pgd or /auto) for completeness; for selectivity it is tclinde-envir1 rather than tclindc-causal.
+
+reliability is the harmonic mean of completeness and selectivity, which you will have to compute yourself.
+so in total, there should be 9 lines: 3 for each method; the methods should be color-coded.

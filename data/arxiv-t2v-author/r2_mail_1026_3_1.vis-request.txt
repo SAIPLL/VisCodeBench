@@ -1,0 +1,4 @@
+Given the resource usage and power consumption in `4_plotting_data.tsv`, compute normalized values using Min-Max scaling to simply identify correlation and plot 2-row subplot.
+The first plot displays the normalized resource_usage over time and the second plot shows the normalized power consumption over time.
+Overall figure should be titled with a given title.
+Save the plot as `2_visualisation_image.png` with high quality, ensuring the layout is adjusted to avoid overlap between the subplots.

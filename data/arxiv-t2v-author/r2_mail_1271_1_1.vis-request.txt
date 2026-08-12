@@ -1,0 +1,2 @@
+Given results from several CSV files for both in-distribution and out-of-distribution data, and plot a joint scatterplot showing the relationship between the manifold distance to the ground truth (lambda_gt_mse) and an OOD error score (z_score_mse_sino).
+Use different colors for each dataset.

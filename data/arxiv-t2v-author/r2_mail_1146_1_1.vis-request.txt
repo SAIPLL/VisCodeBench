@@ -1,0 +1,30 @@
+Goal: Create a set of bar plots for each model in the list ALL_MODELS! 
+I want to show how much more often the most common number in a given problem setting appears over the random baseline.
+ 
+The grouping I want this over is defined by the cross-product of: ["model_ui", "is_chat", "problem_length", "problem_range", "support",]  
+So, take the max count over `top_token_idx` divided by the sum of the values of `top_token_idx` within each group.
+
+The random baseline is simply the uniform probability of 1 over the number of options which is capture via `problem_length`.
+ 
+For each model create barchart with bars for every problem length.
+(Some models have chat versions; have side-by-side bars for those.)  
+Now, I want to show the baseline value to be the uniform probability of 1 over the problem length, so please add a horizontal line at the bar height.
+ 
+Label "Top Token (%)" along the left side of the grouped plots;   
+Be sure to label the bar colors as Base, Chat, and then for that baseline value (please color is gold, say, goldenrod) label that Expected.
+ 
+I want the legend to appear only in the last subplot.
+ 
+Some details: give a list distance between the edge of the bars and the horizontal baseline bars.
+ 
+Label all the x-axis as "Domain Length" and the y-axis as "Top 1 Proportion"  Have each subplot labelled by the model  
+Organize the plot to have 4 columns and 3 rows  The very last final detail: in the top right of each barplot include a small annotation that marks the average excess probability on the top option over the baseline expected value as a percentage in blue text.
+ 
+Thanks!   
+The data is in `for_replication.tsv`  
+The relevant fields are:   
+df = df[[       misc      'model_ui',  model name      'is_chat',   some models have base and chat versions       problem def & settings      'problem_length',      'problem_range',      'support',   the support (or endings) of the distribution (defines the problem)       results      'top_token_idx',  ]] 
+
+ALL_MODELS = [      'Yi-1.5-9B',      'Yi-1.5-34B',      'Meta-Llama-3.1-8B',      'Mistral-7B-v0.1',       'Mistral-7B-v0.3',       'Mixtral-8x7B-v0.1',      'gemma-2-9b',      'gemma-2-27b',      'gpt-3.5',      'gpt-4-turbo',      'gpt-4o-mini',      'gpt-4o',  ]   
+
+Use pandas and seaborn!

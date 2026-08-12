@@ -1,0 +1,15 @@
+This plot compares different metrics (COMET, LitTER, and MWEScore) across various language pairs (de-en, ru-en, and en-de) at different increments of data, ranging from 0 to 89K.
+
+The graph shows several trend lines with different patterns (solid, dotted, and dashed) and colors (blue, orange/red, and green).
+
+Each line represents a specific combination of metric and language pair.
+ 
+Some key observations: The COMET scores (blue lines) generally remain stable or show a slight decline, with values ranging between 0.65-0.8.
+
+The LitTER scores (orange/red lines) show a consistent downward trend across all language pairs, starting around 0.4-0.6 and declining to 0.2-0.4.
+
+The MWEScore (green lines) remains relatively stable across the range, with values around 0.5-0.6.
+ 
+The x-axis shows data points at 0, 18K, 36K, 54K, 71K, and 89K, while the y-axis ranges from approximately 0.2 to 0.8.
+
+The de-en language pair generally shows higher scores across metrics compared to ru-en and en-de pairs.

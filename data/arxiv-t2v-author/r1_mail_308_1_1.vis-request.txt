@@ -1,0 +1,1 @@
+shows the distribution of the data obtained by the four BERT models on the HurtLex test - showing the correspondingly categories - related to the term groups queer and non-queer.

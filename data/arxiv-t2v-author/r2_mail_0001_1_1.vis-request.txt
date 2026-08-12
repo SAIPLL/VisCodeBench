@@ -1,0 +1,1 @@
+For the given data in the lists time_gsh, time_cah, time_rl1, time_rl2 (4 algorithms), plot four subfigures titled "U-TPP", "R-TPP, λ=0.99", "R-TPP, λ=0.95", "R-TPP, λ=0.9", respectively.

@@ -1,0 +1,4 @@
+'./p_acc.json' is a json file you can load as 2 list xs, ys with "xs, ys = json.load()".
+xs is        a list of mask ratio factor p values.
+ys is the corresponding values of eval dataset Accuracy with xs.
+please generate a figure for me with label of 'deepseek' and  color blue, limiting y between 35, 55.

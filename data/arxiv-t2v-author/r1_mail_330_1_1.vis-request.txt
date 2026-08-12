@@ -1,0 +1,6 @@
+Draw a barplot image to show the experiment results over two datasets, "Amazon" and "Maple".
+Each dataset has a series of sub-tasks.
+All the sub-tasks are tested through two methods "Seen" and "Unseen" with three models.
+Use the sub-tasks as the x-axis and the scores as the y-axis.
+Use different color to represent different method.
+Group the results from different models by the dataset.

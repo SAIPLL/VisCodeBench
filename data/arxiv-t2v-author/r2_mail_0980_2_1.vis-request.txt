@@ -1,0 +1,2 @@
+Visualize the distribution of days for Response and Completion as a horizontal box plot.
+Show the median as an orange line and the mean as a green triangle.

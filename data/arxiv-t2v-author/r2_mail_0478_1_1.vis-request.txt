@@ -1,0 +1,20 @@
+Compare the parser's performance difference (GA, PA, FGA, and FTA) before   (under the folder "original_result") and after (under the folder "result") implementing the preprocessing framework.
+
+The logs are separated into three subgroups according to the number of variables contained.
+
+You will find the data used for plotting under the "complex" folder.
+
+"complex=1" indicates the logs have no parameter (#Param.=0), 
+"complex=2" indicates the logs have 1-4 parameters (0<#Param.<5), 
+and "complex=3" means that the logs have more than 4 parameters (#Param.>=5).
+
+
+Plot the results of each parser for each subgroup in bar plots; you should have 4 subplots in total.
+
+For better comparison, plot the refined results in solid color, and outline the original results with transparent bar and red dot lines.
+
+For each subplot, you should have 12 bars in total (3subgroups*4 metrics).
+
+The x-axis shall be the four metrics, with text placed under the bars of 0<#Param.<5 subgroups.
+
+Also, you should provide the subgroup-color (denote the original results with red dot lines) matching box on top of the plot.

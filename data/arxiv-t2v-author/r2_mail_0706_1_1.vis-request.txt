@@ -1,0 +1,2 @@
+For the given features and labels can you please draw a horizontal subplot of three plots including a  1) PCA decomposition 2) Visualisation of Decision Boundaries 3) t-SNE plots all in 2 dimensions.
+Make sure all classes are represented by distinct colors and also include a vertical color bar at the right with labels from 0 to 9.

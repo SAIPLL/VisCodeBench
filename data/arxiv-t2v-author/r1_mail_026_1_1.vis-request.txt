@@ -1,0 +1,1 @@
+Please plot a heat map of the given data matrix.

@@ -1,0 +1,1 @@
+Given the emotional score of some words and their translation substracted in context, to evaluate how these words are positive or negative, please visualize the relationship between the score before and after translation.

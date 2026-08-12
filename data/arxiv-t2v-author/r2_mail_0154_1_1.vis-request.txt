@@ -1,0 +1,4 @@
+Please create a bar chart showing the jailbreak success rate across different jailbreak methods.
+The x-axis should represent the various methods, such as AutoBreach, GPTfuzzer, and PAIR, and the y-axis should show the jailbreak success rate in percentage.
+Use different colors for each language model, such as Claude3, GPT-3.5, GPT-4 Turbo, and Bingchat.
+The bars should be labeled with the corresponding success rates at the top.

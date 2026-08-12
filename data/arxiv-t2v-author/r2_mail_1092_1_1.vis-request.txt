@@ -1,0 +1,2 @@
+Once I have the YOLO-format dataset labels, I would like to visualize the distribution of object sizes in the dataset.
+Please create a scatter plot for this distribution.

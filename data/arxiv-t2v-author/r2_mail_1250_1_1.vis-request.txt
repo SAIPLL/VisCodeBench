@@ -1,0 +1,2 @@
+The first row is state p and the second row is state p.
+Draw a phase portrait with p as x axis values and q as y axis values

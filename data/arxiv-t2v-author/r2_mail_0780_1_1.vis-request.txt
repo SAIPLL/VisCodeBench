@@ -1,0 +1,3 @@
+Create a 2×5 grid of horizontal bar charts comparing the stability of different diffusion approaches across atmospheric pressure levels.
+Plot the Wasserstein distance for three methods: 'Pixel-Space' (shown as a vertical dashed line), 'Latent (in-situ)', and 'Latent (in-situ + ex-situ)' (shown as horizontal bars).
+Use consistent y-axis labels across all plots,  and include a legend.

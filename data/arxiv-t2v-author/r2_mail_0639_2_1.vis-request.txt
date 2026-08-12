@@ -1,0 +1,2 @@
+For the given data in variables "acceptance rate %" and "throughput (token/s)", show a barchats for the acceptance rate and line charts for the throughput.
+With W4A16 and W16A16 throughput as two separate horizontal dot lines.

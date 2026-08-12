@@ -1,0 +1,7 @@
+Create a Python script that uses matplotlib and scienceplots to generate a line chart illustrating how threshold values on the x-axis impact MAP performance on the y-axis.
+The script should:  Utilize the science style for plotting.
+Use LaTeX commands to make the text bold.
+ Set the x-axis as "Threshold" and the y-axis as "MAP performance (%)", both with bold labels.
+ Plot the following hard-coded values: x_vals: A range from 0 to 1 in increments of 0.05.
+y_vals: [0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.16, 0.12, 0.126, 0.129, 0.144, 0.15, 0.25, 0.35, 0.35, 0.32]  Customize tick labels to be bold.
+ Save the output as a PDF named map_performance_plot.pdf.

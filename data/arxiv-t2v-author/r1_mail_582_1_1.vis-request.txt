@@ -1,0 +1,1 @@
+Given the statistical count of the span index vectors in "data" folder, draw a line graph of the average count of the span index vector at each layer as the lambda value changes.

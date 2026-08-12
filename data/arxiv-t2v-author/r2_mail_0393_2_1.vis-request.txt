@@ -1,0 +1,4 @@
+Given the input data, which shows the bandwidth achieved in GB/s across a domain of different numbers of GPUs, plot the bandwidth achieved by shp and mhp on a log-log line plot.
+ Plot the y-axis in TB/s.
+ Label plot "Stream Triad" and label the x- and y-axes "Number of GPU Tiles" and "Bandwidth (TB/s)," respectively.
+ Place a grey, dashed "perfect scaling" line demonstrating perfect speedup slightly below the plotted lines.

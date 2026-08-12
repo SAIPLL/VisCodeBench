@@ -1,0 +1,2 @@
+Stacked bar plot for noisy gripper data analysis
+shows the accuracy on the x-axis and the task on the y-axis for different cases with and without noise.

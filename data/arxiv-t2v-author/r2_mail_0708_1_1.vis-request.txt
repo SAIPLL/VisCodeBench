@@ -1,0 +1,10 @@
+For the given data in the variables "the number of parameters" and "MSE measures" with respect to the number of 6 categories (x-axis) of hidden dimension and 3 categories (sub-category) of depth of the network, show a 
+(1) bar chart for the number of parameters of each pair of hidden dimension and depth, for which use the y-axis on the left-hand side.
+When plotting the bar plot, place the bars for different depth but same hidden dimension next to each other and use hatch patterns ('/', '\\', and '/' for depth 1, 2, and 3, respectively).
+
+Then, (2) place a ''o--'' line plot for the MSE measure of each pair of hidden dimension and depth on the top of the bar plot, for which use the y-axis on the right-hand side.
+Use green colour in the bars and lines for depth 1, and red colour for depth 2, and blue colour for depth 3.
+Finally, a single MSE measure and number of parameters of 5 comparisons (namely "TimesNet", "iTransformer", "PatchTST", "FITS", "N-Linear") are provided.
+
+Place a dashed line plot according to their MSE measure and place the comparison name and corresponding number of parameters (e.g., FITS (0.016M) ) as text label just above or below their line.
+When placing the labels, avoid overlapping, and use the following colours for the label and line plot of each comparison - brown for FITS, orange for PatchTST, purple for N-Linear, indigo for iTransformer, and darkcyan for TimesNet.

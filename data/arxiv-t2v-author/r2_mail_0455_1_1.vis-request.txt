@@ -1,0 +1,19 @@
+Assume you have a numpy array with dimension [2, 5, 7, 2], with every element being a floating-point number that represents a metric called \"energy\".
+
+Use this numpy array to generate a figure that shows the energy of different accelerators for various LLMs.
+
+The figure is divided into two halves: left and right, which is why the numpy array's first dimension is 2.
+
+The left half has a title \"Discriminative\", while the right half has a title \"Generative\".
+
+The second dimension of the numpy array means there are 5 different accelerators: [\"FP16\", \"BitMoD-LL\", \"ANT-LY\", \"OliVe-LY\", \"BitMoD-LY\"].
+
+The third dimension of the numpy array means there are 6 LLMs: [\"OPT-1.3B\", \"Phi-2B\", \"Yi-6B\", \"Llama-2\\n7B\", \"Llama-2\\n13B\", \"Llama-3\\n8B\"], as well as the average energy of these LLMs at the end with a name \"GeoMean\".
+
+The last dimension of the numpy array is 2, which means every data point is a tuple containing two energy numbers.
+ 
+Each half of the figure shows the energy of 5 accelerators on the 6 LLMs plus the \"GeoMean\" of these LLMs.
+
+Every LLM contains 5 blue and 5 orange bars, where the blue and orange colors correspond to the two energy numbers in every tuple.
+
+The blue bars have a legend \"On-chip Compute\", while the orange bars have a legend \"Off-chip DRAM\".

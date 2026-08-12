@@ -1,0 +1,10 @@
+I have saved the hidden representations for many kernels in the "hidden_save_for_plot" folder.
+The hidden representations for kernel x are saved in the file f"hidden_save_for_plot/{x}_h7.npy".
+Each kernel contains hundreds of data points, and the file contains an array of the shape [number_of_data, dimension].
+I have several dozens of train kernels and 6 test kernels, and I want to plot all their hidden representations on a scatter plot.
+Use T-SNE to downgrade the hidden representations to 2 dimensions.
+Then, use the matplotlib library to plot the scatter plot.
+The representations of data points from the same kernel should have the same color, and you can use the matplotlib library to automatically assign colors to them.
+For the test kernels, show their kernel names in the legend.
+For the training kernels, do not display the legend.
+  The following kernels are training kernels: ['gemm-blocked', 'gemm-ncubed', 'spmv-ellpack', 'stencil', 'nw', 'stencil-3d', '2mm', '3mm', 'adi', 'atax', 'bicg', 'bicg-large', 'covariance',  doitgen', 'doitgen-red', 'fdtd-2d', 'gemm-p-large', 'gemver', 'gesummv', 'heat-3d', 'jacobi-1d', 'mvt', 'seidel-2d', 'symm', 'symm-opt', 'syrk', 'trmm', 'mvt-medium', 'atax-medium', 'bicg-medium', 'gesummv-medium', 'symm-opt-medium']  The test kernels are: ['fdtd-2d-large', 'gemver-medium', 'syr2k', 'gemm-p', 'jacobi-2d', 'trmm-opt']

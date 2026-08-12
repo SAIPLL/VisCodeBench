@@ -1,0 +1,1 @@
+count the number of searches for all the claims, and group them by the number of searches, shade the portion of the number that the claim is wrongly verified.

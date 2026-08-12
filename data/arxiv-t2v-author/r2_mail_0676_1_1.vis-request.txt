@@ -1,0 +1,1 @@
+For the given data in "./data/configcount_20241003_163244.csv", plot bar charts for acceptance rate, group by networks, split results by solvers (ILP, BnB*-infty, BnB*-3 and BFN) and decompose the acceptance rate by each configuration.

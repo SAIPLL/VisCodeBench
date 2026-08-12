@@ -1,0 +1,18 @@
+First, read the K JSON files provided through runtime arguments.
+
+Each JSON file contains the results of a method.
+
+The corresponding method names are specified in the legend runtime argument.
+ 
+
+This code will generate N figures, where N is the number of super categories.
+
+Each figure is a box plot comparing the K methods across M subcategories, where M is the number of subcategories under a given super category.
+ 
+Start by reading the JSON files and ensure that each method includes the same number of super categories and that the subcategories for each super category are consistent across all methods.
+
+Use libraries like panda and matplotlib.
+ For each super category, plot its subcategories across the different methods.
+Use boxplot for visualising results.
+The subcategory names are the same as the keys of the subcategory dictionaries.
+However, there is one exception: if a subcategory name contains 'bg', shorten it to 'bg'.

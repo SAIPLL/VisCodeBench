@@ -1,0 +1,1 @@
+For the given data "data/2x3_random_testbed_testbed_results.csv" and "data/2x3_random_testbed_results_greedy.csv" in the variables "Total Collision Distance" and "Total Flights Distance" for each "Strategy" (no_ca, pf_ca, basic_ca), show a line chart.

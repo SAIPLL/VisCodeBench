@@ -1,0 +1,7 @@
+I have conducted four experiments using an active learning method on eight different languages, each consisting of five cycles.
+
+For every cycle, I recorded the accuracy.
+
+The results are stored in a TSV file ("acc_cycles.tsv") with four columns: lang, Exp, cycle, and Acc.
+Please visualize the data by creating a plot for each language, showing how accuracy changes across cycles.
+Use a separate line for each experiment, and distinguish them with different colors.

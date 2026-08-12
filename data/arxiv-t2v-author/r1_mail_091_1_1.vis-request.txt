@@ -1,0 +1,24 @@
+Given the data for three large language models (LLMs): GPT-4, GPT-3.5, and Mistral-7B, along with metrics like NR (number of resets) and NES (number of executed steps).
+Please plot a figure for me use a plotting library like Matplotlib or Seaborn in Python.
+
+Specially, create a figure with three subplots (left, middle, right).
+  
+
+Left Plot:    
+- Plot the NR and NES metrics for the three LLMs: GPT-4, GPT-3.5, and Mistral-7B.
+   
+- Use different line styles and markers to distinguish between "with" and "without" prospective data (`w/ prosp.` and `w/o prosp.`).
+ 
+
+Middle Plot:    
+- Display bar graphs comparing random baselines and their performance with/without prior trajectory sampling.
+   
+- Use darker bars for data with prior and lighter bars for data without prior.
+ 
+
+Right Plot:    
+- Show bar graphs for experiments with and without error messages input to the LLM action semantics generator.
+   
+- Mark action semantics accuracy on top of the bars for experiments failing to find a solution.
+ Include appropriate legends and labels for each plot indicating what each line, bar, or color represents.
+Label axes for NR and NES correctly and ensure the range fits comfortably around the data points on each sub-plot.

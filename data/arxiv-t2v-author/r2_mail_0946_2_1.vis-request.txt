@@ -1,0 +1,12 @@
+The data contains the confidence intervals for each of the numbers of red, blue, green balls, estimated by two different algorithms ("kt" and "dirmul").
+There are multiple runs.
+I want to plot three graphs across columns.
+
+1) I want to plot the confidence intervals along the number of draws, averaged over multiple runs, where the standard deviations are indicated by shaded regions.
+
+2) The data also has "sizes" of the confidence sets computed across the number of draws.
+I wish to plot the relative value of confidence sets.
+In the same plot, I also want to indicate the relative volume of the "dirmul" confidence sequence relative to the "kt" confidence sequence.
+ 
+3) Lastly, I want to plot the histogram of the relative decision time of "dirmul" compared to the decision time of "kt" from each run.
+Note that the decision is made as soon as all three confidence intervals become disjoint.

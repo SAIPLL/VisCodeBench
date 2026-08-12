@@ -1,0 +1,5 @@
+Generate a fig of two subplots.
+Each plot is a probability density/mass plot of different distribution under the mean f=0.5 or 1.0.
+The candidate distributions are Poisson/Categorical, Gumbel-Softmax, Exponential, Rayley, and Half-normal.
+Please plot their corresponding density/mass w.r.t.
+the sample z from 0 to 4.

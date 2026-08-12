@@ -1,0 +1,1 @@
+plot how long each pipeline takes to execute as a bar plot showing the error bars as confidence interval.

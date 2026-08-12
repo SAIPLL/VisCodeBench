@@ -1,0 +1,4 @@
+Please generate three line plots that compare the metrics "alignment" "regret" and "quality" across feature dimension sizes and algorithms.
+The x axis should be initial step size, and the y-axis should be the corresponding metric.
+Higher feature dimensions should be colored darker than lower feature dimensions, and algorithms should be differentiated by the style of line.
+For the title, indicate the direction that is better with an arrow, for regret, lower is better, but for quality and alignment, higher is better.

@@ -1,0 +1,7 @@
+I trained an essay scoring model using features called "type256".
+For the given "confusion_true_scores.txt" and "confusion_pred_scores.txt", compute a confusion matrix and visualize it with a heatmap, so that we can evaluate the accuracy of the predictions.
+"confusion_true_scores.txt" contains the ground truth scores, and "confusion_pred_scores.txt" contains the predicted scores.
+These are data from "Prompt 1", so show it in the title of the heatmap.
+The score range is between 2 and 12 and tick labels should correspond to this range.
+You need to write the value in each cell.
+Please use blue for the heat map.

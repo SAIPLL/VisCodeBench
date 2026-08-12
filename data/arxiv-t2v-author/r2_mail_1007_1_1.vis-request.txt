@@ -1,0 +1,5 @@
+Each file in the data folder has the format: energy, displacement, projected displacement, in-plane strain.
+Each set of data contains 4 different mode files, i.e., linearMode_6, nonlinearCompliantMode_6, RSMode_6, and strainSpaceMode_6.
+For two given sets of data "square60x60" and "square_twist", plot energy v.s.
+projected displacement and in-plane strain v.s.
+projected displacement sequentially, each subplot shows 4 different modes with different colors.

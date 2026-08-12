@@ -1,0 +1,2 @@
+Create a pointplot for the distribution of alphas for each model for both instruments.
+Error bars should cover all observations

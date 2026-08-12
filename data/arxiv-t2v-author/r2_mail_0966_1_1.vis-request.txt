@@ -1,0 +1,7 @@
+Draw a box plot based on the following requirements:  
+- Each box represents the data of a group.
+ 
+- Draw lines to show pairwise comparisons between two groups by indicating whether the difference is statistically significant.
+Show a p-value and an effect size.
+
+- Color red the lines in case of significant difference (p < 0.05).

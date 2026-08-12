@@ -1,0 +1,18 @@
+Generate a single image that contains three subplots arranged horizontally.
+Each subplot should clearly display different aspects of a custom activation function, Swish-T_C, and its first derivative:  
+
+Left Subplot (Activation Functions):  Plot several curves showing different versions of the Swish-T_C activation function over a specified range of x-values.
+ Include an additional curve for the standard Swish activation function, drawn as a dashed line, to serve as a reference.
+ Each curve must be labeled (using a legend) with its corresponding parameter values (such as specific α and β settings).
+ Add appropriate x and y axis labels and a descriptive title for this subplot.
+ 
+
+Middle Subplot (Derivatives with Varying β):  Plot the first derivative of the activation function for multiple instances where only the β (beta) value is varied (keeping α constant).
+ Ensure that each derivative curve is clearly distinguishable and labeled with the corresponding β value.
+ Include clear axis labels (e.g., 'x' for the input and 'f'(x)' for the derivative) and a title that describes the parameter variation.
+ 
+
+Right Subplot (Derivatives with Varying α):  Plot the first derivative of the activation function for several cases where the α (alpha) value changes while the β value remains fixed.
+ Each derivative curve should be easily distinguishable and have a label indicating its α value.
+ Provide suitable axis labels and a title to explain that this subplot illustrates the effect of varying α.
+ Finally, ensure that the overall layout is tidy (for example, by using a tight layout), that all legends, titles, and labels are clearly readable, and that the curves in each subplot are visually distinct from one another.

@@ -1,0 +1,26 @@
+I want a single figure containing two adjacent vertical bar plots.
+
+The plot on the left should be called "Mean Scores by Strategy and Round" and for each of the 4 strategies, there should be two bars next to each other (blue and red) depicting the mean score for two rounds of a game, respectively (blue - first round, "r1"; red - second round, "r2").
+
+At the end of the plot, after the 4 strategies, there should be a single light blue bar depicting a single mean score ("LLM_mean").
+
+It should be centered and thick enough so that it visually resembles the previous categories with two bars.
+
+It should be separated from the other strategies with a vertical dashed line.
+Centered above each category's bar(s) should be a label pointing to which strategy is represented, the font should be big enough so that it is readable.
+
+There should be whitespace between the bars belonging to each category, but the two same-category bars should not have whitespace between.
+
+The x axis should be labeled as "Strategy" (below) and the y-axis as "Mean score" (left side).
+
+The lower bound of the y-axis should be 60, and the higher 100.
+
+The title should be big and above the graph.
+
+Ther should be a legend in the bottom right corner detailing what the colors of the bars mean.
+
+The right graph should be titled "Associated Bonuses" and it will only include the 4 strategies with 2 bars each, a green (bonus in the first round, "bonus-r1") and a purple (bonus in the second round, "bonus-r2").
+
+The approach to labelling the title, strategies (above graph pairs) and axes, as well as the white space between pairs (but not individual bars) and the legend in the lower right corner (clarifying what the colors depict) should remain the same as with the left graph.
+
+The y-axis should be labeled "Bonus Ratio (% out of 100) with lower bound 0.

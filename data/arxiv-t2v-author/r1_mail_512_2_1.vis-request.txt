@@ -1,0 +1,3 @@
+load 'attention_weights.pt' into attention_weights, and then for each epoch (num_epochs=10) extract the 'attention_row_weight' on a specific row using 'attention_row_weights.append(torch.mean(attention_weights[epoch][0], dim=0)[0][row].detach().numpy())'.
+Then visualize 'np.array(attention_row_weights)' using imshow.
+Because row ranges from 0 to 23, we will get 24 figures - arrange them in a 4 by 6 grid.

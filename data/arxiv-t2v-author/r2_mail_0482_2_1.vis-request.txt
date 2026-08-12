@@ -1,0 +1,4 @@
+Given the data in test_teacher_ngrc, plot the smoothed distribution of the data for each column.
+Do the same for the data in output_ngrc and superimpose the two distributions with different colours.
+The x-axis label for each dimension should be "x", "y" and "z" and the y-axis label should be density for all dimensions.
+Keep the legend outside of the box for each dimension and have the layout of the subplots be tight.

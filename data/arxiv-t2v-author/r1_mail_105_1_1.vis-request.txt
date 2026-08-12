@@ -1,0 +1,2 @@
+For the given data "shots" "cosa_scores" and "instruct_scores", make a line plot using "shots" as the x-axis, and "cosa_scores" and "instruct_scores" as two separate lines.
+Then, draw the "point" as a red star in the plot, and draw a horizontal line across the point.

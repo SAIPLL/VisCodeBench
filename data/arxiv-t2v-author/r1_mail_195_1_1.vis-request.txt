@@ -1,0 +1,13 @@
+I have a dataset that contains three sets of values: Encoder, Decoder Mask, and Decoder Unmask, each with their respective means and standard deviations over multiple language modeling checkpoints.
+
+I want a line plot where:  The x-axis represents the checkpoints (as sequential indices).
+
+The y-axis shows the metric values (ranging from 0.0 to 1.0).
+
+Each line represents one of the three sets (Encoder, Decoder Mask, and Decoder Unmask).
+
+Include shaded areas around each line to indicate the standard deviations.
+
+The plot should have a grid, a legend, a title, and labels for the axes ('Language Modeling Checkpoint' for x-axis and 'F1' for y-axis).
+
+Save the plot as a PNG file with a resolution of 300 DPI.\"

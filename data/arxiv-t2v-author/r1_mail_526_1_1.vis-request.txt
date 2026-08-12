@@ -1,0 +1,33 @@
+Let \( x \) represent the set of x-coordinates of points, and \( y \) represent the set of corresponding y-coordinates.
+
+
+The coordinates \( (x_i, y_i) \) where \( x_i \in \#x1 \) and \( y_i \in \#y1 \) are represented by solid squares, while the coordinates \( (x_i, y_i) \) where \( x_i \in \#x2 \) and \( y_i \in \#y2 \) are represented by solid triangles.
+ 
+
+1.
+First, plot the positions of these points and draw straight lines connecting them using solid lines.
+    
+2.
+For a given index \( i \), the points \( (x1[i], y1[i]) \) and \( (x2[i], y2[i]) \) represent the \( i^{th} \) label in \#annotations.
+Place the label corresponding to the line between these two points at an appropriate position.
+Make sure the text does not overlap and is easy to distinguish.
+    
+3.
+For the 9th point (i=8, label "DALL-E 3"), which has an estimated value, distinguish it by representing the point \( (x1[8], y1[8]) \) with an empty square and \( (x2[8], y2[8]) \) with an empty triangle.
+Plot these two points and draw a straight line connecting them.
+    
+4.
+The points belong to 4 different categories.
+Draw 4 ellipses to represent the general distribution of each category, ensuring clear separation of each type.
+The categories are as follows:            
+- Category 1: Points 1 to 4 (i=0-3) with labels 'SD 1.5', 'SD 2.1', 'SD XL\n1.0', and 'SD CA'.
+        
+- Category 2: Points 5, 6, and 9 (i=4,5,8) with labels 'DeepFloyd', 'PixArt', and 'DALL-E 3'.
+        
+- Category 3: Point 7 (i=6) with label 'Kolors'.
+        
+- Category 4: Points 8 and 10 (i=7,9) with labels 'SD 3' and 'FLUX.1'.
+    
+  
+5.
+Finally, set the x-axis label to 'Cosine Similarity' and the y-axis label to 'Alignment Score'.

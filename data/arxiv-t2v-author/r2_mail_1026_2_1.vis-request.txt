@@ -1,0 +1,3 @@
+Given the acutal and predicted power data with predicted background power in `4_plotting_data.tsv`, along with a figure size, create a figure with three subplots.
+The first subplot compares the actual and predicted total power, the second displays the predicted background power, and the third shows the predicted workload power.
+Save the plot as `2_visualisation_image.png` with high quality, ensuring the layout is adjusted to avoid overlap between the subplots.

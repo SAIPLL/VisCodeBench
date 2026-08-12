@@ -1,0 +1,1 @@
+I would like to create a bar chart using matplotlib, with Times New Roman font and ggplot style theme.

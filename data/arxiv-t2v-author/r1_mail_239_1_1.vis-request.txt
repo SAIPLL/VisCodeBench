@@ -1,0 +1,2 @@
+Please visualize the following data in four horizontally-adjacent subplots.
+Each subplot should contain a line for each models that show its average performance given the number of shots (zero, one, and few shots).

@@ -1,0 +1,4 @@
+Create a bar chart comparing the accuracy of three machine learning models-Random Forest, Support Vector Machine (SVM), and Neural Network-across five datasets labeled A through E.
+Each model's accuracy values on each dataset are provided, with Random Forest generally performing best, followed by SVM and then the Neural Network.
+The chart should clearly display the datasets on the x-axis and accuracy on the y-axis, with each model represented by a distinct color.
+This will help visually highlight the comparative performance of the models across the datasets.

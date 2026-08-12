@@ -1,0 +1,3 @@
+Using the policy evaluation data, create a comparative line plot showing the performance of three algorithms (RS-BPI, DSM-BPI, and Benchmark) as a function of the square root of time steps.
+Include confidence intervals represented by shaded regions around each line, and show the maximal policy value as a reference horizontal line.
+Plot the value of learned policies on the y-axis and √T on the x-axis.

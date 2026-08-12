@@ -1,0 +1,1 @@
+Draw a radar chart of the results of different methods on different metrics, adjust the scale of each axis to make the chart clear and visible, without displaying the results on each metrics.

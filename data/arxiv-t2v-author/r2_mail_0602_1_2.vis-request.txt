@@ -1,0 +1,1 @@
+Plot the data to show: the grey relational grade for a given radius and height

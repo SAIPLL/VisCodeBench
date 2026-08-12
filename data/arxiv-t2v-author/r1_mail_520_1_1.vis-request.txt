@@ -1,0 +1,2 @@
+The data ("selfrag_L2.xlsx", "Sheet1") describes the results of our method combined with self-rag on different datasets.
+We want to emphasize that our method is loosely coupled and can continue to improve performance based on other advanced methods.

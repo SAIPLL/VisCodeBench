@@ -1,0 +1,2 @@
+Visualise the Hausdorff distance's susceptibility to outliers based on two-point clusters, each containing a single point of the other cluster in its centre.
+Contrast this result with the Wasserstein Distance.

@@ -1,0 +1,2 @@
+Visualize the subject-wise rankings submitted by each educator as bar charts, grouped by their demographics.
+Use different colors to distinguish between the categories.

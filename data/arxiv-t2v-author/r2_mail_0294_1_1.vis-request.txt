@@ -1,0 +1,1 @@
+我现在有表头为Bottom Model,Datasets,MTA,MTA Variance,ASR,ASR Variance的3个csv文件，每个文件代表了参与方的梳理，请用python读取它，在1张图上绘制6个柱状图，上面3个主任务MTA的性能，左中右分别对应了不同的底层模型，每个小图有3个数据集，要同时展示不同的参与方的情况；下面3个图是ASR性能。注意 每个指标要给出其方差。

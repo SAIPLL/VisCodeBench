@@ -1,0 +1,2 @@
+For the given number of connections per circuit plot the average numbers of bytes need to store each connection.
+Plot this for the setting where 25,50,75, or 100 circuits are combined before being transfered to storage.

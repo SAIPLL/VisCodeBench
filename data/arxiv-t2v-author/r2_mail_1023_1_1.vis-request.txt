@@ -1,0 +1,2 @@
+Based on the provided data for input variables 1 and 2, plot a line chart where the data for both variables share a common horizontal axis.
+However, the vertical axis on the left is scaled according to the unit of variable 1, while the vertical axis on the right is scaled according to the unit of variable 2.

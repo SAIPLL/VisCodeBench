@@ -1,0 +1,2 @@
+Based on the given data, please show the search results of each tuner in a given search time.
+(The target score of the search is 75%)

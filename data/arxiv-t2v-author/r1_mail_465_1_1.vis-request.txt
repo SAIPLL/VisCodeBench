@@ -1,0 +1,12 @@
+Plot model's predicted probability (column "score") at different ranks for two models for query #146187 (TinyBERT-BCE, from the "DL2019_tinybert_t0.0_negs1_bm25_1000.csv" file and TinyBERT-gBCE, from the "DL2019_tinybert_t0.75_negs128_bm25_1000.csv" files).
+  The X-axis should correspond to rank, and the Y-axis should correspond to predicted probability.
+The X-axis should be on a log scale with a base of 5.
+X-axis ticks should be shown as normal integer numbers.
+ The axis should be on a normal scale from 0 to 1.
+The BCE line should be dashed dark green, and the gBCE line should be solid dark blue.
+The model names should be shown on the plot using the same colour next to the lines corresponding to each plot.
+The model tiles should be inclined roughly at the angle corresponding to the plot's slope.
+You should compute the slope automatically so that the labels appear around 1/3 of the plot width to the left.
+(i'e left position of the label should be somewhere around 1/3 of all ranks.
+) don't use normal python's legend   The lines should be bold (around 5 pixels width).
+ Overall, the figure should be wide (roughly 1:4 proportion height:width)

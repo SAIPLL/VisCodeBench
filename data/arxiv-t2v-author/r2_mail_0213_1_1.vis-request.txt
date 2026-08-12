@@ -1,0 +1,15 @@
+Plot the provided mAP50-95 and Accuracy scores and their standard deviations in the same plot.
+
+
+Both should be line plots with markers (mAP should be blue with star markers, and Acc should be red with circle markers), and the std should be used to add a shaded area of confidence around each line.
+
+
+You should also add two horizontal lines showing the performance of non-square boxes, preserving the color and shaded area.
+In this case, the accuracy should be a dash-dot line, while the mAP should be a dashed line.
+
+
+Moreover, two vertical black lines should be added: a dash-dot line showing the average of the iCubWorld dataset and a dashed one for the CORe50 dataset.
+Finally, add axis titles (x: Expansion Rate, on the top; y: Score, on the left), Legend (it should be on the bottom with 3 columns and 2 rows), and enable the grid for both x and y axes.
+
+
+Make sure that it fits in the figure region and that the width matches that of the axes.

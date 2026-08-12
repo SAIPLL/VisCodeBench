@@ -1,0 +1,1 @@
+For the given data in the variables "labels" and "accuracy", generate a line plot for each model.

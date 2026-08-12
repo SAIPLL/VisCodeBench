@@ -1,0 +1,3 @@
+Using the data from the table, create three subplots to showcase the performance of each algorithm (UniAD, VAD, LTF).
+In each subplot, the x-axis should represent the scenario levels, while the y-axis should display the Score.
+The HD_Score for each dataset should be represented as a bars, and the average subscores across the datasets should be plotted as a line chart.

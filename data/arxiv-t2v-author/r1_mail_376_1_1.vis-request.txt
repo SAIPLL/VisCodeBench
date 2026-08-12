@@ -1,0 +1,1 @@
+For the given data in the variables 1-gram, 2-gram, adn 3-gram,  show line plots of different methods.

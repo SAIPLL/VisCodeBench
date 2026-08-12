@@ -1,0 +1,2 @@
+Create bar charts that show positive and negative labels, where the bar height corresponds to the frequency of the label.
+Make the bars horizontally aligned.

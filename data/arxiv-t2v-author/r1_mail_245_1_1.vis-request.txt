@@ -1,0 +1,3 @@
+Create three side-by-side scatter plots for each of the given datasets (Mathador-LM, MMLU, and GSM8k).
+Also fit a line through all of the given points.
+y-axis should be accuracy, and x-axis should be model size (log scale).

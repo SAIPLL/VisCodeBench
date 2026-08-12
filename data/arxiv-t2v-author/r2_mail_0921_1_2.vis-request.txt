@@ -1,0 +1,1 @@
+two stacked bar charts  - title: \"Rankings of Helpfulness & Confidence\" - three rank levels (Rank 1, Rank 2, Rank 3) with different blue colors - three conditions (Text, Third, First) - Number: the count of responses.

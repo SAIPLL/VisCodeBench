@@ -1,0 +1,1 @@
+Visualize Dice across training sizes and fine-tuning strategies using a bar chart with error bars and a box plot comparing U-Net baseline and two strategies.

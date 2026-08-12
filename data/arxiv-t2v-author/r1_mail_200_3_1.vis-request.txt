@@ -1,0 +1,9 @@
+Create a Python script using `pandas`, `seaborn`, and `matplotlib` to analyze task performance distributions from a CSV file named `general-lvlm.csv`.
+
+The script preprocesses the data by converting numeric values into percentages and organizes task types in a specific order.
+
+It calculates the range of performance values for each task to dynamically assign colors: purple for wider distributions and green for narrower ones.
+
+The script generates a violin plot with a clean, minimalist style, bold labels, and a percentage-formatted y-axis (ranging from 0 to 100).
+
+Save the plot as high-resolution files (`distribution-each-tasks.png`) to highlight the distribution of scores across tasks and models effectively.

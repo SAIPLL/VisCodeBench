@@ -1,0 +1,15 @@
+For the given data, filter n (i.e.
+the number of samples) to be 10 and s_to_theta to be either escort or arms.
+
+Then, draw a parallel coordinates plot.
+
+The x axis should have two variables: the mask lr, which you can find in the variable `cat_s_lr` and the regularization constant lambda, which you can find as `cat_lmbda`.
+
+Furthermore, the problem has two measures of performance: accuracy (`Acc`) and percentage of weights remaining (`Wrem`).
+
+Depict `Wrem` as the hue, from low to high weights remaining we want the colors to be roughly: red, orange, yellow, green.
+
+To be able to visualize accuracy at the same time, depict the proximity to the Pareto frontier as the `Acc` value by using saturation: low saturation (i.e.
+gray-ish lines) are far from the Pareto frontier (i.e.
+low relative accuracy), whereas high saturation entries are close to the Pareto frontier (i.e.
+high relative accuracy).

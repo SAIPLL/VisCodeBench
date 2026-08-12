@@ -1,0 +1,2 @@
+Generate two propensity distributions with the same volume (one binormal centered at 0.2 and 0.8, one normal around 0.5) .
+Plot these two distributions.

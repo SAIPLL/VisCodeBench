@@ -1,0 +1,6 @@
+Plot a bar chart showing the computation times for different functions.
+Use the function names as labels on the x-axis and their corresponding computation times (in milliseconds) on the y-axis.
+Label the y-axis as 'Computation Time (ms)' and the x-axis as 'Functions'.
+Place the numerical computation time values on top of each bar for clarity.
+Make the bars cyan-colored with a black edge and rotate the x-axis labels slightly for readability.
+Add horizontal grid lines for better reference.

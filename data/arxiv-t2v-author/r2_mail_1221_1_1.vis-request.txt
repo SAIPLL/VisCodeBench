@@ -1,0 +1,4 @@
+Draw two figures side by side.
+The left figure should have the x-axis labeled 'Number of Edges' and the y-axis labeled 'Inference Time (s)'.
+The right figure should have the x-axis labeled 'Inference Time per Edge (ms)' and the y-axis labeled 'AUC (%)'.
+Place the legend in the bottom right corner of the right figure.

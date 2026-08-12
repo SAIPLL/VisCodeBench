@@ -1,0 +1,2 @@
+For the given "data.pkl", line plot the failure rate (`failure_count` / `cycle count`) and shade its 95% confidence interval, as a function of `slenderness`.
+Plot different `p` in different subplots, and different `d` as different lines.

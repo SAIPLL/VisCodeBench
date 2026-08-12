@@ -1,0 +1,8 @@
+Please use the performance measures in the files toxicity_EN_cycle_1, toxicity_DE_cycle_1, toxicity_ZH_cycle_1, and toxicity_RU_cycle_1 to plot the following indicators: Accuracy, Precision, Recall, F1-Score, and Elo-Score.
+
+Merge with file "meta_elo_baseline.csv" for Meta-Elo.
+The models have the same name in each file, so it is necessary to extract the language from the file names and incorporate it into the models as a tag, respectively.
+
+Use a different column on the X-axis for each indicator and sort the models on the Y-axis by F1-Score.
+
+I suggest the following colours for the indicators: '#657b83', '#586e75', '#073642', '#002b36', '#cb4b16', '#b58900'.

@@ -1,0 +1,2 @@
+Each model should have a set of bars representing the accuracy achieved with each feature combination.
+Each feature combination should be indicated by a different color, and the legend should clearly label these combinations.

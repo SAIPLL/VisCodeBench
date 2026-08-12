@@ -1,0 +1,13 @@
+The chart shows the recommendation performance on a Book dataset by varying the methods used for calculating the matching score.
+
+The methods compared are BERT, BLUE, ROUGE, and TaxRec.
+
+The performance is measured using three metrics: Recall@1, Recall@5, and Recall@10, represented by distinct bars for each matching method.
+
+1.Recall@1 (light green bars): Performance is consistently low across all methods but shows an improvement from BERT to TaxRec.
+
+2.Recall@5 (peach bars): Performance increases progressively from BERT to TaxRec, indicating TaxRec has a significant advantage.
+
+3.Recall@10 (lavender bars): This metric has the highest values for all methods, with TaxRec achieving the best score, followed by ROUGE, BLUE, and BERT.
+ 
+The TaxRec method demonstrates the best overall performance across all metrics, suggesting it is more effective at generating accurate recommendations for this dataset.

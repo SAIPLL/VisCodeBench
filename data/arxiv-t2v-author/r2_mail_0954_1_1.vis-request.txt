@@ -1,0 +1,5 @@
+For the given data, show a line plot of how each model type and settings with different ranks perform at different activated parameter ratio.
+Label the model type and settings for each line.
+ Make sure that Color represents different methods:  "S", "D", "R" and "E" refer to the proposed PERFT variants.
+Transparency indicates different sparsity levels (ratio of activated experts K/N , as "(TopK/N)"labeled for PERFT-R and PERFT-E).
+Marker size indicates bottleneck size D_B .

@@ -1,0 +1,4 @@
+From the data plot the mean profit Π against the Hoefding bound confidence level, s_δ, for the finite (FIN) and infinite (INF) population assumption.
+On the secondary axis plot the probability of budget infeasibility for the finite (FIN) and infinite (INF) population assumption.
+Merge the legends for the two axes.
+Finally, also plot the minimum profit achieved with reference data, Π(X_R).

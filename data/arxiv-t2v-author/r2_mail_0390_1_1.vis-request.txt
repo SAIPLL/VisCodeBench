@@ -1,0 +1,4 @@
+Show a grouped bar plot where the y-axis is P99 tail latency in microseconds and the x-axis is record value size in bytes.
+Each x value corresponds to a group of two bars, where the left bar is the original system in hatched blue color, and the right is the foreactor system in orange color.
+Place the value of each bar in small font on top of the bar.
+Abbreviate x values larger than 1024 with suffix 'K', for example, '16K' instead of '16384'.

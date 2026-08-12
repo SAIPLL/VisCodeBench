@@ -1,0 +1,5 @@
+Generate a horizontal stacked bar chart displaying user feedback on various aspects of the MIMOSA system.
+The chart consists of several questions on the y-axis, each representing a different feature or usability aspect of MIMOSA.
+The x-axis represents the number of respondents.
+ Each bar is divided into different colored segments, corresponding to a Likert scale ranging from 'Strongly Disagree' to 'Strongly Agree'.
+The colors represent:  Dark red for 'Strongly Disagree' Red for 'Disagree' Light pink for 'Somewhat Disagree' Purple for 'Neither Agree nor Disagree' Light blue for 'Somewhat Agree' Medium blue for 'Agree' Dark blue for 'Strongly Agree'

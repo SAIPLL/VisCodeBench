@@ -1,0 +1,1 @@
+Given the evaluation data (evaluation_data.xlsx), create four boxplots to visually compare the rating distributions for readability, correctness, usefulness, and overall satisfaction scores between the conversational interface and the graphical interface.

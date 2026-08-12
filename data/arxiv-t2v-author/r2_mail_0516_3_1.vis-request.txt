@@ -1,0 +1,2 @@
+Read all csv files, and plot a line for each, x value is the first column and y value is the second column, which also rename it to Delta Compression as Percentage of Original Size (%).
+Files that present data using the same method (ZSTD, Huffman) paint in the same color but different shape.

@@ -1,0 +1,6 @@
+Given the data in the variables 'probs', 'results_FH', 'results_PA', 'results_PD', 'results_GTB', 'results_DTA1' and 'results_A1TA3' which are lists of floats with the same length.
+ Plot the values of the six 'results_XX' variables in the y axis depending on the values in the 'prob' variable in the x axis.
+ The x coordinate should be labeled "likelihood of conflicts (%)" and the y coordinate labeled "time (ms)".
+ The y axis should be displayed in a logarithmic scale.
+ The legend should be ideally placed so that it does not cover the lines displayed on the figure.
+ These six lines should have different colors and markers and should remain distinguishable even if the plot is printed in black and white.

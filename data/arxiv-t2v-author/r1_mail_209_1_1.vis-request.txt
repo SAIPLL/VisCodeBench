@@ -1,0 +1,15 @@
+I would like a horizontal bar chart that displays the top 10 features ranked by their importance in a random forest model.
+
+Each bar should represent a feature, with the length of the bar proportional to its importance value.
+ 
+The features should be sorted in descending order of importance, with the most important feature, 'UniqueWordCount,' appearing at the top.
+
+Each bar should have a distinct pastel-like color, and the edges of the bars should be outlined in black with a slightly thick border.
+ 
+The x-axis should represent the importance values, while the y-axis should list the feature names.
+
+Both axes' labels and ticks should be bold, and the overall chart should have a clean, modern style.
+
+The chart title should read 'Top 10 Feature Importances with Random Forest'.
+ 
+Finally, ensure the chart layout is well-spaced and readable, suitable for presentation or publication.

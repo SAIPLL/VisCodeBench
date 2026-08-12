@@ -1,0 +1,4 @@
+For each fake_dir, plot the ap along the parameter (f).
+Each line should have a different color and bullets as markers.
+Flip the x-axis such that it goes from high to low.
+The clean value is equal to f = 1.0.

@@ -1,0 +1,1 @@
+Plot a posterior distribution with respect to the change point locations in the interval [0, n], and show its match with the theoretical prediction

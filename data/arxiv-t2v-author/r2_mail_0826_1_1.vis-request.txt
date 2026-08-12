@@ -1,0 +1,2 @@
+The provided data includes six sets of values corresponding to SOM, OM_1, TMM, OM_k, UMOPT, and UM_{TMM}.
+Plotted as a line graph.

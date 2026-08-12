@@ -1,0 +1,27 @@
+I have three sets of training results stored in pickle files under the path results/use_case_1/{M}_{L}/JS_training_results.pkl, where M and L can be 20, 200, or 2000.
+
+Each file contains training and validation losses for a JS divergence discriminator model over epochs, along with scalar values representing the training and validation bounds.
+ 
+I want to create a figure with three subplots arranged in a single row, corresponding to the three combinations: M = L = 20, 200, and 2000.
+
+
+Each subplot should:  
+- Plot the training loss (tr_loss) and validation loss (eval_loss) as line plots over epochs.
+ 
+- Add two horizontal dashed lines: one green line at the training bound (estimates[1]) and one red line at the validation bound (estimates[3]).
+ 
+- Have the title "M = {value}, L = {value}".
+ 
+- Set "Epoch" as x-axis label and "Loss" as y-axis label.
+ 
+- Include a grid with light transparency.
+ 
+
+The overall figure should:  
+- Be sized approximately (20, 5).
+ 
+- Have a global title: "$D_{JS}$ Discriminator Training and Validation Losses".
+ 
+- Include a shared legend placed at the center right with: "Training Loss", "Validation Loss", "Training Bound", "Validation Bound".
+ 
+- Be saved as JS_discriminator_losses.png in the same results/use_case_1/ folder.

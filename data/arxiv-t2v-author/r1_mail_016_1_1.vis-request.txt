@@ -1,0 +1,5 @@
+Plot performance, cost, and degree of openness of open MoE and dense LMs.
+Model names contain rounded parameter counts: model-active-total for MoEs and model-total for dense LMs.
+#ckpts is the number of intermediate checkpoints available.
+We highlight MMLU as a summary of overall performance; see §3 for more results.
+OLMOE-1B-7B performs best among models with similar active parameter counts and is the most open MoE.

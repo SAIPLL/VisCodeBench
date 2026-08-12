@@ -1,0 +1,1 @@
+Given the supplied data file that lists developer behavior and corresponding C file characteristics draw a heat map depicting the relationship between the two.

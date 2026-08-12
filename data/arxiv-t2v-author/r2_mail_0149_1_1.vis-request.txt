@@ -1,0 +1,1 @@
+For the given percentiles (P50, P75, P90, P99) of query latency evaluated for three different methods on business data, create a bar plot that clearly differentiates the methods.

@@ -1,0 +1,4 @@
+plot to show our study's main results.
+The horizontal axis displays the test suites, and the vertical axis displays the models.
+Green color corresponds to accuracy scores close to 100%, yellow close to 50%, and red close to 0.
+The top row represents human validation scores, achieved by native speakers who reviewed a random subsample of minimal pairs from each test suite.

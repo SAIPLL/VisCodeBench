@@ -1,0 +1,1 @@
+Based on my data file, draw a line chart of the contrast between the three modes, with color distinctions.

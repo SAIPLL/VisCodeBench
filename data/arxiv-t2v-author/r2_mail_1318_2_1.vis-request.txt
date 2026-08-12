@@ -1,0 +1,2 @@
+Given the mean Intersection-over-Union performance of various baselines and ablations, plot a barplot showing error bars in red.
+Create a legend on top right with blue square representing "ours", light-gray for "baselines", and darker gray for "ablations".

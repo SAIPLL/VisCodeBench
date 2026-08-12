@@ -1,0 +1,4 @@
+for the values containing in each files which has a name as expectationEntropy_random_*.txt, your task is to draw  'step' type histogram plot on the same figure.
+Label them according to 'random_*' based on the input file 'expectationEntropy_random_*.txt'.
+For example, the label for 'expectationEntropy_random_min.txt' would be 'randomMin'.
+Generate the figure as a PDF file with 300 DPI and tightly cropped.

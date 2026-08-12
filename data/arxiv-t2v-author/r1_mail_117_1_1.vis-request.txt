@@ -1,0 +1,1 @@
+Given the data in "./MLLM_Results", please plot a stacked histogram with x-axis being the confidence level, and y-axis being the frequency of the confidence level.

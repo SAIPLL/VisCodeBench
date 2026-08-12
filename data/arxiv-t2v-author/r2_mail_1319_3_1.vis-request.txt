@@ -1,0 +1,7 @@
+The following code implements a simple image graph diffusion step with an attention graph  
+``` def _diffusion_step(x,Q,V,attn,num_heads):          B, N, C = x.shape     V = torch.diag(V)     Q = Q + 1e-6*torch.eye(Q.size(-1),device=Q.device)     v = torch.nn.functional.linear(x, Q).reshape(B, N, num_heads, C // num_heads).permute(0, 2, 1, 3)      x = (attn @ v).transpose(1, 2).reshape(B, N, C)     x = torch.nn.functional.linear(x, V@torch.linalg.inv(Q))     return x  def diffusion_step(x,Q,V,attn,num_heads = 3):     return x + _diffusion_step(x,Q,V,attn,num_heads) ```  it does not use normalization.
+Implement PreNorm and PostNorm variations of it.
+Then for the no norm, post LN (with positive and negative weights), pre LN (with positive and negative weights), plot the evolution in the frequency ratio.
+The frequency ratio is defined here  ``` def freqratio(X):     bs,n,d = X.shape          lfc = (1/n)*(torch.ones((bs,n,n)).to(X.device)@X)     hfc = X - lfc          return (torch.linalg.norm(hfc,axis=(-1,-2))/torch.linalg.norm(lfc,axis=(-1,-2))).mean() ```  Have an option for a sharpening or smoothing diffusion model based on whether the V matrix is positive or not.
+For instance if it's negative it will be something like V = -1e-2*torch.rand(dim).to(device) .
+if sharpening use the color green, red otherwise.

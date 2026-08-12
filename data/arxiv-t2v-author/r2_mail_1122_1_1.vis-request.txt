@@ -1,0 +1,1 @@
+I would like to plot a bar chart, with 5 groups, each group represents a backbone model, and in each group there are 4 bars, which represent 4 different training paradigms.

@@ -1,0 +1,3 @@
+Plot two lines that show throughput (in kops/sec) across varying numbers of clients.
+Use a red line with triangle markers for the foreactor system, and use a blue line with circle markers for the original system.
+Show grid lines for the y axis at major ticks.

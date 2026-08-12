@@ -1,0 +1,5 @@
+Given the folder "data" consisting of "explain_log_gcn_dist.npy" and "explain_log_gcn_loo.npy", this code generates a line plot to compare two explanation methods (DistShift and LOO) for a GCN model.
+The visualization shows how the explanation accuracy changes with respect to the number of edges (up to 1,392,751 edges) at different granularity levels.
+The plot uses a blue line for DistShift and a green line for LOO method, with customized styling including Times New Roman font and grid lines.
+The figure is rendered in a 10:5 aspect ratio and saved as a high-resolution image (300 DPI) named 'explain_figure.jpg'.
+The data is loaded from pre-computed NumPy files containing the explanation results for each method.

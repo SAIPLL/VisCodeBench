@@ -1,0 +1,2 @@
+Plot energy prediction errors as a bar chart for all the models.
+For each model group together the errors for 4 splits

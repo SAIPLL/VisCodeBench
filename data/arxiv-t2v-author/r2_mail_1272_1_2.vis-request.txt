@@ -1,0 +1,1 @@
+Plot the runtime of each pipeline (in hours) against the length of the signal.

@@ -1,0 +1,1 @@
+plot the above figure using barplot, and finally add one more group call average

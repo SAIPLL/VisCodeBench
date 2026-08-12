@@ -1,0 +1,3 @@
+Based on csv data "tutoAI_a_selected" which contains TutoAI (column Q3_1, Q3_2, Q3_3) and YouTube Chapter (column Q14_1, Q14_2, Q14_3)'s performance, plot three pairs of boxplots.
+The names are "step text", "step timestamp" and "step thumbnail" respectively.
+Besides, conduct a Wilconx ranked sum test, if the p-value is smaller than 0.05/3, then draw "***" on top of the pair.

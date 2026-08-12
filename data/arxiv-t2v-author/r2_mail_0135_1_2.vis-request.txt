@@ -1,0 +1,7 @@
+Create a figure with three side-by-side subplots, each representing a different method: 'SGL,' 'SimGCL,' and 'HFGCL.'  Each subplot consists of two vertically stacked panels.
+The upper panel shows a 2D density plot of data points forming a ring-like structure with an orange-shaded density representation.
+The lower panel presents a 1D density estimation plot corresponding to the data distribution.
+The background of the plots should be lightly shaded.
+The density plots should use an orange color scheme, with a darker outline emphasizing density variations.
+Ensure each subplot has a title indicating the method name ('SGL,' 'SimGCL,' 'HFGCL').
+Maintain a uniform layout across all subplots for easy comparison.

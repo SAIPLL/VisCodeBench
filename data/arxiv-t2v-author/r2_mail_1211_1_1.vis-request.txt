@@ -1,0 +1,4 @@
+Given the surface normal predictions (ground truths, baseline model and our models), visualize them with a t-sne plot in two dimensions.
+Assign unique colors to data points from each model.
+Also add the frontal planes (dummy predictions) together for reference.
+Make sure the grid lines are behind the scattered data points.

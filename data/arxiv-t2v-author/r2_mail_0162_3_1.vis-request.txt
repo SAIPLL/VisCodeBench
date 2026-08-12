@@ -1,0 +1,2 @@
+Based on the data provided, a bar chart and a line graph are plotted separately.
+The bar chart compares the highs and lows of the three metrics in the three scenarios, and the line chart plots the changes in the best AP metrics within 500 epochs

@@ -1,0 +1,1 @@
+For the given data about memory usage for the person detection model on different inference engines, show a comparison bar chart.

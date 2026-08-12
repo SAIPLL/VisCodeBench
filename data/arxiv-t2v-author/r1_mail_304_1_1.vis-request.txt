@@ -1,0 +1,5 @@
+Context on the data: I have three models (called iterations), all trained for 2M updates.
+These models were scored at different moments of their training procedure.
+  Request: I would like to make a figure score vs number of updates to see how these models compare.
+Since the models are not always evaluated on the same checkpoints, linear interpolation needs to be performed in order to fill the gaps.
+Please put in bold the scores for the following key updates: 400K, 1M, 1.5M and 2M.

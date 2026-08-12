@@ -1,0 +1,9 @@
+For the given label distribution data across different modalities (\"text,\" \"audio,\" \"vision,\" and \"shared\") and six emotion categories (\"Happy,\" \"Sad,\" \"Anger,\" \"Surprise,\" \"Disgust,\" and \"Fear\"), generate a set of grouped bar charts.
+Create four subplots corresponding to different epochs (#1, #4, #7, and #10).
+Use blue for \"text,\" orange for \"audio,\" green for \"vision,\" and red for \"shared.\" Label the x-axis with emotion categories and the y-axis as \"Density.\" Include a legend for modality differentiation.
+Save the visualization as \"label_distribution_MER_mosei.png\" with high quality.
+ 3\u3001\"For the given label distribution data across different modalities (\"text,\" \"audio,\" \"vision,\" and \"shared\"), and their corrsponding regression sentiment scores.
+Create four subplots corresponding to different epochs (#1, #4, #7, and #10).
+Use blue for \"text,\" orange for \"audio,\" green for \"vision,\" and red for \"shared,\" ensuring semi-transparent overlapping densities.
+Label the x-axis with the distribution range and the y-axis as \"Density.\" Include a legend for modality differentiation.
+Save the visualization as \"label_distribution_MSA_mosei.png\" with high quality.\"

@@ -1,0 +1,4 @@
+For the given data, plot multiple heatmaps (3 heatmaps horizontally).
+In each heatmap, on the y-axis there should be differrent AQM types, on the x-axis there should be different buffer sizes in terms of BDP, and each cell should show the Prague throughput and below that, it should show CUBIC throughput in parenthesis.
+First heatmap should show the case where CUBIC does not have ECN support, the second heatmap should show the case where CUBIC supports ECN, and the last heatmap should show the case where Prague ECN fallback algorithm is ON.
+The colorbar should be from 0 to 100.

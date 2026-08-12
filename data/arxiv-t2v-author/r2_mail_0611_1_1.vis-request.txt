@@ -1,0 +1,10 @@
+For the given data in the variables "eegvit_rmse", "eegvit_mae_04_rmse" and "eegvit_mae_08_rmse", show a line chart.
+Mark each data point as a dot.
+The title of this chart should be "1 Transformer Block".
+Mark "eegvit_rmse" in blue, "eegvit_mae_04_rmse" in orange, "eegvit_mae_08_rmse" in green.
+Indicate the value of the last data point in "eegvit_rmse" with a red horizontal dashed line.
+Show a legend: "EEGViT" for "eegvit_rmse" data, "EEGViT-MAE, r = 0.4" for "eegvit_mae_04_rmse" data, "EEGViT-MAE, r = 0.8" for "eegvit_mae_08_rmse" data, "EEGViT at 15th epoch" for the red dashed line.
+Use math symbol font for "r" in "r=", and "th" in "15th" should be superscript.
+The x-axis shows epoch number 1-15, with the title "Training Epochs".
+The y-axis shows values, with the title "RMSE".
+Save this chart as "EEGViT-MAE_vis.pdf" with high quality.

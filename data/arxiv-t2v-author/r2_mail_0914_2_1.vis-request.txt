@@ -1,0 +1,2 @@
+Please write a Python script to generate the visualization for the six groups of data.
+For each group, use a line chart to visualize it.

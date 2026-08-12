@@ -1,0 +1,1 @@
+I want scatterplots of accuracy with LingMess, CAW-coref and the SpanBERT models, split by the different pronoun series and indicating the grammatical case of the pronoun with the colour and shape of the markers

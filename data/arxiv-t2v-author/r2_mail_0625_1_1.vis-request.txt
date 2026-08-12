@@ -1,0 +1,13 @@
+Using the reconstruction error data in the '4_data' folder (PCA and 'ours' models for normal and anomaly samples), create a side-by-side comparison plot with two panels.
+For each model, plot the MSE values for pre-intervention (anomaly) and post-intervention (normal) data, showing both raw values (with alpha=0.5) and filtered values (using a median filter with window size 120).
+
+Use green and blue colors for the filtered lines, and light green and light blue for raw data.
+Add a red dashed line to indicate the threshold for anomaly detection.
+
+Include a grid on both axes, set y-axis limits from 0 to 1, and use the same y-scale for both panels.
+
+Label the x-axis as 'Time [Input windows]' and y-axis as 'MSE'.
+
+Add titles 'PCA [36]' and 'Ours' to the respective panels, and include a legend in the upper left corner.
+
+Save the figure as 'ad_reconstruction_MSE.png' with 600 DPI resolution.

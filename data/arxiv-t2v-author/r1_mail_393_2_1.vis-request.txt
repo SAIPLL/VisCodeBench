@@ -1,0 +1,26 @@
+I have CLIPScore data for different models, including baseline methods (GLACNet, AREL, TAPM, ReCo-RL) and our proposed methods (Ours beam, Ours top-k, Ours nucleus, Ours SimCTG).
+ 
+I want a grouped bar chart where: 
+- The x-axis represents the different models: ['GLACNet', 'AREL', 'TAPM', 'ReCo-RL', 'Ours beam', 'Ours top-k', 'Ours nucleus', 'Ours SimCTG'].
+
+- The y-axis represents the CLIPScore values.
+
+- For each model, display two bars: One for 'CLIPScore without contrastive loss' using a lighter color.
+One for 'CLIPScore with contrastive loss' using a darker color (only for our proposed models; for baselines, the values should remain zero).
+
+- Include horizontal reference lines: One for 'RefCLIPScore of GT' at 78.97.
+One for 'CLIPScore of GT' at 65.25.
+
+- The legend should differentiate: 'RefCLIPScore of GT' (dashed line).
+'CLIPScore of GT' (solid line).
+'RefCLIPScore without contrastive loss' (lighter color).
+'CLIPScore without contrastive loss' (lighter color).
+'RefCLIPScore with contrastive loss' (darker color).
+'CLIPScore with contrastive loss' (darker color).
+
+- The title of the plot should be 'Concatenation after mapping network'.
+
+- The x-axis should be labeled 'Models', and the y-axis should be labeled 'CLIPScore'.
+
+- Show the numerical values on top of each bar for clarity.
+- The value of y-axis should start from 50 instead of 0.

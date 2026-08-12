@@ -1,0 +1,2 @@
+You have the data from three different methods.
+Please plot their data into three subplots with (1, 3) arranging in python code.

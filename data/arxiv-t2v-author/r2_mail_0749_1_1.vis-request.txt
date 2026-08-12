@@ -1,0 +1,3 @@
+Make a bar chart about "The most reduced dependenies".
+The X label is dependency's name and the y label is the amount of removed scenarios.
+The step of y axis is 1 and display the horizontal line in the graph.

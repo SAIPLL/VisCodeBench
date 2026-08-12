@@ -1,0 +1,4 @@
+Plot precision-recall curves of the "x_values" (recall) and "y_values" (precision) data for the models within the .py file.
+Additionally, label each point of each curve with the threshold used, as per the "labels" variable of each model.
+Then, draw F1 score isolines with dashed black lines and label them on the top- and left-side of the plot.
+Finally, create a legend, label the x-axis as "Recall %", and the y-axis as "Precision %".

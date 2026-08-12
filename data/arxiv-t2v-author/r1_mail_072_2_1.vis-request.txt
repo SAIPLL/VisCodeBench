@@ -1,0 +1,1 @@
+create a figure category, color, font size of label and legend should be clarify.

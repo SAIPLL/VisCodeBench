@@ -1,0 +1,4 @@
+In the json file there are multiple metrics for different models.
+for each metric plot all models using lineplots.
+Keep in mind that the layer sub parts are alternating in the following order: norm,attention,norm,MLP.
+color code them as norm in yellow, attention in grey and MLP in white.

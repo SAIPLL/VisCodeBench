@@ -1,0 +1,2 @@
+You are given a json file ("qg_train_data_raw.jsonl") that contains multiple samples and for each sample there are some predictions with confidences.
+Please extract those confidences and visualize "averaged confidences for sub-questions sets distribution" in a histogram

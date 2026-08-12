@@ -1,0 +1,2 @@
+For the given data in the variables "Layers of Resnet" and "Top1 error," show a bar chart.
+Place the values on top of the bars.

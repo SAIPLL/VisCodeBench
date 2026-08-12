@@ -1,0 +1,9 @@
+Create a visualization showing the direct and indirect effects from my mediation analysis.
+ For each outcome variable FP (fairness), PER (privacy_concerns), and IM (impression_management), display the direct and indirect effects as grouped bar charts side-by-side.
+Use blue bars for direct effects and orange bars for indirect effects.
+Add a star symbol (★) above bars with statistically significant effects.
+ Include error bars calculated from the confidence intervals.
+Add a horizontal line at zero to better illustrate positive and negative effects.
+Make the x-axis labels show participant demographics with proper capitalization and rotation for readability.
+ Display the three outcome variables in separate panels arranged horizontally with appropriate subplot labels.
+Add a legend in the first panel only, and ensure consistent and professional formatting throughout.

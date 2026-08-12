@@ -1,0 +1,4 @@
+Plot $\tau_c$ (y-axis) as a function of the number of samples N (x-axis) using the given "tau_c_list.csv" data.
+Represent each data point as a red circle.
+Additionally, to allow comparison, plot a constant blue solid line at 53.026, independent of the number of samples.
+For the legend in the lower right corner, label the blue line as "FLEUR-Score Smoothing" and the red circles as "FLEUR-Sampling."

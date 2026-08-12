@@ -1,0 +1,2 @@
+Here is the accuracy comparison of three different models (GPT-4.0, Gemini 1.0, and GPT-3.5).
+The comparison includes the accuracy achieved using zero-shot approaches, the benchmark QA results reported in the original paper, and the accuracy improvements achieved using the proposed methodology presented in this paper.

@@ -1,0 +1,1 @@
+A dual Y-axis graph with 6 samples, including blue and orange parts, and the legend is on the bottom left

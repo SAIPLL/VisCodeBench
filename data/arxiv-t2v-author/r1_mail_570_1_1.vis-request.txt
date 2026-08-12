@@ -1,0 +1,38 @@
+Please write a Python script that uses Matplotlib and Numpy to generate six different types of weight decay curves, representing the variation of the ratio between distilled data and manually labeled data as training progresses over several epochs.
+
+The following are the specific requirements for the task:  Define several different weight decay functions:  Pure Distilled: Always remains at 1.0, indicating complete reliance on distilled data.
+
+Pure Original: Always remains at 0.0, indicating complete reliance on manually labeled data.
+
+Simple Mix: Relies on distilled data during the first half of training and on manually labeled data during the second half.
+
+Sigmoid: Use a sigmoid function to smoothly transition between distilled and original data.
+
+You need to implement a sigmoid function with a tunable parameter k that controls the steepness of the transition.
+
+Cosine: Use a cosine function to smoothly transition, ensuring the weight remains between 0 and 1, gradually changing as training progresses.
+
+Power Decay: Use a power decay function to smoothly transition between the two types of data.
+The parameter n controls the speed of the decay.
+
+Create a range for the epochs: Define a range from 0 to 19 (for a total of 20 epochs) and compute the values of each weight decay function for each epoch.
+ 
+Generate the plots:  Use Matplotlib to create a 2x3 grid of subplots, with each subplot showing the result of a different weight decay function.
+
+For each subplot, the x-axis should represent the training epochs (from 0 to 19), and the y-axis should represent the weight ratio between distilled and manually labeled data (ranging from 0 to 1).
+
+Add labels for each curve, and include a legend showing the specific parameters (such as the k value for the Sigmoid function or the n value for the Power Decay function).
+
+Set titles and labels for the plots:  Each subplot should have a title indicating which decay type it represents.
+
+Add x-axis and y-axis labels, which should be "Epoch" and "Weight $w_0$", respectively.
+
+Enable grid lines and ensure that each subplot has clear ticks and labels.
+
+Save and display the plots:  Save the generated plots as a PDF file.
+
+Ensure that the layout is adjusted so the subplots do not overlap and that the titles and labels are clearly visible.
+
+Additional Notes:  Use the Numpy library for mathematical calculations (such as sigmoid and cosine computations).
+Create the 2x3 subplot grid using Matplotlib's plt.subplots() function, ensuring that each subplot shows a different decay curve.
+Adjust the layout of the plots to ensure no overlap, and make sure the chart is clean and easy to understand.

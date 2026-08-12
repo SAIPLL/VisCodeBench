@@ -1,0 +1,3 @@
+Plot a grouped bar plot where the x axis is the B+-tree degree parameter and the y axis is throughput (in million records/sec).
+Each x value corresponds to a group of three bars, where the original system is plotted as a hatched blue bar, the foreactor system with pre-issuing depth of 64 (foreactor-64) is plotted as a light orange bar, and the foreactor system with pre-issuing depth of 256 (foreactor-256) is plotted as a dark orange bar.
+Put the y value of each bar on top of the bar.

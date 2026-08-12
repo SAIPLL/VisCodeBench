@@ -1,0 +1,2 @@
+The line chart shows the DL network accuracy when the different number of pseudo labels are chosen to train the DL network.
+The dotted line at top-16 shows that the accuracy saturates at this point, to illustrate that its the optimal number of pseudo labels to select to train the DL network.

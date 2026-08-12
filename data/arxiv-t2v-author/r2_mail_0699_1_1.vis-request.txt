@@ -1,0 +1,5 @@
+Based on the given data, draw a PDF containing 8 heat maps (2 rows, 4 columns).
+The following requirements apply: 1.
+The colors range from lightblue to cornflowerblue 2.
+The key of each first-level dict is the horizontal axis, and the key of the inner nested dict is the vertical axis 3.
+Add a title and figure titles

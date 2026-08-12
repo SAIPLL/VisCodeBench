@@ -1,0 +1,16 @@
+Assume you have a numpy array with dimension [2, 5, 7], with every element being a floating-point number that represents a metric called \"speed\".
+Use this numpy array to generate a figure that shows the speed of different accelerators for various LLMs..
+
+The figure is divided into two halves: left and right, which is why the numpy array's first dimension is 2.
+
+The left half has a title \"Discriminative\", while the right half has a title \"Generative\".
+
+Each half of the figure will show the speed of different accelerators on various LLMs.
+
+You are given the speed of 6 LLMs: [\"OPT-1.3B\", \"Phi-2B\", \"Yi-6B\", \"Llama-2\\n7B\", \"Llama-2\\n13B\", \"Llama-3\\n8B\"] on 5 different accelerators: [\"FP16\", \"BitMoD-LL\", \"ANT-LY\", \"OliVe-LY\", \"BitMoD-LY\"].
+
+The name of the 6 LLMs will appear on the X-axis as tick labels.
+
+In addition, the average speed of these 6 LLMs will also appear on the X-axis with a tick label \"GeoMean\", which is why the numpy array's last dimension is 7 instead of 6.
+
+Every LLM label, including \"GeoMean\", contains 5 bars that correspond to the speed of different accelerators for this LLM, which is why the numpy array's middle dimension is 5.

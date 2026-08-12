@@ -1,0 +1,1 @@
+For the given data in lists "value_gsh", "value_trh", "value_rl1", "value_rl2" (4 algorithms), draw four subfigures, each shows a bar chart corresponding to a specific problem distribution.

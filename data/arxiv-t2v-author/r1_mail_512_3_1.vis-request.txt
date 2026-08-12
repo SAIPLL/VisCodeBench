@@ -1,0 +1,3 @@
+load 'attention_weights_2_back.pt' into 'attention_weights', and then for each epoch (num_epochs=10), plot 'attention_head' as a heatmap, where 'attention_head = torch.mean(attention_weights_over_epochs[epoch][0], dim=0)[0].cpu().detach().numpy()'.
+Also plot a diagonal line from top left to bottom right of the heatmap.
+Arrange the 10 figures (one for each epoch) into 5 columns.

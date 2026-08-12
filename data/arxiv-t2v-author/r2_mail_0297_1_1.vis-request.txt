@@ -1,0 +1,2 @@
+Using the Iris dataset from sklearn, generate a 2D scatter plot with a  LAMP projection at scale factor [0.01, 0.1, 1, 10, 100] (1 plot for each scale).
+Color the points by their class labels,  and compute three metrics: silhouette coefficient, neighborhood preservation,  and silhouette ratio.

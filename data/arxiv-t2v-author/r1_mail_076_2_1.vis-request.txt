@@ -1,0 +1,4 @@
+Plot the scattered point plots of Score vs.
+Token length and Score vs.
+Runtime subplots into the same figure with (1, 2) arranging.
+For data types with turn1 (T1) and turn2 (T2), use blue and red colors, respectively.

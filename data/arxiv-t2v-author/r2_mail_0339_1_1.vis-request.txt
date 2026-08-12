@@ -1,0 +1,2 @@
+For the given coefficients of a fitted logistic regression model, plot the sorted odds ratios.
+Also add a dotted line at odds = 1.

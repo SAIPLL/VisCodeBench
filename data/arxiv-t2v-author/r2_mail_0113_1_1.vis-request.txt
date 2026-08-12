@@ -1,0 +1,1 @@
+For the given performance of three different methods (Diffuser, Decision Diffuser and DexDiffuser) on four different tasks (Door Openning, Pen Re-orientation, Hammer Nail, and Manipulate Block), draw the bar chart to compre their performances.

@@ -1,0 +1,3 @@
+Create a two-dimensional scatter plot of the data contained in "usps_embedding.csv" by applying t-SNE wit n_components=2.
+The first column of the data are the labels that should only be used to color the scatters.
+Use a scatter_size of 10.

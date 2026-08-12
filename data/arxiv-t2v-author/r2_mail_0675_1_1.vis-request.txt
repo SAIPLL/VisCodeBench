@@ -1,0 +1,4 @@
+A key component of PALM is computing the moving average of sensitivities across data batches, smoothed by α.
+
+Make a figure illustrates the variations of the mean errors, for the benchmark datasets, for varying α.
+We observe that the "domain-level" sensitivity across past batches of data is indeed useful.

@@ -1,0 +1,2 @@
+A grouped bar chart (Response time and Failure ratio together) to compare the failure ratio and response time of 6 benchmarked LLMs in vanilla and the Chain-of-Thoughts settings in the FoCus dataset.
+A vertical line should separate the first three LLMs bars from the last three LLMs.

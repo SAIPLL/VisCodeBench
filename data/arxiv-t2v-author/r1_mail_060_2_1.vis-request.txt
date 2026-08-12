@@ -1,0 +1,2 @@
+Create a facet plot for the distribution of the alpha.
+The facet rows should represent the foundation, the Y different instruments, hue the agent and X the alpha value.

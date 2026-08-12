@@ -1,0 +1,3 @@
+Generate a catplot based on the provided data.
+There should be two subplots in a row, where the left is for Mistral-Base and right is for Llama-3.
+There should be two y axes, left is the AlpacaEval results and right is the MT-bench results.

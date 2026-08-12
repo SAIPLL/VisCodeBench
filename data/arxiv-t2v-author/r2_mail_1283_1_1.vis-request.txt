@@ -1,0 +1,4 @@
+We need to create 6 subplots first.
+For each category, plot 2 lines with the 2 histograms.
+Place the category name on top, and display the x-axis in e-4 format.
+Put the label "Number of feature maps" and the legend only in the first subplot.

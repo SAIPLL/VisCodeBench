@@ -1,0 +1,4 @@
+I have evaluation data (plot_data.csv) measuring three metrics - Completeness, Hallucination, and Consistency - across different legal parties (Applicant, State, and Court).
+I'd like to create two horizontal bar charts, stacked vertically.
+  - the first one showing the overall average scores for each metric, with error bars/confidence intervals  - the second one is a grouped horizontal bar chart breaking down each metric by the three legal parties (Applicant, State, Court), also with error bars.
+Include a legend identifying which color represents each party.

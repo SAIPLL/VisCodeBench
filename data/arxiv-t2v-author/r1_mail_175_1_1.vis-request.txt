@@ -1,0 +1,13 @@
+Given the data in the `systems.csv` file, generate a plot visualizing the data.
+
+Your x-axis should contain the length column while the y-axis should show the loss achieved by the various systems, represented by all other columns in the data.
+
+To normalize the data, you should subtract the optimal cross entropy column from all other columns.
+
+Furthermore, rename the columns for an accurate representation in the legend as follows: davidson -> Davidson ($\theta = 1$), rao -> Rao-Kupper ($\theta = \sqrt{2}$), cross_entropy -> Bradley-Terry, accuracy -> accuracy, glicko -> Glicko.
+
+Add a horizontal grey dotted line labeled with the words "Constant Rating" at the loss log(2) (remember to subtract the optimal loss from this as well).
+
+Despine the figure, increase the font sizes, set a light-grey background and set the y-scale to a log scale.
+
+Give an appropriate title and x-label, and make sure to change the used font to the LaTeX default font.

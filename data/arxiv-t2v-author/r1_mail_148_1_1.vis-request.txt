@@ -1,0 +1,2 @@
+Plot the log-likelihood distributions of Human, GPT-3.5-turbo, and GPT-3.5-turbo attacked text for the LogRank, LogProb, DetectGPT, and Fast-DetectGPT detectors.
+All data is stored in the "./data" directory.

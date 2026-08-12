@@ -1,0 +1,3 @@
+Plot empirical coverage over test coverage for SVHN and tissuemnist dataset and the overall average results on all 20 datasets.
+add as a subplot title the name of the dataset for SVHN and tissuemnist, while use average for the average over all 20 datasets.
+Add a legend on top of the plots with the name of the methods.

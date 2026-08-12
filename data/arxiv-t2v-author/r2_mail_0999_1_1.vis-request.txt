@@ -1,0 +1,12 @@
+Using the provided Excel data, generate a dual-axis line plot or grouped bar chart to visualize annual trends in AQA (Action Quality Assessment) publications.
+
+The plot should use the same x-axis (years) but separate the data into two vertically stacked subplots: 
+(a) the top subplot should show the number of papers per year categorized by application domains (e.g., sports, medical, industrial), 
+while (b) the bottom subplot should display counts by emerging research themes (e.g., fairness, interpretability, multimodal learning).
+
+
+Ensure both subplots share the same time scale for easy comparison.
+
+Highlight the growth in publications over recent years using annotations (e.g., arrows, text labels) to emphasize key trends, such as surges in specific domains or shifts in research focus.
+
+If applicable, consider using a secondary y-axis in one subplot to accommodate varying scales while maintaining readability.

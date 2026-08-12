@@ -1,0 +1,5 @@
+Create line charts per work area size and per method
+Line chart for:
+- area size = [900, 625, 400, 225, 100]
+- gps_size
+- method = ["py_par", "py", "qgis", "postgis"]

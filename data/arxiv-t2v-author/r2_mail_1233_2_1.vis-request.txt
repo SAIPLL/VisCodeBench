@@ -1,0 +1,2 @@
+Given two sets of data, one "before training" and one "after training".
+Draw their bar charts, fill them with different patterns, and the data between different fruit varieties correspond one by one.

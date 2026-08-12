@@ -1,0 +1,4 @@
+Given the token prediction probabilities for W4A4 and W4A16, create a scatter plot where each point represents a token with its corresponding prediction probability.
+Use red to mark points for W4A4 and blue for W4A16.
+Along the top and right sides of the scatter plot, display the marginal distributions of accepted tokens and rejected tokens, respectively.
+Additionally, plot a separate density legend bar on the right to illustrate the distribution of accepted tokens and rejected tokens.

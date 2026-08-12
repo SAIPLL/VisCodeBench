@@ -1,0 +1,5 @@
+Load the data in the provided excel file ("adapter_types_only.xlsx").
+Create a matplotlib bar plot with the adapter type data from the first column.
+The bars corresponding to the highest values should be colored in salmon, the others in skyblue.
+Add grids to the plot and appropriate axis descriptions.
+The order that the bars are displayed in should be as follows: "Unique", "Houlsby", "Pfeiffer", "K-Adapter", "Bapna and Firat", "StructAdapt".

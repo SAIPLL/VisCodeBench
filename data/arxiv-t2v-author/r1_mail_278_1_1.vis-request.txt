@@ -1,0 +1,9 @@
+Please use the data file 'scores-code.xlsx' to plot a stacked histogram of the percentage score from each of the six groups ['35-RAW', '35', '4-RAW', '4', 'MIXED', 'ST'] using the colours ['#386cb0', '#8da0cb','#ed936a','#E76F51','#888670','#2A9D8F'].
+
+On top of the stacked histogram, plot each groups mean as vertical lines and corresponding standard error as horizontal error bars.
+
+Include a legend on the plot showing the colours of the different groups along with their mean and standard error.
+
+For the legend, include the full name for each group where ['35-RAW', '35', '4-RAW', '4', 'MIXED', 'ST'] correspond to ['GPT-3.5 raw input:', 'GPT-3.5 with Prompt Engineering:', 'GPT-4 raw input:', 'GPT-4 with Prompt Engineering:', 'Mixed student and GPT-4:', 'Student only:'].
+
+The title should be 'Histogram of Total Scores by Source (as Percentages)', the x label 'Percentage of Total Score' and the y label 'Count'.

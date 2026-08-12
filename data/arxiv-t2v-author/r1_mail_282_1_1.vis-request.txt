@@ -1,0 +1,9 @@
+I have a CSV file ("confidence_score_data.csv") that stores my model predictions (col.
+Prediction), my model confidence scores (col.
+Confidence), and whether the model is correct or not (col.
+Defer).
+Prediction can be one of {-1,0,1}.
+-1 means "Contradict," 0 means "No mention," and 1 means "Entail."  Defer can be one of {0,1}.
+0 means the prediction is correct, and 1 means the prediction is wrong (hence, we want to defer this sample).
+ Draw me a 3D plot showing the distribution of the confidence scores across the three classes I have in the data and whether the model prediction is correct or wrong.
+Label the axes accordingly.
