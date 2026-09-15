@@ -52,7 +52,7 @@
 
 - Muneeba Asif, Mohammad Kumail Kazmi, Mohammad Ashiqur Rahman, Syed Rafay Hasan, and Soamar Homsi. 2024. SHEATH: Defending Horizontal Collaboration for Distributed CNNs against Adversarial Noise. arXiv preprint arXiv:2409.17279.
 
-- Hadi Askari, Anshuman Chhabra, Muhao Chen, and Prasant Mohapatra. 2025. Assessing LLMs for Zero-shot Abstractive Summarization Through the Lens of Relevance Paraphrasing. arXiv preprint arXiv:2406.03993.
+- Hadi Askari, Anshuman Chhabra, Muhao Chen, and Prasant Mohapatra. 2025. Assessing LLMs for Zero-shot Abstractive Summarization Through the Lens of Relevance Paraphrasing. In Findings of the Association for Computational Linguistics: NAACL 2025, pages 2187–2201, Albuquerque, New Mexico. Association for Computational Linguistics.
 
 - Parham Abed Azad and Hamid Beigy. 2024. Multi-BERT: Leveraging Adapters and Prompt Tuning for Low-Resource Multi-Domain Adaptation. arXiv preprint arXiv:2404.02335.
 
