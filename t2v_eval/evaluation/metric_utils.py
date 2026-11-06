@@ -847,9 +847,14 @@ def read_t2v_log_dir(
     summarize_before: bool = False,
     summarize_after: bool = False,
     print_points: int = 0,
+    normalize: bool = True,
 ) -> dict:
     """
     Parse and preprocess a T2V log directory.
+
+    With ``normalize=False`` the per-axis min-max normalisation is skipped and the
+    raw logged values are returned (the data-similarity metric then normalises each
+    prediction/reference axis pair into the reference axis's frame itself).
 
     Chains: parsing → normalisation → grouping → (optional) downsampling →
     filtering.  This is the main entry point for loading logged figure data.
@@ -887,7 +892,8 @@ def read_t2v_log_dir(
         summarize_fig_data(fig_data, data_type=data_type,
                            verbose=verbose, print_points=print_points)
 
-    fig_data = normalize_fig_data(fig_data)
+    if normalize:
+        fig_data = normalize_fig_data(fig_data)
     fig_data = group_fig_data_by_plt_func(fig_data)
 
     if down_sampling:

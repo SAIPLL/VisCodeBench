@@ -14,7 +14,8 @@ import scipy.spatial.distance
 from joblib import Parallel, delayed
 from tqdm import tqdm
 
-from .metric_utils import read_t2v_log_dir, summarize_fig_data, data_to_np_1d, data_to_np_4d
+from .metric_utils import (read_t2v_log_dir, summarize_fig_data, data_to_np_1d, data_to_np_4d,
+                           find_min_max)
 
 
 # ---------------------------------------------------------------------------
@@ -95,7 +96,9 @@ def get_cont_recall_new(p_xs, p_ys, g_xs, g_ys, epsilon: float) -> float:
     """
     Parametric (arc-length) interpolation recall for continuous (line) series.
 
-    Vectorised implementation.
+    Vectorised implementation. Both curves are expected in the reference axis frame
+    (reference data in [0, 1]), so the point error is divided by the reference range,
+    1, rather than by the point's distance from the origin.
     """
     p_ts = np.concatenate([[0], np.cumsum(np.hypot(np.diff(p_xs), np.diff(p_ys)))])
     g_ts = np.concatenate([[0], np.cumsum(np.hypot(np.diff(g_xs), np.diff(g_ys)))])
@@ -124,8 +127,7 @@ def get_cont_recall_new(p_xs, p_ys, g_xs, g_ys, epsilon: float) -> float:
     px = np.interp(g_ts, p_ts, p_xs)
     py = np.interp(g_ts, p_ts, p_ys)
     error      = np.hypot(g_xs - px, g_ys - py)
-    denom      = np.hypot(g_xs, g_ys) + epsilon
-    norm_error = np.minimum(1.0, error / denom)
+    norm_error = np.minimum(1.0, error)
 
     total_score    = float(np.sum((1.0 - norm_error) * interval))
     total_interval = float(np.sum(interval))
@@ -224,11 +226,60 @@ def compare_data_series(pred_series: dict, gt_series: dict, debug: bool = False)
     return compare_scatter(pred_data, gt_data, debug=debug)
 
 
+_COORDS = ("x", "y", "z", "t")
+
+
+def reference_axis_frame(gt_series_list: list) -> dict:
+    """
+    ``{coord: (offset, scale)}`` mapping the reference axis into [0, 1].
+
+    The range is taken over all non-pie series in the reference axis. A constant
+    reference coordinate (e.g. a flat line) has no range, so it is centred on 0 and
+    scaled by its own magnitude (or 1 when it is 0): matching values map to 0, and a
+    prediction that doubles the constant maps to 1.
+    Coordinates absent from the reference axis get no entry and are left as is.
+    """
+    bounds = find_min_max([s for s in gt_series_list if s["plt_func"] != "pie"])
+    frame = {}
+    for coord, (lo, hi) in zip(_COORDS, bounds):
+        if not (np.isfinite(lo) and np.isfinite(hi)):
+            continue
+        frame[coord] = (lo, hi - lo) if hi > lo else (lo, abs(lo) or 1.0)
+    return frame
+
+
+def to_reference_frame(series_list: list, frame: dict) -> list:
+    """Copies of *series_list* expressed in *frame*; pie slices become proportions."""
+    out = []
+    for series in series_list:
+        data = dict(series["data"])
+        if series["plt_func"] == "pie":
+            total = np.sum(data["x"])
+            if total > 0:
+                data["x"] = np.asarray(data["x"]) / total
+        else:
+            for coord, (offset, scale) in frame.items():
+                if coord in data:
+                    data[coord] = (np.asarray(data[coord], dtype=float) - offset) / scale
+        out.append({**series, "data": data})
+    return out
+
+
 def compare_axes(pred_series_list: list, gt_series_list: list,
-                 debug: bool = False, n_jobs: int = 1) -> float:
+                 debug: bool = False, n_jobs: int = 1,
+                 normalize: bool = True) -> float:
     """
     Compare two axes by solving the optimal series-assignment problem.
+
+    With *normalize*, both axes are first mapped into the reference axis's frame
+    (:func:`reference_axis_frame`), so scale, unit and offset errors in the
+    prediction are scored instead of being normalised away.
     """
+    if normalize:
+        frame = reference_axis_frame(gt_series_list)
+        pred_series_list = to_reference_frame(pred_series_list, frame)
+        gt_series_list   = to_reference_frame(gt_series_list, frame)
+
     n_pred = len(pred_series_list)
     n_gt   = len(gt_series_list)
 
@@ -249,7 +300,8 @@ def compare_axes(pred_series_list: list, gt_series_list: list,
 
 
 def compare_figures(pred_fig_data: dict, gt_fig_data: dict,
-                    debug: bool = False, n_jobs: int = 1) -> float:
+                    debug: bool = False, n_jobs: int = 1,
+                    normalize: bool = True) -> float:
     """
     Compare two full figures (dicts of axes) by optimal axis assignment.
     """
@@ -259,7 +311,7 @@ def compare_figures(pred_fig_data: dict, gt_fig_data: dict,
     n_gt      = len(gt_axes)
 
     iterator = (
-        delayed(compare_axes)(pred_axes[i], gt_axes[j], debug=debug)
+        delayed(compare_axes)(pred_axes[i], gt_axes[j], debug=debug, normalize=normalize)
         for i in range(n_pred)
         for j in range(n_gt)
     )
@@ -293,7 +345,8 @@ def calculate_similarity_score(pred_log_dir: str,
                                 print_points: int = 0,
                                 use_cache: bool = False,
                                 save_results: bool = False,
-                                verbose: bool = False) -> float:
+                                verbose: bool = False,
+                                reference_frame: bool = True) -> float:
     """
     Compute the data-similarity score between a predicted and a ground-truth
     T2V log directory.
@@ -318,15 +371,24 @@ def calculate_similarity_score(pred_log_dir: str,
         Write the result to ``evaluation.json`` in ``pred_log_dir``.
     verbose
         Print debug information during scoring.
+    reference_frame
+        Map each (prediction, reference) axis pair into the reference axis's frame
+        before comparing (default). ``False`` normalises every log directory by its
+        own ranges at load time, as before; the line-error divisor change in
+        :func:`get_cont_recall_new` applies in both modes.
 
     Returns
     -------
     float  Similarity score in [0, 1].
     """
     eval_path = os.path.join(pred_log_dir, "evaluation.json")
+    normalisation = "reference_frame" if reference_frame else "self"
     if use_cache and os.path.exists(eval_path):
         with open(eval_path, encoding="utf-8") as fh:
-            return json.load(fh)["similarity_score"]
+            cached = json.load(fh)
+        # Results written before reference-frame scoring carry no "normalisation" field.
+        if cached.get("normalisation", "self") == normalisation:
+            return cached["similarity_score"]
 
     _kwargs = dict(
         dedup=dedup,
@@ -337,6 +399,7 @@ def calculate_similarity_score(pred_log_dir: str,
         summarize_before=summarize_before,
         summarize_after=summarize_after,
         print_points=print_points,
+        normalize=not reference_frame,
     )
     pred_fig_data = read_t2v_log_dir(pred_log_dir, **_kwargs)
     gt_fig_data   = read_t2v_log_dir(gt_log_dir,   **_kwargs)
@@ -347,7 +410,8 @@ def calculate_similarity_score(pred_log_dir: str,
         if gt_n * pred_n > 10:
             print(f"GT series: {gt_n}, Pred series: {pred_n} — may take a while …")
 
-    similarity_score = compare_figures(pred_fig_data, gt_fig_data, debug=verbose)
+    similarity_score = compare_figures(pred_fig_data, gt_fig_data, debug=verbose,
+                                       normalize=reference_frame)
 
     if save_results:
         result = {
@@ -356,6 +420,7 @@ def calculate_similarity_score(pred_log_dir: str,
             "gt_log_dir":      gt_log_dir,
             "gt_summary":      summarize_fig_data(gt_fig_data,   data_type="Ground Truth", verbose=False),
             "similarity_score": similarity_score,
+            "normalisation":    normalisation,
         }
         with open(eval_path, "w", encoding="utf-8") as fh:
             json.dump(result, fh, indent=4)
