@@ -175,3 +175,12 @@ tests/pandas
 .vscode
 logs
 observation*
+
+# VisCodeBench run outputs (docs/tutorial.md)
+runs/
+submission/
+submission.zip
+
+submission-*/
+submission-*.zip
+logs-*/

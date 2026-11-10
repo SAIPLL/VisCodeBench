@@ -1,101 +1,54 @@
 # VisCodeBench
 
-**VisCodeBench** is an end-to-end Text-to-Vis benchmark that reflects real-world
-practice. It contains **2,672 samples** drawn from three domains — educational,
-scientific, and general-audience — with varying levels of complexity, and it
-pairs those samples with data-centric evaluation metrics for scoring generated
-visualisations.
+**VisCodeBench** is an end-to-end Text-to-Vis benchmark that reflects real-world practice: given a natural-language request and some data, a system must write the code that produces the requested chart. Its **2,672 samples** come from real users in three domains (educational, scientific and general-audience), and predictions are scored with data-centric metrics that compare the data a chart actually displays.
 
-> **Paper:** *VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting
-> real-world practice* (COLM 2026).
-> Hy Nguyen, Thomas James Elton, Ella Wilson, Andrew Reeson, Cécile Paris,
-> Josiah Poon, Jonathan K. Kummerfeld.
-> The University of Sydney · CSIRO's Data61.
+- 📄 **Paper:** [VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting real-world practice](https://openreview.net/forum?id=noorBEVR4k) (COLM 2026)
+- 🏆 **Leaderboard:** [codabench.org/competitions/16125](https://www.codabench.org/competitions/16125/)
+- 🚀 **Tutorial:** [docs/tutorial.md](docs/tutorial.md), from a fresh clone to a leaderboard submission
 
-> **🏆 Leaderboard:** https://www.codabench.org/competitions/16125/
+## News
 
-This repository provides the **evaluation code**, **representative samples**, and
-**prompts**. The full benchmark dataset is kept private and accessed via the
-leaderboard to prevent web scraping and use in LLM training.
+- **2026-11:** We updated the [running tutorial](docs/tutorial.md). It now runs a coding agent ([OpenAI Codex CLI](https://github.com/openai/codex) or [Claude Code](https://code.claude.com/docs)) inside a Docker container on every sample, handles usage limits, keeps each model's answers separate, and builds the submission file in one command.
+- **Coming soon:** leaderboard results for new models (e.g. Codex-gpt-6-astra).
 
-## What is Text-to-Vis?
+## Dataset
 
-Text-to-Vis is the task of taking a human-language request for a visualisation,
-together with some input data, and generating code that produces the
-corresponding chart. VisCodeBench evaluates systems on realistic requests: the
-charts, data, and requests originate from real users rather than synthetic
-templates, and many samples require substantial data processing and
-customisation.
-
-## Dataset Overview
-
-VisCodeBench is built from three sources. After collection, the raw data went
-through an annotation process combining LLM assistance and expert human review
-(annotators with 4+ years of coding and academic-visualisation experience).
-
-| Subset | Size | Domain | Description |
+| Subset | Size | Domain | Source |
 | --- | --- | --- | --- |
-| **GitHub-T2V** | 843 | Educational | Visualisation tasks from assignment notebooks in online data-science, data-analysis, and ML courses shared on GitHub. Each sample includes underlying data, context code, a natural-language request, the reference code, and the resulting chart. |
-| **arXiv-T2V** | 805 | Scientific | Charts contributed by authors of 2024 arXiv papers via an ethics-approved survey, with the corresponding code, underlying data, and a newly written request. Exhibits longer outputs, more plot types, and more subplots. |
-| **OWID-T2V** | 1,024 | General audience | Charts and datasets curated from [Our World in Data](https://ourworldindata.org/). Original charts were produced in custom JavaScript, so instead of code we provide reference displayed data points and the original chart images for evaluation. |
+| **GitHub-T2V** | 843 | Educational | Visualisation tasks from assignment notebooks in online data-science, data-analysis and ML courses shared on GitHub. |
+| **arXiv-T2V** | 805 | Scientific | Charts contributed by authors of 2024 arXiv papers through an ethics-approved survey, with their code, data and a newly written request. Longer outputs, more plot types and more subplots. On the leaderboard it is split into **easy** and **hard**. |
+| **OWID-T2V** | 1,024 | General audience | Charts and datasets curated from [Our World in Data](https://ourworldindata.org/). The originals were drawn in custom JavaScript, so the references are the displayed data points and the original chart images. |
 
-Compared with existing benchmarks, VisCodeBench places higher demands on models:
-longer inputs and outputs, more distinct libraries per sample, multiple subplots
-per chart, and greater flexibility of data format — reflecting genuine
-real-world visualisation work.
+All samples were annotated with LLM assistance and reviewed by experts with 4+ years of coding and academic-visualisation experience. Compared with earlier benchmarks, VisCodeBench has longer inputs and outputs, more libraries per sample, more subplots per chart, and more varied data formats.
 
-## Leaderboard & Submissions
+The sample inputs (data, context code and request) can be downloaded from the leaderboard. The reference solutions are kept private and used only for scoring, so that they don't leak into LLM training data.
 
-Because the full dataset is held out, evaluation is run through the Codabench
-competition rather than by releasing test data:
+## Getting started
 
-**➡️ https://www.codabench.org/competitions/16125/**
+Follow the **[tutorial](docs/tutorial.md)**. In short:
 
-To participate:
+1. Clone this repository and download the sample inputs into `data/codabench`.
+2. Build the Docker image, which includes the evaluation library and both coding agents.
+3. Generate predictions with `run_agent.sh`, or with your own Text-to-Vis system.
+4. Log the data your charts display with `python -m t2v_eval.batch_log`, and upload the resulting zip to the leaderboard.
 
-1. Open the competition page and read the task description and rules.
-2. Register for the competition on Codabench.
-3. Generate visualisation code for the provided inputs using your Text-to-Vis
-   system.
-4. Package your outputs in the required submission format (see the competition
-   page) and upload them.
-5. Your submission is scored automatically with the metrics in this repository,
-   and results appear on the leaderboard.
+## Evaluation library
 
-The representative samples and prompts in this repository illustrate the input
-format and let you validate your pipeline locally before submitting.
-
-## Evaluation Library (`t2v_eval`)
-
-The `t2v_eval` package is the scoring engine behind the leaderboard. It logs the
-data that plotting libraries actually render, then compares predicted
-visualisations against reference visualisations using data-centric metrics such
-as **Displayed Data Similarity** and an image-level **Accessibility** score.
-
-Installation, logging, scoring, the full API reference, supported plotting
-libraries, and tests are documented in **[docs/t2v_eval.md](./docs/t2v_eval.md)**.
-
-Quick start:
-
-```bash
-pip install -e .
-```
-
-```python
-from t2v_eval.evaluation import calculate_similarity_score
-
-similarity = calculate_similarity_score(
-    pred_log_dir="logs/pred",
-    gt_log_dir="logs/reference",
-)
-print(similarity)  # float in [0, 1], higher is better
-```
+The `t2v_eval` package in this repository is the scoring engine behind the leaderboard. It records the data that matplotlib, seaborn and geopandas actually draw, then compares predictions with references using **Displayed Data Similarity** and **Chart Type Accuracy**. Installation, the API and the supported plotting functions are documented in **[docs/t2v_eval.md](docs/t2v_eval.md)**.
 
 ## License
 
-See [LICENSE](LICENSE).
+[MIT](LICENSE). See [docs/acknowledgements.md](docs/acknowledgements.md) for the work this project builds on.
 
-## Acknowledgements
+## Citation
 
-We would like to acknowledge the following references that have contributed to
-the development of this project: [References](./docs/acknowledgements.md).
+```bibtex
+@inproceedings{
+nguyen2026viscodebench,
+title={VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting real-world practice},
+author={Hy Nguyen and Thomas James Elton and Ella Wilson and Cecile Paris and Andrew Reeson and Josiah Poon and Jonathan K. Kummerfeld},
+booktitle={Third Conference on Language Modeling},
+year={2026},
+url={https://openreview.net/forum?id=noorBEVR4k}
+}
+```

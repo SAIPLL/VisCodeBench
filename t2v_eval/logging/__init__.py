@@ -44,7 +44,7 @@ class CodeCompletionState(Enum):
     COMPLETED = "completed"
     INCOMPLETE = "incomplete"
 
-LOGGING_ACTIVATION_CODE = """from t2v_eval.logging import activate_t2v_logging; activate_t2v_logging("{log_dir}")"""
+LOGGING_ACTIVATION_CODE = """from t2v_eval.logging import activate_t2v_logging; activate_t2v_logging({log_dir!r})"""
 IGNORE_WARNING_CODE = "import warnings; warnings.filterwarnings('ignore')"
 
 
