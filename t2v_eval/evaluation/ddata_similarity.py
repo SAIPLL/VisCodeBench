@@ -227,36 +227,50 @@ def compare_data_series(pred_series: dict, gt_series: dict, debug: bool = False)
 
 
 _COORDS = ("x", "y", "z", "t")
+_INF, _NINF = float("inf"), float("-inf")   # the sentinels used by find_min_max
+
+NORMALISATIONS = ("reference_frame", "self_frame")
 
 
-def reference_axis_frame(gt_series_list: list) -> dict:
+def _check_normalisation(normalisation: str) -> None:
+    if normalisation not in NORMALISATIONS:
+        raise ValueError(
+            f"normalisation must be one of {NORMALISATIONS}, got {normalisation!r}")
+
+
+def axis_frame(series_list: list) -> dict:
     """
-    ``{coord: (offset, scale)}`` mapping the reference axis into [0, 1].
+    ``{coord: (offset, scale)}`` mapping an axis's non-pie series into [0, 1].
 
-    The range is taken over all non-pie series in the reference axis. A constant
-    reference coordinate (e.g. a flat line) has no range, so it is centred on 0 and
-    scaled by its own magnitude (or 1 when it is 0): matching values map to 0, and a
-    prediction that doubles the constant maps to 1.
-    Coordinates absent from the reference axis get no entry and are left as is.
+    The range is taken over all non-pie series of the axis. A constant coordinate
+    (e.g. a flat line) has no range, so it is centred on its value and scaled by its
+    own magnitude (or 1 when it is 0): matching values map to 0, and a value that
+    doubles the constant maps to 1.  Coordinates absent from every series (left at
+    the ``INF``/``NINF`` sentinels by :func:`find_min_max`) get no entry.
     """
-    bounds = find_min_max([s for s in gt_series_list if s["plt_func"] != "pie"])
+    bounds = find_min_max([s for s in series_list if s["plt_func"] != "pie"])
     frame = {}
     for coord, (lo, hi) in zip(_COORDS, bounds):
-        if not (np.isfinite(lo) and np.isfinite(hi)):
+        if lo == _INF or hi == _NINF:
             continue
         frame[coord] = (lo, hi - lo) if hi > lo else (lo, abs(lo) or 1.0)
     return frame
 
 
-def to_reference_frame(series_list: list, frame: dict) -> list:
-    """Copies of *series_list* expressed in *frame*; pie slices become proportions."""
+def to_frame(series_list: list, frame: dict) -> list:
+    """
+    Copies of *series_list* expressed in *frame*.
+
+    Pie series are mapped to their own proportions; all other series are shifted
+    and scaled per coordinate by *frame*.  The input series are not modified.
+    """
     out = []
     for series in series_list:
         data = dict(series["data"])
         if series["plt_func"] == "pie":
             total = np.sum(data["x"])
             if total > 0:
-                data["x"] = np.asarray(data["x"]) / total
+                data["x"] = np.asarray(data["x"], dtype=float) / total
         else:
             for coord, (offset, scale) in frame.items():
                 if coord in data:
@@ -267,18 +281,22 @@ def to_reference_frame(series_list: list, frame: dict) -> list:
 
 def compare_axes(pred_series_list: list, gt_series_list: list,
                  debug: bool = False, n_jobs: int = 1,
-                 normalize: bool = True) -> float:
+                 normalisation: str = "reference_frame") -> float:
     """
     Compare two axes by solving the optimal series-assignment problem.
 
-    With *normalize*, both axes are first mapped into the reference axis's frame
-    (:func:`reference_axis_frame`), so scale, unit and offset errors in the
-    prediction are scored instead of being normalised away.
+    normalisation
+        ``"reference_frame"`` (default): both axes are mapped into the reference
+        axis's frame, so scale, unit and offset errors in the prediction are scored
+        instead of being normalised away.
+        ``"self_frame"``: each axis is mapped into its own frame (the previous
+        behaviour, which ignores scale and offset).
     """
-    if normalize:
-        frame = reference_axis_frame(gt_series_list)
-        pred_series_list = to_reference_frame(pred_series_list, frame)
-        gt_series_list   = to_reference_frame(gt_series_list, frame)
+    _check_normalisation(normalisation)
+    gt_frame   = axis_frame(gt_series_list)
+    pred_frame = gt_frame if normalisation == "reference_frame" else axis_frame(pred_series_list)
+    pred_series_list = to_frame(pred_series_list, pred_frame)
+    gt_series_list   = to_frame(gt_series_list, gt_frame)
 
     n_pred = len(pred_series_list)
     n_gt   = len(gt_series_list)
@@ -301,17 +319,21 @@ def compare_axes(pred_series_list: list, gt_series_list: list,
 
 def compare_figures(pred_fig_data: dict, gt_fig_data: dict,
                     debug: bool = False, n_jobs: int = 1,
-                    normalize: bool = True) -> float:
+                    normalisation: str = "reference_frame") -> float:
     """
     Compare two full figures (dicts of axes) by optimal axis assignment.
+
+    *normalisation* is passed to :func:`compare_axes` for every axis pair.
     """
+    _check_normalisation(normalisation)
     pred_axes = list(pred_fig_data.values())
     gt_axes   = list(gt_fig_data.values())
     n_pred    = len(pred_axes)
     n_gt      = len(gt_axes)
 
     iterator = (
-        delayed(compare_axes)(pred_axes[i], gt_axes[j], debug=debug, normalize=normalize)
+        delayed(compare_axes)(pred_axes[i], gt_axes[j], debug=debug,
+                              normalisation=normalisation)
         for i in range(n_pred)
         for j in range(n_gt)
     )
@@ -346,7 +368,7 @@ def calculate_similarity_score(pred_log_dir: str,
                                 use_cache: bool = False,
                                 save_results: bool = False,
                                 verbose: bool = False,
-                                reference_frame: bool = True) -> float:
+                                normalisation: str = "reference_frame") -> float:
     """
     Compute the data-similarity score between a predicted and a ground-truth
     T2V log directory.
@@ -371,23 +393,23 @@ def calculate_similarity_score(pred_log_dir: str,
         Write the result to ``evaluation.json`` in ``pred_log_dir``.
     verbose
         Print debug information during scoring.
-    reference_frame
-        Map each (prediction, reference) axis pair into the reference axis's frame
-        before comparing (default). ``False`` normalises every log directory by its
-        own ranges at load time, as before; the line-error divisor change in
-        :func:`get_cont_recall_new` applies in both modes.
+    normalisation
+        ``"reference_frame"`` (default) maps each (prediction, reference) axis pair
+        into the reference axis's frame before comparing.  ``"self_frame"`` maps
+        each axis into its own frame, as before.  See :func:`compare_axes`.
 
     Returns
     -------
     float  Similarity score in [0, 1].
     """
+    _check_normalisation(normalisation)
     eval_path = os.path.join(pred_log_dir, "evaluation.json")
-    normalisation = "reference_frame" if reference_frame else "self"
     if use_cache and os.path.exists(eval_path):
         with open(eval_path, encoding="utf-8") as fh:
             cached = json.load(fh)
-        # Results written before reference-frame scoring carry no "normalisation" field.
-        if cached.get("normalisation", "self") == normalisation:
+        # Results written before this option existed carry no "normalisation" field
+        # and were scored differently, so they are recomputed.
+        if cached.get("normalisation") == normalisation:
             return cached["similarity_score"]
 
     _kwargs = dict(
@@ -399,7 +421,6 @@ def calculate_similarity_score(pred_log_dir: str,
         summarize_before=summarize_before,
         summarize_after=summarize_after,
         print_points=print_points,
-        normalize=not reference_frame,
     )
     pred_fig_data = read_t2v_log_dir(pred_log_dir, **_kwargs)
     gt_fig_data   = read_t2v_log_dir(gt_log_dir,   **_kwargs)
@@ -411,7 +432,7 @@ def calculate_similarity_score(pred_log_dir: str,
             print(f"GT series: {gt_n}, Pred series: {pred_n} — may take a while …")
 
     similarity_score = compare_figures(pred_fig_data, gt_fig_data, debug=verbose,
-                                       normalize=reference_frame)
+                                       normalisation=normalisation)
 
     if save_results:
         result = {
