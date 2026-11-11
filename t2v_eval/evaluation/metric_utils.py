@@ -128,7 +128,8 @@ def check_discrete_values(array) -> bool:
 
 
 ## Maps each raw plt_func to a canonical group name.
-## "plot" series are never merged — kept separate to preserve curve identity.
+## "plot" and "pie" series are never merged — kept separate to preserve curve
+## identity and each pie's own proportions.
 _PLT_FUNC_GROUP: dict[str, str] = {
     # keep separate (2d)
     "plot":             "plot",
@@ -136,7 +137,7 @@ _PLT_FUNC_GROUP: dict[str, str] = {
     "fill_betweenx":    "plot",
     "stem":             "plot",
     "stairs":           "plot",
-    # merge — 1d
+    # keep separate (1d)
     "pie":              "pie",
     # merge — 2d
     "bar":              "bar",
@@ -163,7 +164,6 @@ _PLT_FUNC_GROUP: dict[str, str] = {
 
 ## Coordinate keys to concatenate when merging, keyed by canonical group name.
 _MERGE_KEYS: dict[str, list[str]] = {
-    "pie":       ["x"],
     "bar":       ["x", "y"],
     "box":       ["x", "y"],
     "scatter":   ["x", "y", "z"],
@@ -180,8 +180,8 @@ def group_fig_data_by_plt_func(fig_data: dict) -> dict:
     """
     Normalise plt_func names and merge same-type series within each axis.
 
-    ``plot`` series are kept separate (preserves individual curve identity).
-    All other types are merged into a single accumulated series per axis so
+    ``plot`` and ``pie`` series are kept separate (preserves individual curve
+    identity, and lets each pie be scored as its own proportions).  All other types are merged into a single accumulated series per axis so
     that scatter/bar/etc. distances are computed on the full point cloud.
     """
     new_fig_data = defaultdict(list)
@@ -193,7 +193,7 @@ def group_fig_data_by_plt_func(fig_data: dict) -> dict:
         for series in series_list:
             group = _PLT_FUNC_GROUP[series["plt_func"]]
 
-            if group == "plot":
+            if group in ("plot", "pie"):
                 series["plt_func"] = group
                 accumulated[group].append(series)
                 continue
@@ -851,8 +851,10 @@ def read_t2v_log_dir(
     """
     Parse and preprocess a T2V log directory.
 
-    Chains: parsing → normalisation → grouping → (optional) downsampling →
-    filtering.  This is the main entry point for loading logged figure data.
+    Chains: parsing → grouping → (optional) downsampling → filtering.  This is the
+    main entry point for loading logged figure data.  Values are returned as logged;
+    the data-similarity metric normalises each prediction/reference axis pair itself
+    (see ``ddata_similarity.compare_axes``).
 
     Parameters
     ----------
@@ -887,7 +889,6 @@ def read_t2v_log_dir(
         summarize_fig_data(fig_data, data_type=data_type,
                            verbose=verbose, print_points=print_points)
 
-    fig_data = normalize_fig_data(fig_data)
     fig_data = group_fig_data_by_plt_func(fig_data)
 
     if down_sampling:
