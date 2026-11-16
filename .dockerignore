@@ -1,0 +1,15 @@
+# Only pyproject.toml, requirements.txt, README.md, t2v_eval/ and
+# docs/codex_script.sh are needed to build the image.
+.git
+.gitignore
+.pytest_cache
+**/__pycache__
+*.egg-info
+data
+runs
+logs
+submission
+submission.zip
+tests
+.DS_Store
+.env
