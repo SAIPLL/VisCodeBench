@@ -136,7 +136,7 @@ Requirements:
 (2) The generated visualisation must be relevant.
 (3) Use Python libraries such as matplotlib, seaborn, or geopandas for visualisation.
 (4) The visualisation should be clear, well-labelled, and visually appealing, with no overlapping text or overflowing elements.
-(5) For maps, use the GeoJSON file "countries.geo.json" for country boundaries.
+(5) For maps, use the GeoJSON file "countries.geo.json" for country boundaries. If it is not exist, use "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json" .
 (6) For maps, display data-present areas in suitable colours, and data-absent areas in white with a hatched style and grey border where applicable.
 (7) Save the visualisation as PNG image file(s) at './outputs/output_{i}.png' unless the request specifies otherwise.
 (8) Use a non-interactive backend and do not display the visualisation, to avoid timeouts.
