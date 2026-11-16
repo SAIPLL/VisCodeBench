@@ -44,11 +44,11 @@ The `t2v_eval` package in this repository is the scoring engine behind the leade
 
 ```bibtex
 @inproceedings{
-nguyen2026viscodebench,
-title={VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting real-world practice},
-author={Hy Nguyen and Thomas James Elton and Ella Wilson and Cecile Paris and Andrew Reeson and Josiah Poon and Jonathan K. Kummerfeld},
-booktitle={Third Conference on Language Modeling},
-year={2026},
-url={https://openreview.net/forum?id=noorBEVR4k}
+    nguyen2026viscodebench,
+    title={VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting real-world practice},
+    author={Hy Nguyen and Thomas James Elton and Ella Wilson and Cecile Paris and Andrew Reeson and Josiah Poon and Jonathan K. Kummerfeld},
+    booktitle={Third Conference on Language Modeling},
+    year={2026},
+    url={https://openreview.net/forum?id=noorBEVR4k}
 }
 ```
