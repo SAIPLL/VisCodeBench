@@ -74,6 +74,9 @@ print(chart_type_ok)
 `calculate_similarity_score` returns a float in `[0, 1]` (higher is better) based
 on **Displayed Data Similarity**, a flexible, LLM-independent measure of how
 closely the generated chart reproduces the reference data points.
+Each axes is normalised by its own range before comparison, so uniform scale and
+offset errors within an axis are not penalised; see
+[Normalisation in Displayed Data Similarity](ddata_similarity_normalisation.md).
 `calculate_chart_type_accuracy` checks whether the predicted chart types cover
 the reference chart types. `calculate_accessibility_score` computes image-level
 **Accessibility** signals such as text contrast and spacing.
